@@ -1,0 +1,13 @@
+mixin titleGroup(titleTop, titleBottom, addClass)
+	if addClass
+		.title-group.text-center(class=" "+ addClass)
+			.title-2
+				h2 !{titleTop}
+			.title-3
+				h3 !{titleBottom}
+	else
+		.title-group
+			.title-2
+				h2 !{titleTop}
+			.title-3
+				h3 !{titleBottom}

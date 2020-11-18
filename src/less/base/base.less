@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+.test{
+  padding: 20px;
+  background-color: @orange;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,19 +35,9 @@ body {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: #000;
-
-  @media (max-width: 1199px) {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  @media(max-width: 767px){
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }
 
 a,
@@ -204,9 +199,10 @@ section {
   }
 }
 
+
 // button
-.button.button-solid{
-  display: inline-block;
+.button-white{
+  display: inline-flex;
   background-color: #FFFFFF;
   padding-left: 24px;
   padding-right: 36px;

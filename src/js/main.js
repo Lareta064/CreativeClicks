@@ -33,14 +33,14 @@ $(document).ready(function () {
 			// mobHeader.classList.remove('active');
 
 		});
-		mobMenu.addEventListener('click', function () {
-			this.classList.remove('active');
-			// menuToggle.classList.remove('active');
-			// overlayBlock.classList.remove('active');
-			// mobHeader.classList.remove('active');
-			// bodyEl.classList.remove('noscroll');
+		// mobMenu.addEventListener('click', function () {
+		// 	this.classList.remove('active');
+		// 	// menuToggle.classList.remove('active');
+		// 	// overlayBlock.classList.remove('active');
+		// 	// mobHeader.classList.remove('active');
+		// 	// bodyEl.classList.remove('noscroll');
 
-		})
+		// })
 	}
    let caseSlider = $('.case-slider');
    let caseSliderArrowLeft = $('button.arr-left');

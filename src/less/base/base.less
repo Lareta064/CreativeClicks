@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+.test{
+  padding: 20px;
+  background-color: @orange;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,14 +38,10 @@ body {
   max-width: 1248px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: #000;
-  @media(max-width:1199px){
-    padding-left: 16px;
-    padding-right: 16px;
-  }
- 
+
 }
 .container--p0{
   padding-left: 0;
@@ -211,7 +212,6 @@ section {
   padding: 5px 10px;
   color: #FFFFFF;
   font-size: 45px;
-
 }
 
 .marked-text.marked-text--right {
@@ -222,9 +222,10 @@ section {
   }
 }
 
+
 // button
-.button.button-solid{
-  display: inline-block;
+.button-white{
+  display: inline-flex;
   background-color: #FFFFFF;
   padding-left: 24px;
   padding-right: 36px;
@@ -232,10 +233,15 @@ section {
   color: #000000;
   outline: none;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.01em;
   font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
+
+  span+span{
+    margin-left: 14px;
+  }
 
   &:hover {
     background-color: @hoverBtn;

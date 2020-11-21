@@ -90,8 +90,21 @@ button {
 section {
   padding-left: 16px;
   padding-right: 16px;
+  position: relative;
 }
-
+.progress-bar{
+  position: absolute;
+  bottom: 55px;
+  height: 24px;
+  width: 150px;
+  background-color: #fff;
+  z-index: 20;
+  left: -16px;
+}
+.progress-bar.progress-bar--right{
+  right: -16px;
+  left:auto;
+}
 // typography
 .title-3 h3,
 .title-1 h1 {
@@ -126,7 +139,7 @@ section {
     line-height: 24px;
   }
 }
-
+.time-text,
 .head-3 h3 {
   font-size: 56px;
   line-height: 48px;
@@ -168,7 +181,7 @@ section {
 .title-group {
   max-width: 688px;
   text-transform: uppercase;
-
+  text-align: center;
   .title-2 {
     margin-bottom: 24px;
   }
@@ -204,6 +217,7 @@ section {
     display: none;
   }
 }
+
 
 .marked-text {
 

@@ -60,5 +60,21 @@ $(document).ready(function () {
 		caseSlider.trigger("prev.owl.carousel");
 
 	});
+	let t1 = new Date().toLocaleTimeString().slice(0,-3);
+	
 
+	let amst = ((new Date().getUTCHours() + 1).toLocaleString()) + ":" + (new Date().getUTCMinutes().toLocaleString());
+	document.querySelector('#timeOut').textContent = amst;
+
+	let beij = ((new Date().getUTCHours() + 8).toLocaleString()) + ":" + (new Date().getUTCMinutes().toLocaleString());
+	document.querySelector('#timeOut1').textContent = beij;
+
+	let telav = ((new Date().getUTCHours() + 2).toLocaleString()) + ":" + (new Date().getUTCMinutes().toLocaleString());
+	document.querySelector('#timeOut2').textContent = telav;
+
+	let toron = ((new Date().getUTCHours() - 5).toLocaleString()) + ":" + (new Date().getUTCMinutes().toLocaleString());
+	document.querySelector('#timeOut3').textContent = toron;
+
+	let sanfr = ((new Date().getUTCHours() - 8).toLocaleString()) + ":" + (new Date().getUTCMinutes().toLocaleString());
+	document.querySelector('#timeOut4').textContent = sanfr;
 })

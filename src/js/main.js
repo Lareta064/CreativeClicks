@@ -52,6 +52,70 @@ $(document).ready(function () {
 		smartSpeed:800
 
    });
+	let partnersSlider = $('.partners-slider');
+	partnersSlider.owlCarousel({
+		items:1,
+		smartSpeed:800,
+		touchDrag : false
+
+	});
+	// FORM FAKE PLACEHOLDER
+	const formItem = document.querySelector('.form-item');
+	if(formItem){
+		let inputElement = formItem.querySelector('input');
+		let placeholderElement = formItem.querySelector('.fake-placeholder');
+		
+		inputElement.addEventListener('focus', function(){
+			placeholderElement.classList.add('active');
+		});
+		
+		inputElement.addEventListener('blur', function(){
+			if(inputElement.value == ''){
+				placeholderElement.classList.remove('active');
+			}
+			else{
+				placeholderElement.classList.add('active');
+			}
+			
+		});
+	}
+	// FORM VALIDATE
+	$('#contact-form').validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            email: {
+                required: 'field should not be empty',
+                email: 'missing @ symbol'
+            }
+            
+        },
+        submitHandler: function (form) {
+            ajaxFormSubmit();
+        }
+    });
+
+    //  AJAX function
+    function ajaxFormSubmit() {
+
+        let string = $("#contact-form").serialize();
+        $.ajax({
+            type: "POST", 
+            url: "php/mail.php",
+            data: string, 
+           
+            success: function (html) {
+                $("#contact-form").slideUp(800);
+                $('#answer').html(html);
+            }
+        });
+        return false;
+    }
+   // time for city
    $(caseSliderArrowRight).click(function () {
 		caseSlider.trigger("next.owl.carousel");
 

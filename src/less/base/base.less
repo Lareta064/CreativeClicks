@@ -7,7 +7,16 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Karla Bold Italic';
+  src: url('../fonts/Karla-BoldItalic.eot');
+  src: url('../fonts/Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Karla-BoldItalic.woff') format('woff'),
+  url('../fonts/Karla-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+/*font-family: 'Karla Bold Italic';*/
 * {
   box-sizing: border-box;
 }
@@ -250,17 +259,21 @@ section {
   align-items: center;
   letter-spacing: 0.01em;
   font-size: 20px;
-  line-height: 1.2;
+  font-family: 'Karla Bold';
   text-transform: uppercase;
+  
 
   span+span{
     margin-left: 14px;
   }
-
+  span:last-child{
+    height: 25px;
+  }
   &:hover {
     background-color: @hoverBtn;
   }
 }
+
 //padding and margin
 .p-128{
   padding: 128px;

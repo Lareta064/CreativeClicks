@@ -328,7 +328,7 @@ section {
 .lable {
   width: fit-content;
   background-color: #000000;
-  height: 65px;
+  height: 40px;
   line-height: 65px;
   padding-left: 8px;
   padding-right: 8px;
@@ -340,4 +340,9 @@ section {
   padding-top: 0;
   padding-bottom: 0;
   white-space: nowrap;
+  align-items: center;
+  
+  @media(max-width: 767px){
+    height: 65px;
+  }
 }

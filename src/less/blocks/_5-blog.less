@@ -40,6 +40,8 @@
 
     @media (max-width: 767px) {
       margin-right: -16px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .progress-bar {
@@ -59,6 +61,7 @@
 
       @media (max-width: 767px) {
         flex-direction: column;
+        top: -209px;
       }
     }
 
@@ -67,11 +70,17 @@
       flex-direction: column;
       width: 32%;
       max-width: 274px;
+      border: 3px solid red;
+
 
       @media (max-width: 767px) {
         width: 100%;
-        max-width: 304px;
-        margin-bottom: 96px;
+        max-width: 319px;
+        margin-bottom: 90px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -109,6 +118,10 @@
       min-height: 186px;
       //margin-right: auto;
       margin-top: -13px;
+
+      @media(max-width: 767px){
+        margin-top: -4px;
+      }
     }
 
     .blog-cards-item:nth-child(even) .blog-cards-title {
@@ -136,7 +149,7 @@
       margin-bottom: 13px;
 
       @media (max-width: 767px) {
-        margin-top: -24px;
+        margin-top: -22px;
       }
     }
 
@@ -162,6 +175,9 @@
 
     .blog-button {
       margin-top: 12px;
+      @media(max-width: 767px){
+        margin-top: 0;
+      }
     }
 
   }

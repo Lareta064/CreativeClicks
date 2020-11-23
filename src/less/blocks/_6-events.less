@@ -1,73 +1,91 @@
-.events{
-  .title-group {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-bottom: 128px;
+.events {
 
-    @media (max-width: 767px) {
-      margin-bottom: 288px;
-    }
-
-    .title-2 {
-      color: @yellow;
-    }
+  .title-2 {
+    color: @yellow;
   }
-  .events-content{
+
+  .events-content {
+    position: relative;
     background-color: @yellow;
-    max-width: 1224px;
+    max-width: 1208px;
     padding-bottom: 128px;
     margin-left: -17px;
+    padding-right: 128px;
+    padding-left: 114px;
 
     .progress-bar {
       bottom: 52px;
-      right: 45px;
-      min-width: 165px;
-
       @media (max-width: 767px) {
         right: auto;
-        //bottom: 52px;
       }
     }
-  }
 
-  .events-cards{
-    display: flex;
-    justify-content: center;
+    .events-cards {
+      position: relative;
+      top: -64px;
+      display: flex;
 
-    @media (max-width: 767px) {
-      display: block;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
     }
-  }
 
-  .events-img{
-    width: 225.8px;
-    margin-top: -64px;
-    @media (max-width: 767px) {
-      width: 256px;
-      //margin-top: inherit;
+    .events-cards-item{
+      display: flex;
+      flex-direction: column;
+      //width: 32%;
+      width: 320px;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: 319px;
+        margin-bottom: 96px;
+      }
     }
-  }
 
-  .events-cards-title {
-    height: 180px;
-    margin-left: 48px;
-  }
+    .events-cards-item-1{
+      width: 312px;
+    }
 
-  .marked-text {
-    margin-bottom: 24px;
-  }
+    .events-cards-item-2{
+      width: 284px;
+      margin-left: 28px;
+    }
 
-  .marked-text span {
-    color: #000000;
-    background-color: inherit;
-  }
+    .events-cards-item-3{
+      width: 288px;
+      margin-left: 56px;
+    }
 
-  .events-cards-item + .events-cards-item {
-    margin-left: 112px;
+    .events-img {
+      width: 225.8px;
+      margin-right: auto;
+      @media (max-width: 767px) {
+        width: 256px;
+        margin-right: unset;
+      }
+    }
 
-    @media (max-width: 767px) {
-      margin-left: 0;
+    .events-lable {
+      position: relative;
+      left: 48px;
+      bottom: 20px;
+      margin-bottom: 4px;
+    }
+
+    .events-cards-title {
+      min-height: 220px;
+      margin-left: auto;
+      margin-top: -20px;
+    }
+
+    .marked-text {
+      margin-bottom: 24px;
+    }
+
+    .marked-text span {
+      color: #000000;
+      background-color: inherit;
     }
   }
 }

@@ -1,5 +1,13 @@
 .events {
-
+  .black-wrapper{
+    position: relative;
+    .progress-bar {
+      bottom: 52px;
+      @media (max-width: 767px) {
+        right: auto;
+      }
+    }
+  }
   .title-2 {
     color: @yellow;
   }
@@ -18,12 +26,7 @@
       padding-right: 0;
     }
 
-    .progress-bar {
-      bottom: 52px;
-      @media (max-width: 767px) {
-        right: auto;
-      }
-    }
+    
 
     .events-cards {
       position: relative;

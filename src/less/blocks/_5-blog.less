@@ -1,8 +1,16 @@
 .black-wrapper {
   padding-top: 256px;
-
+  position: relative;
   @media (max-width: 767px) {
     padding-top: 128px;
+    .progress-bar {
+      bottom: 52px;
+
+      @media (max-width: 767px) {
+        left: auto;
+        right: -16px;
+      }
+    }
   }
 }
 
@@ -44,14 +52,7 @@
       padding-right: 0;
     }
 
-    .progress-bar {
-      bottom: 52px;
-
-      @media (max-width: 767px) {
-        left: auto;
-        right: -16px;
-      }
-    }
+ 
 
     .blog-cards {
       position: relative;

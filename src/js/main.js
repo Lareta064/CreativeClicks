@@ -4,41 +4,33 @@ $(document).ready(function () {
 	const bodyEl = document.body;
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('.header-navigation');
-	// const overlayBlock = document.querySelector('#overlay');
-	// const mobHeader = document.querySelector('.header');
 	
 	if (menuToggle) {
 		menuToggle.addEventListener('click', function () {
 			if (this.classList.contains('active')) {
 				this.classList.remove('active');
 				mobMenu.classList.remove('active');
-				// overlayBlock.classList.remove('active');
 				bodyEl.classList.remove('noscroll');
-				// mobHeader.classList.remove('active');
+				
 
 			} else {
 				this.classList.add('active');
 				mobMenu.classList.add('active');
-				// overlayBlock.classList.add('active');
-				// mobHeader.classList.add('active');
 				bodyEl.classList.add('noscroll');
 
 			}
 		});
 		window.addEventListener('resize', function () {
 			menuToggle.classList.remove('active');
-			// overlayBlock.classList.remove('active');
 			bodyEl.classList.remove('noscroll');
 			mobMenu.classList.remove('active');
-			// mobHeader.classList.remove('active');
+			
 
 		});
 		mobMenu.addEventListener('click', function () {
 			this.classList.remove('active');
 			 menuToggle.classList.remove('active');
-		// 	// overlayBlock.classList.remove('active');
-		// 	// mobHeader.classList.remove('active');
-		 bodyEl.classList.remove('noscroll');
+		 	bodyEl.classList.remove('noscroll');
 
 		})
 	}
@@ -52,6 +44,14 @@ $(document).ready(function () {
 		smartSpeed:800
 
    });
+  
+   	caseSliderArrowLeft.click(function () {
+		caseSlider.trigger("next.owl.carousel");
+	});
+	caseSliderArrowRight.click(function () {
+		caseSlider.trigger("prev.owl.carousel");
+	});
+	
 	let partnersSlider = $('.partners-slider');
 	partnersSlider.owlCarousel({
 		items:1,
@@ -110,7 +110,7 @@ $(document).ready(function () {
            
             success: function (html) {
                 $("#contact-form").slideUp(800);
-                $('#answer').html(html);
+                $('#answer').html('success');
             }
         });
         return false;

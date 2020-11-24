@@ -30,9 +30,9 @@
       top: -72px;
       display: flex;
 
-
       @media (max-width: 767px) {
         flex-direction: column;
+        top: -214px;
       }
     }
 
@@ -46,6 +46,12 @@
         width: 100%;
         max-width: 319px;
         margin-bottom: 96px;
+      }
+    }
+
+    .events-cards-item:nth-child(odd){
+      @media(max-width: 767px){
+        width: 300px;
       }
     }
 

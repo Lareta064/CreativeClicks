@@ -1,6 +1,7 @@
 .events {
-  .black-wrapper{
+  .black-wrapper {
     position: relative;
+
     .progress-bar {
       bottom: 52px;
       @media (max-width: 767px) {
@@ -8,6 +9,7 @@
       }
     }
   }
+
   .title-2 {
     color: @yellow;
   }
@@ -21,12 +23,11 @@
     padding-right: 128px;
     padding-left: 114px;
 
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       padding-left: 0;
       padding-right: 0;
     }
 
-    
 
     .events-cards {
       position: relative;
@@ -39,7 +40,7 @@
       }
     }
 
-    .events-cards-item{
+    .events-cards-item {
       display: flex;
       flex-direction: column;
       width: 312px;
@@ -52,15 +53,33 @@
       }
     }
 
-    .events-cards-item:nth-child(odd){
-      @media(max-width: 767px){
+    .events-cards-item:nth-child(odd) {
+      @media (max-width: 767px) {
         width: 300px;
+        margin-left: auto;
       }
     }
 
     .events-cards-item:nth-child(odd) .events-img {
       @media (max-width: 767px) {
-        margin-left: 85px;
+        position: relative;
+        margin-left: auto;
+        left: 20px;
+      }
+    }
+
+    .events-cards-item:nth-child(odd) .events-cards-title {
+      @media (max-width: 767px) {
+        position: relative;
+        margin-right: auto;
+        z-index: 2;
+      }
+    }
+
+    .events-cards-item:nth-child(odd) .events-button {
+      @media (max-width: 767px) {
+        margin-left: unset;
+        margin-right: unset;
       }
     }
 
@@ -76,37 +95,37 @@
       }
     }
 
-    .events-cards-item:nth-child(even) .lable{
-      @media(max-width: 767px){
+    .events-cards-item:nth-child(even) .lable {
+      @media (max-width: 767px) {
         margin-left: auto;
       }
     }
 
 
-    .events-cards-item:nth-child(even) .events-button{
-      @media(max-width: 767px){
+    .events-cards-item:nth-child(even) .events-button {
+      @media (max-width: 767px) {
         margin-right: unset;
         margin-left: auto;
       }
     }
 
-    .events-cards-item-1{
+    .events-cards-item-1 {
       width: 312px;
     }
 
-    .events-cards-item-2{
+    .events-cards-item-2 {
       width: 284px;
       margin-left: 28px;
 
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         margin-left: 0;
       }
     }
 
-    .events-cards-item-3{
+    .events-cards-item-3 {
       width: 288px;
       margin-left: 56px;
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         margin-left: 0;
       }
     }
@@ -133,7 +152,7 @@
       margin-top: -18px;
     }
 
-      .marked-text span {
+    .marked-text span {
       color: #000000;
       background-color: inherit;
       padding: 0;

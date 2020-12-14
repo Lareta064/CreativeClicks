@@ -5,7 +5,7 @@
 			position: absolute;
 			right: 0;
 			left: 0;
-			top:700px;
+			top:702px;
 			height: 16px;
 			background-color: #fff;
 			z-index: 5;
@@ -33,6 +33,26 @@
 		@media(max-width:767px){
 			padding-top: 128px;
 			padding-bottom: 80px;
+		}
+	}
+	&.signin-adv{
+		.header--signin .title-group{
+			top: 24px;
+			right: 14px;
+			@media(max-width:767px){
+				top: 0px;
+				right: 6px;
+				.title-2{
+					margin-bottom: 0;
+					margin-top: 24px;
+				}
+			}
+		}
+		.header-title{
+			padding-bottom: 106px;
+			@media(max-width:767px){
+				padding-bottom: 112px;
+			}
 		}
 	}
 	.header--signin .header-title{
@@ -85,4 +105,7 @@
 	.progress-bar{
 		bottom:52px;
 	}
+}
+.color-block--formWrapper {
+	padding-top: 120px;
 }

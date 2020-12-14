@@ -1,0 +1,66 @@
+// header-top
+.header-top
+	a(href="index.html").logo
+		img(src="img/logo/logo.png", width="92" alt="logo")
+	.menu-toggle
+		span
+	//header-menu
+.header-navigation
+	.header-menu.header-menu--orange
+		.header-menu__list
+			.header-menu__list-head
+				a(href="index.html").logo.logo--mobile
+					img(src="img/logo/logo.png", width="92" alt="logo")
+				button.close-mobile-menu
+					+icon-close
+			ul
+				li
+					a(href="index.html") Home
+				li
+					a(href="whatWeDo.html") What we do
+				li
+					a(href="#") Who we are
+				li
+					a(href="#") Careers
+				li
+					a(href="#") Resources
+				li.active
+					a(href="#") Sign in
+header.header.header--signin
+	.progress-bar.progress-bar--right
+	.hidden-layout
+	.container.container--p0
+		.header-title
+			.title-group
+				.title-3
+					h3 Sign up
+			.header-title__img
+				picture
+					source(srcset="img/signin/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
+					source(srcset="img/signin/header.jpg", width="524" alt="img")
+					img(src="img/signin/header.jpg", width="524" alt="img")
+		.header-color-block.p-128.color-block
+			.text-block
+				.text-32
+					p Get access to a range of media sources delivering quality and volume.
+				.text-block-btn
+					a(href="signInAdv.html").button-white
+								span For Advertisers
+								span 
+									+sliderArrowRight
+			.text-block
+				.text-32
+					p Monetize your traffic and maximize your eCPM.
+				.text-block-btn
+					a(href="#!").button-white
+								span For publishers
+								span 
+									+sliderArrowRight
+		.header-color-block.p-128.color-block.color-block--white
+			.text-32
+				p Do you already have an account?
+			.text-block-btn
+				a(href="#!").button-white.button-dark
+							span Sign in
+							span 
+								+sliderArrowRight

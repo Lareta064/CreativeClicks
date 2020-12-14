@@ -1,0 +1,45 @@
+// header-top
+.header-top
+	a(href="index.html").logo
+		img(src="img/logo/logo.png", width="92" alt="logo")
+	.menu-toggle
+		span
+	//header-menu
+.header-navigation
+	.header-menu.header-menu--orange
+		.header-menu__list
+			.header-menu__list-head
+				a(href="index.html").logo.logo--mobile
+					img(src="img/logo/logo.png", width="92" alt="logo")
+				button.close-mobile-menu
+					+icon-close
+			ul
+				li
+					a(href="whatWeDo.html") Home
+				li.active
+					a(href="whatWeDo.html") What we do
+				li
+					a(href="#") Who we are
+				li
+					a(href="#") Careers
+				li
+					a(href="#") Resources
+				li
+					a(href="signIn.html") Sign in
+header.header.header--wedo
+	.progress-bar.progress-bar--right
+	.hidden-layout
+	.container.container--p0
+		.header-title
+			+titleGroup('Inspiring people is', 'What <br>we do')
+			.header-title__img
+				picture
+					source(srcset="img/whatwedo/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
+					source(srcset="img/whatwedo/header.jpg", width="524" alt="img")
+					img(src="img/whatwedo/header.jpg", width="524" alt="img")
+		.header-color-block.p-128.color-block
+			.text-block
+				.head-3
+					h3 KPI-driven <br> solutions
+				.text-32
+					p We provide marketers and publishers with KPI-driven mobile marketing solutions. From social, search, to native and display, we supply a massive scale through our strong network of 36,000 partners

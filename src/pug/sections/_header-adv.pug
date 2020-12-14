@@ -1,0 +1,88 @@
+// header-top
+.header-top
+	a(href="index.html").logo
+		img(src="img/logo/logo.png", width="92" alt="logo")
+	.menu-toggle
+		span
+	//header-menu
+.header-navigation
+	.header-menu.header-menu--orange
+		.header-menu__list
+			.header-menu__list-head
+				a(href="index.html").logo.logo--mobile
+					img(src="img/logo/logo.png", width="92" alt="logo")
+				button.close-mobile-menu
+					+icon-close
+			ul
+				li
+					a(href="index.html") Home
+				li
+					a(href="whatWeDo.html") What we do
+				li
+					a(href="#") Who we are
+				li
+					a(href="#") Careers
+				li
+					a(href="#") Resources
+				li.active
+					a(href="#") Sign in
+header.header.header--signin
+	.progress-bar.progress-bar--right
+	.hidden-layout
+	.container.container--p0
+		.header-title
+			.title-group
+				.title-3
+					h3 Sign up
+				.title-2
+					h2 for advertisers
+			.header-title__img
+				picture
+					source(srcset="img/signin/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
+					source(srcset="img/signin/header.jpg", width="524" alt="img")
+					img(src="img/signin/header.jpg", width="524" alt="img")
+		.header-color-block.p-128.color-block.color-block--formWrapper
+			.form-wrapper
+				form(action="").advRegistration
+					.form-item
+						label.form-item__title company
+						input(type="text" name="company" placeholder="Company name")
+					.form-item
+						label.form-item__title Name
+						input(type="text" name="firstName" placeholder="Your first name")
+					.form-item.form-item--sibl
+						input(type="text" name="lastName" placeholder="Last name")
+					.form-item
+						label.form-item__title Email address
+						input(type="text" name="email" placeholder="Your email address")
+					.form-item
+						label.form-item__title Password
+						input(type="password" name="password" placeholder="Password")
+						.input-icon.icon-passw
+							img.active(src="img/signin/show-pass.png", width="23" alt="showPass")
+							img(src="img/signin/hide-pass.png", width="23" alt="hidePass")
+
+					.form-item.form-item--sibl
+						input(type="password" name="password" placeholder="Confirm your password")
+						.input-icon.icon-passw
+							img.active(src="img/signin/show-pass.png", width="23" alt="showPass")
+							img(src="img/signin/hide-pass.png", width="23" alt="hidePass")
+
+					.form-item
+						.input-icon.select-arr
+							img(src="img/signin/selectArrow.png", width="10" alt="arrow")
+						label.form-item__title Address
+						select#select-country(name="country" )
+							option(value="1") Country
+							option(value="1") Country-1
+							option(value="1") Country-2
+					.form-item.form-item--sibl
+						input(type="text" name="state" placeholder="State (optional)")
+					
+					.form-item.form-item--sibl
+						input(type="text" name="City" placeholder="City")
+					.form-btn
+						button(type="submit").button-white
+							span Let’s connect
+							span 
+								+sliderArrowRight

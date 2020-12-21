@@ -43,7 +43,8 @@ header.header.header--signin
 					img(src="img/signin/header.jpg", width="524" alt="img")
 		.header-color-block.p-128.color-block.color-block--formWrapper
 			.form-wrapper
-				// if incorrect email address input class list add class "error-value" 
+				// if the required input field have been filled incorrectly we should add class 'error-value' to the parent div of that field ('.form-item' class)
+
 				form(action="").advRegistration
 					.form-item
 						label.form-item__title company
@@ -57,7 +58,10 @@ header.header.header--signin
 						label.form-item__title Email address
 						input(type="text" name="email" placeholder="Your email address")
 						// notify if input value novalid
-						//- label.error This is not valid email address
+						label.error This is not valid email address
+						// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
+						// (ex.: <label class="error">This is not valid email address</label>) 
+						
 					.form-item
 						label.form-item__title Password
 						input(type="password" name="password" placeholder="Password")

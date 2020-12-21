@@ -72,6 +72,17 @@ $(document).ready(function () {
 			});
 		}
 	}
+	// BORDER BOTTOM FOR INPUT:FOCUS
+	let inputsArrow= document.querySelectorAll('input');
+	for(let item of inputsArrow){
+		let inputParent = item.closest('.form-item');
+		item.addEventListener('focus', function(){
+			inputParent.classList.add('form-item--focus');
+		});
+		item.addEventListener('blur', function(){
+			inputParent.classList.remove('form-item--focus');
+		})
+	}
 	//TOGGLE ARROW FOR SELECR COUNTRY
 	const selectCountry = document.querySelector('#select-country');
 	if(selectCountry){

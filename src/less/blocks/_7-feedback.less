@@ -111,6 +111,9 @@
 	height: 56px;
 	font-size: 20px;
 	font-family: 'Karla Bold';
+	@media(max-width:374px){
+		font-size: 16px;
+	}
   }
   .form-item:after{
 	content: '';
@@ -123,9 +126,6 @@
 	z-index: 2;
   }
  
-  .form-item.error-value label.error{
-
-  }
   .form-item .form-item__title{
 	  text-transform: uppercase;
 	  font-family: 'Karla Bold';
@@ -140,6 +140,7 @@
 	color:  #000;
 	font-family: 'Karla Bold Italic';
   }
+  .form-item.form-item--focus:after,
   .form-item:focus:after, .form-item:hover:after{
   
    height: 4px;
@@ -177,6 +178,9 @@
   .advRegistration{
 	  .form-item+ .form-item{
 		  margin-top: 56px;
+		  @media(max-width:767px){
+			  margin-top: 41px;
+		  }
 	  }
 	  select{
 		display: block;
@@ -195,6 +199,9 @@
 	}
 	.form-btn{
 		margin-top: 66px;
+		@media(max-width:767px){
+			margin-top: 47px;
+		}
 	}
 }
 .form-item .input-icon{
@@ -230,14 +237,15 @@
 		padding-right: 128px;
 	}
 	.input-icon.select-arr{
-		transition: .5s;
+		pointer-events: none;
 	}
 	.input-icon.select-arr img{
 		position: relative;
 		opacity: 1;
-		pointer-events: none;
+		
+		transition: .5s;
 	}
-	.input-icon.select-arr.rotate{
+	.input-icon.select-arr.rotate img{
 		transform: rotate(180deg);
 	}
 	.button-white{

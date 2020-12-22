@@ -1,18 +1,18 @@
 .events .black-wrapper {
   position: relative;
 }
-.events{
+.events {
   padding-left: 0;
 }
 @media (max-width: 767px) {
-  .events{
+  .events {
     padding-left: 16px;
   }
   .events .black-wrapper {
     padding-top: 43px;
   }
 }
-.events  .progress-bar {
+.events .progress-bar {
   bottom: 52px;
 }
 /* @media (max-width: 767px) {
@@ -257,7 +257,7 @@
   .events .events-content .events-button {
     margin-right: unset;
     margin-top: 24px;
-  margin-left: 48px;
+    margin-left: 48px;
   }
 }
 .events .events-cards .events-cards-item .events-img:after {

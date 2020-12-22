@@ -266,7 +266,22 @@ text-transform: uppercase;
   display: flex;
   flex-direction: column;
 }
-
+.marked-text.marked-text--fix{
+  max-width: 268px;
+  min-width: 268px;
+  line-height: 36px;
+  font-size: 40px;
+  color:#000;
+  letter-spacing: -0.02em;
+}
+@media(min-width:767px) and (max-width:1279px){
+  .marked-text.marked-text--fix{
+    font-size: 30px;
+    line-height: 26px;
+    max-width:  200px;
+    min-width:200px
+  }
+}
 .marked-text span {
   font-size: 40px;
   line-height: 36px;

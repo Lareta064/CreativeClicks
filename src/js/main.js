@@ -92,6 +92,9 @@ $(document).ready(function () {
 			
 		});
 	}
+	$('.button-playVideo').on('click', function(){
+		$('.video-modal').addClass('active');
+	})
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

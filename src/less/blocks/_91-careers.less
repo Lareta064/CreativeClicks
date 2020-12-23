@@ -1,0 +1,51 @@
+.header--careers{
+	h2{
+		color: @red;
+	}
+	.header-title .title-group{
+		padding-left: 0;
+		.title-2{
+			position: relative;
+			top: -5px;
+			left: -5px;
+		}
+		.title-3{
+			position: relative;
+			top: -2px;
+			left: -7px;
+		}
+	}
+	.header-title__img{
+		margin-top:-170px;
+	}
+	.header-title__img:after {
+		
+		background-image: url(../img/careers/header.jpg);
+		@media(max-width:767px){
+			background-image: url(../img/careers/header-mob.jpg);
+		}
+	}
+}
+.header--careers{
+	.header-color-block{
+		background-color: @red;
+		padding-right: 128px;
+		p+p{
+			margin-top: 50px;
+		}
+		p span{
+			position: relative;
+			display: inline-block;
+			line-height: 0.85;
+			// &:after{
+			// 	content: '';
+			// 	position: absolute;
+			// 	left: 0;
+			// 	right: 0;
+			// 	height: 1px;
+			// 	background-color: #000;
+			// }
+			border-bottom: 1px solid #000;
+		}
+	}
+}

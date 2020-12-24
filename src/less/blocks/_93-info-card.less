@@ -9,6 +9,12 @@
 			position: relative;
 			z-index: 3;
 		}
+		@media(max-width:767px){
+			width: 256px;
+			height: 256px;
+			position: relative;
+			left: -17px;
+		}
 	}
 	.info-card__img-blur{
 		position: absolute;
@@ -41,4 +47,24 @@
 		padding-right: 8px;
 		background-color: #000;
 		}
+}
+
+@media(max-width:767px){
+	.info-card:nth-child(odd){
+		.info-card__img{
+			position: relative;
+			left: -17px;
+		}
+		.info-card__body{
+			text-align: right;
+			padding-right: 42px;
+			padding-left: 0;
+			
+		}
+		.info-card__footer{
+			display: flex;
+			padding-right: 42px;
+			flex-direction: flex-end;
+		}
+	}
 }

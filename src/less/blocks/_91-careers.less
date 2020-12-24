@@ -134,6 +134,9 @@
 	}
 	.text-block .head-3 {
 		margin-bottom: 62px;
+		@media(max-width:767px){
+			margin-bottom: 34px;
+		}
 	}
 	.color-block__img{
 		position: relative;
@@ -177,9 +180,14 @@
 		padding-left: 120px;
 		padding-right: 60px;
 		margin-left: -32px;
+		@media(max-width: 767px){
+			margin-left: 16px;
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 	.info-card__body{
-		margin-top: -20px;
+		margin-top: -22px;
 		height: 190px;
 		.marked-text {
 			color: #000;
@@ -193,14 +201,29 @@
 .vacancy-content__cards{
 	display: flex;
 	flex-wrap:wrap;
-	// justify-content: space-between;
 	margin-top: -64px;
+	@media(max-width:767px){
+		margin-top: -107px;
+	}
 }
 .vacancy-card{
 	width: 33.3333%;
 	margin-bottom: 96px;
 	.info-card__footer{
 		margin-top: 20px;
+	}
+	@media(max-width: 767px){
+		width: 100%;
+	}
+	.info-card__img{
+		width: 226px;
+		height: 226px;
+		@media(max-width:767px){
+			width: 256px;
+			height: 256px;
+			position: relative;
+			left: -17px;
+		}
 	}
 }
 .vacancy-content .button-box{

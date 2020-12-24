@@ -92,9 +92,24 @@ $(document).ready(function () {
 			
 		});
 	}
+	//PLAY VIDEO
 	$('.button-playVideo').on('click', function(){
 		$('.video-modal').addClass('active');
-	})
+	});
+
+	//SHOW JOB OPENNING CARDS
+	let vacancyCards = $('.vacancy-card');
+	if($('.vacancy-card')){
+		$('.vacancy-card').each( function(index, item){
+			if(index > 2){
+				$(item).hide();	
+			}
+		});
+		$('#showVacancy').on('click', function(){
+			$('.vacancy-card').fadeIn();
+			$(this).hide();
+		});
+	}
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

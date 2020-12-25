@@ -98,18 +98,45 @@ $(document).ready(function () {
 	});
 
 	//SHOW JOB OPENNING CARDS
-	let vacancyCards = $('.vacancy-card');
+	
 	if($('.vacancy-card')){
-		$('.vacancy-card').each( function(index, item){
-			if(index > 2){
-				$(item).hide();	
+
+		function showJobCards(arr, obj){
+			if(obj.width() >=768){
+				$(arr).each( function(index, item){
+					$(item).show();
+					if(index > 2){
+						$(item).hide();	
+					}	
+				});
 			}
-		});
-		$('#showVacancy').on('click', function(){
-			$('.vacancy-card').fadeIn();
-			$(this).hide();
-		});
+			else{
+				$(arr).each( function(index, item){
+					$(item).show();
+					if(index > 0){
+						$(item).hide();	
+					}	
+				});
+			}
+		}
+	
+	showJobCards($('.vacancy-card'), $(window) );
+	//SHOW JOB OPENNING CARDS ON RESIZE
+	$(window).on('resize', function(){
+		showJobCards($('.vacancy-card'), $(this));
+	});
+
+	//SHOW JOB OPENNING CARDS ON CLICK
+	$('#showVacancy').on('click', function(){
+		$('.vacancy-card').fadeIn();
+		$(this).hide();
+		if($(window).width() <768){
+			$(this).closest('.button-box').css('margin-bottom', '30px');
+		}
+	});
+		
 	}
+
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

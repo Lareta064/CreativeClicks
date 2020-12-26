@@ -154,6 +154,12 @@
 		text-transform: uppercase;
 		height: 56px;
 		line-height: 56px;
+		transition:.5s;
+		cursor:pointer;
+		&:hover{
+			
+			opacity: .5;
+		}
 		i{
 			display: inline-block;
 			margin-left: 16px;
@@ -363,4 +369,7 @@
 	.text-block__btn{
 		margin-top: 64px;
 	}
+}
+.header-menu.header-menu--red{
+	background-color: @red;
 }

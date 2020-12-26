@@ -1,7 +1,7 @@
 mixin vacanceCard(title)
 	.info-card.vacancy-card
 		.info-card__img
-			img(src="img/careers/vacancy.jpg", width="256" alt="img")
+			img.my-class(src="img/careers/vacancy.jpg", width="256" alt="img")
 			.blure-block
 				img(src="img/careers/vacancy.jpg", width="256" alt="img")
 			
@@ -14,6 +14,7 @@ mixin vacanceCard(title)
 				span Learn more
 				span
 					+sliderArrowRight
+
 section.vacancy.section--black
 	.progress-bar
 	.container.container--p0
@@ -35,4 +36,3 @@ section.vacancy.section--black
 						+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship')
 					.button-box
 						a(href="#vacancy-wrapper").button-white.light-button#showVacancy show all (8)
-					

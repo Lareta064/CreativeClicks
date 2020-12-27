@@ -73,11 +73,11 @@ $(document).ready(function () {
 			asNavFor: '#careers-slider2',
 			responsive: [
 				{
-					breakpoint: 1199,
+					breakpoint: 1279,
 					settings: {
 					  slidesToShow: 2,
 					  centerMode: false,
-					variableWidth: true,
+					 variableWidth: true,
 					  
 					}
 				  },

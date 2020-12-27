@@ -54,35 +54,79 @@ $(document).ready(function () {
 	});  
 	}
 	// Careers page carousel
-	
 	if($('#careers-slider1')){
 		$('#careers-slider1').on('init', function(){
 			$('.slick-active').eq(0).addClass('big');
+			// if($(window).width()>768){
+			// 	$('.slick-active').eq(0).addClass('big');
+				
+			// }
+			// else{
+			// 	$('.slick-active').eq(1).addClass('big');
+			// }
 		});
 		$('#careers-slider1').slick({
 			centerMode: true,
-			centerPadding: '200px',
+			centerPadding: '190px',
 			slidesToShow: 3,
 			arrows: false,
 			asNavFor: '#careers-slider2',
-			
+			responsive: [
+				{
+					breakpoint: 1199,
+					settings: {
+					  slidesToShow: 2,
+					  centerMode: false,
+					variableWidth: true,
+					  
+					}
+				  },
+				{
+				  breakpoint: 767,
+				  settings: {
+					slidesToShow: 2,
+					centerPadding: '30px',
+					centerMode: false,
+					variableWidth: true,
+					
+				  }
+				}
+			  ]
 		});
-
-		$('#careers-slider2').slick({
-			slidesToShow: 1,
-			arrowPrev:'',
-			fade: true,
-			dots: true,
-			asNavFor: '#careers-slider1'
-		});
-		
 
 		$('#careers-slider1').on('afterChange', function(){
 			$('.careers-slider1__item').each(function(index, item){
 				$(item).removeClass('big');
 			});
 			$('.slick-active').eq(0).addClass('big');
+			// if($(window).width()>768){
+			// 	$('.slick-active').eq(0).addClass('big');
+			// }
+			// else{
+			// 	$('.slick-active').eq(1).addClass('big');
+			// }
 			
+			
+		});
+
+		$('#careers-slider2').slick({
+			slidesToShow: 1,
+			arrows: false,
+			
+			fade: true,
+			dots: true,
+			asNavFor: '#careers-slider1',
+			
+		});
+		
+
+		$('.careers-slider-nextBtn').on('click', function() {
+			$('#careers-slider2').slick('slickNext');
+			$('#careers-slider1').slick('slickNext');
+		  });
+		$('.careers-slider-prevBtn').on('click', function() {
+			$('#careers-slider2').slick('slickPrev');
+			$('#careers-slider1').slick('slickPrev');
 		});
 	}
 	//SHOW/HIDE PASSWORD

@@ -73,16 +73,18 @@ $(document).ready(function () {
 			asNavFor: '#careers-slider2',
 			responsive: [
 				{
-					breakpoint: 1279,
+					breakpoint: 1199,
 					settings: {
 					  slidesToShow: 2,
-					  centerMode: false,
+					  
+					 variableWidth: true,
+					 centerMode: false,
 					 variableWidth: true,
 					  
 					}
 				  },
 				{
-				  breakpoint: 767,
+				  breakpoint: 1023,
 				  settings: {
 					slidesToShow: 2,
 					centerPadding: '30px',

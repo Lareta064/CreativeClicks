@@ -11,6 +11,9 @@
 	position: relative;
 	height: 850px;
 	padding-top: 132px;
+	@media(max-width:1199px){
+		padding-top: 20px;
+	}
 	@media(max-width:768px){
 		padding-top: 8px;
 	}
@@ -24,6 +27,11 @@
 }
 .careers-slider1__item{
 	position: relative;
+	@media(max-width:1279px){
+		padding: 0 10px;
+		width: 224px;
+		
+	}
 	@media(max-width:1023px){
 		padding: 0 15px;
 		width: 224px;
@@ -44,14 +52,20 @@
 	padding-right: 15px;
 	margin-left: 40px;
 	margin-right: 65px;
-	transition: .6s;
-	@media(max-width:1199px){
+	transition: 1s;
+	@media(max-width:1279px){
+		margin-right: 40px;
 		transform: scale(1.33);
-		margin-right: 25px;
+		top: 0;
+	}
+	@media(max-width:1199px){
 		margin-left: 25px;
 		padding-left: 0;
 		padding-right: 0;
-		top: 0;
+		// top: 0;
+	}
+	@media(max-width:991px){
+margin-right: 25px;
 	}
 }
 .careers-slider1__item .blure-block{
@@ -84,10 +98,15 @@
 		width: 800px;
 	}
 	@media(max-width: 1199px){
-		width: 600px;
+		
 		padding-left: 56px;
 		padding-right: 56px;
 		top: 425px;
+		top: 300px;
+	}
+	@media(max-width: 991px){
+		width: 650px;
+		
 	}
 	@media(max-width: 767px){
 		max-width:579px;
@@ -151,8 +170,9 @@
 	z-index: 6;
 	cursor:pointer;
 	@media(max-width: 1199px){
-		left: 602px;
+		left: 800px;
 		top: 425px;
+		top: 300px;
 	}
 	@media(max-width: 767px){
 		left: 450px;

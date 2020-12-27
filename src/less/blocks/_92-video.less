@@ -26,6 +26,9 @@
 	}
 	.video-wrapper{
 		position: relative;
+		video{
+			width: 100%;
+		}
 	}
 	.video-wrapper:after{
 		content: '';
@@ -46,9 +49,7 @@
 	.video-wrapper .close-btn{
 		opacity: 0;
 	}
-	.video-wrapper:hover .close-btn{
-		opacity: 1;
-	}
+	
 	.close-btn svg{
 		transition: .5s;
 		cursor:pointer;
@@ -56,4 +57,7 @@
 	.close-btn:hover svg{
 		transform: rotate(360deg);
 	}
+}
+.video-modal.active:hover .close-btn{
+	opacity: 1;
 }

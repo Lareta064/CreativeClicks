@@ -173,17 +173,20 @@ $(document).ready(function () {
 		});
 	}
 	//PLAY VIDEO
-	$('.button-playVideo').on('click', function(){
-		$('.video-modal').addClass('active');
-		$('body').addClass('noscroll');
+	$('.button-playVideo').each(function(i, item){
+		$(item).on('click', function(){
+			$('.video-modal').addClass('active');
+			$('body').addClass('noscroll');
+		});
 	});
+
 	$('.close-btn').on('click', function(){
 		$(this).closest('.video-modal').removeClass('active');
+		$('body').removeClass('noscroll');
 	})
 
 	//SHOW JOB OPENNING CARDS	
 	if($('.vacancy-card')){
-
 		function showJobCards(arr, obj){
 			if(obj.width() >=768){
 				$(arr).each( function(index, item){

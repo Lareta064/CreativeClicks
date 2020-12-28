@@ -101,27 +101,17 @@ $(document).ready(function () {
 				$(item).removeClass('big');
 			});
 			$('.slick-active').eq(0).addClass('big');
-			// if($(window).width()>768){
-			// 	$('.slick-active').eq(0).addClass('big');
-			// }
-			// else{
-			// 	$('.slick-active').eq(1).addClass('big');
-			// }
-			
 			
 		});
 
 		$('#careers-slider2').slick({
 			slidesToShow: 1,
 			arrows: false,
-			
 			fade: true,
 			dots: true,
-			asNavFor: '#careers-slider1',
-			
+			asNavFor: '#careers-slider1'
 		});
 		
-
 		$('.careers-slider-nextBtn').on('click', function() {
 			$('#careers-slider2').slick('slickNext');
 			$('#careers-slider1').slick('slickNext');

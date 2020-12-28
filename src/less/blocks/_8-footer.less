@@ -92,8 +92,15 @@
   
   }
   }
-  .header, .partners, .partners-footer,.case-studies, .offices, .blog, .events, .feedback, footer,
-  .partners-footer, .section--black{
+  .header, .partners, .partners-footer,.case-studies, .offices, .blog, .events, .feedback, footer,  .section--black{
 	position: relative;
-  
+	&:after{
+		content:'';
+		height: 2px;
+		position: absolute;
+		left: 16px;
+		right: 16px;
+		background-color: #000;
+		bottom: -1px;
+	}
   }

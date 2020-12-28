@@ -1,0 +1,103 @@
+
+// header-top
+.header-top
+	a(href="index.html").logo
+		img(src="img/logo/logo.png", width="92" alt="logo")
+	.menu-toggle
+		span
+	//header-menu
+.header-navigation
+	.header-menu.header-menu--red
+		.header-menu__list
+			.header-menu__list-head
+				a(href="index.html").logo.logo--mobile
+					img(src="img/logo/logo.png", width="92" alt="logo")
+				button.close-mobile-menu
+					+icon-close
+			ul
+				li
+					a(href="index.html") Home
+				li
+					a(href="whatWeDo.html") What we do
+				li
+					a(href="#") Who we are
+				li.active
+					a(href="careers.html") Careers
+				li
+					a(href="resources.html") Resources
+				li
+					a(href="signIn.html") Sign in
+header.header.header--careers
+	.progress-bar.progress-bar--right
+	.hidden-layout
+	.container.container--p0
+		.header-title
+			.title-group
+				.title-3
+					h3 Careers
+				.title-2
+					h2 For ambitious people
+			
+			.header-title__img
+				picture
+					source(srcset="img/careers/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
+					source(srcset="img/whatwedo/header.jpg", width="500" alt="img")
+					img(src="img/careers/header.jpg", width="524" alt="img")
+		.header-color-block.p-128.color-block
+			.text-block
+				.head-3
+					h3 Who are we <br>looking for?
+				.text-32
+					p An ambitious Energetic, Entrepreneurial and Digital Expert with a winner’s mentality. You love being challenged and you are eager to take the next step in your career. 
+					p If #[span this is you], we are looking for you!
+
+//yellow block
+section.section--black.careers-yellow
+	.progress-bar
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--left
+				.color-block__img
+					img(src="img/careers/1.jpg", width="384" alt="img")
+					.blure-block
+						img(src="img/careers/1.jpg", width="384" alt="img")
+				.color-block.p-128.yellow-block
+					.text-block
+						.head-3
+							h3 Working at Creative Clicks means...
+						.text-32
+							p Building your own story and becoming who you want to be.
+
+							p Working at Creative Clicks means working in a very ambitious environment with a lot of responsibility. It is a place to learn, experiment, discover and develop in a fast-growing company.
+
+// orange block
+section.section--black.careers-orange
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--right
+				.color-block__img
+					.button-white.button-playVideo play video
+						i
+							svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M0 0V14L11 7L0 0Z" fill="black")
+					img(src="img/careers/2.jpg", width="384" alt="img")
+					.blure-block
+						img(src="img/careers/2.jpg", width="384" alt="img")
+				.color-block.p-128.orange-block
+					.text-block
+						.head-3
+							h3 Benefits of working at CC
+						.text-32
+							p Friday drinks, CC swag, company parties, anniversary celebrations, company outings. (compensation and benefits package varies depending on geographical location)
+//video-modal
+.video-modal
+	.video-wrapper
+		.close-btn
+			span
+				svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+					path(d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white")
+		video(src="video/video.mp4" autoplay="true" type="video/mp4" controls="controls" poster="img/video/1.jpg"  alt='video')
+			source(src="video/video.mp4" type="video/mp4")
+			source(src="video.webm" type="video/webm")
+			source(src="video.ogv" type="video/ogg")

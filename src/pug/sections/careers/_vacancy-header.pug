@@ -1,0 +1,71 @@
+
+// header-top
+.header-top
+	a(href="index.html").logo
+		img(src="img/logo/logo.png", width="92" alt="logo")
+	.menu-toggle
+		span
+	//header-menu
+.header-navigation
+	.header-menu.header-menu--red
+		.header-menu__list
+			.header-menu__list-head
+				a(href="index.html").logo.logo--mobile
+					img(src="img/logo/logo.png", width="92" alt="logo")
+				button.close-mobile-menu
+					+icon-close
+			ul
+				li
+					a(href="index.html") Home
+				li
+					a(href="whatWeDo.html") What we do
+				li
+					a(href="#") Who we are
+				li.active
+					a(href="careers.html") Careers
+				li
+					a(href="resources.html") Resources
+				li
+					a(href="signIn.html") Sign in
+header.header.header--oneVacancy
+	.progress-bar.progress-bar--right
+	.hidden-layout
+	.container.container--p0
+		.header-title
+			.title-group
+				.title-3
+					h3 Junior Business Develop&shy;ment Manager
+				.title-2
+					h2 Tel aviv
+			
+			.header-title__img
+				picture
+					source(srcset="img/vacancy/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
+					source(srcset="img/vacancy/header.jpg", width="386" alt="img")
+					img(src="img/vacancy/header.jpg", width="386" alt="img")
+		.header-color-block.p-128.color-block
+			.text-block
+				.text-24
+					p Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+				.text-block__list
+					h4 Role Description
+					ul
+						li Recruit publishers and manage every aspect of the day-to-day operation.
+						li Manage multiple accounts, monitor publisher’s data performance along with&nbsp;analyzing data of key metrics to identify and implement changes for increasing the performance
+						li Analyze and optimize performance and revenue to constantly improve company and advertiser’s results.
+						li Identify trends and opportunities in the Online Advertising ecosystem and interfacing verticals, according to company strategy and business opportunities
+						li Understand advertiser requirements alongside company’s needs and optimize publisher accounts accordingly.
+						li Meet and beat profit targets weekly.
+				.text-block__list
+					h4 Requirements
+					ul
+						li Strong understanding of sales, communication and costumer success
+						li Native level English speaker and writer
+						li Great analytical skills, great Excel knowledge
+						li Team player, motivated, proactive, driven to succeed
+						li Bachelor’s degree in marketing, business or related field
+				.button-box
+					a(href="#!").button-white
+						span apply now
+						span
+							+sliderArrowRight

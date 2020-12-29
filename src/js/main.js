@@ -167,13 +167,39 @@ $(document).ready(function () {
 		$(item).on('click', function(){
 			$('.video-modal').addClass('active');
 			$('body').addClass('noscroll');
+			$('.videoTag')[0].play();
+		
 		});
 	});
 
 	$('.close-btn').on('click', function(){
 		$(this).closest('.video-modal').removeClass('active');
 		$('body').removeClass('noscroll');
-	})
+		$('.videoTag')[0].pause();
+	});
+	// CALC INFO-CARD HEIGHT
+	function equalizeText(rowClassName,blockClassName){
+		//Row array
+		let rowArray = document.querySelectorAll(`.${rowClassName}`);
+		
+			// Cycle through each row
+		for (let i = 0; i < rowArray.length; i++){
+			let cardBodyArr = rowArray[i].querySelectorAll(`.${blockClassName}`);
+			let maxHeight = 0;
+
+				//Cycle through all div-s in the row and find maxHeight
+			for (let j = 0; j < cardBodyArr.length; j++){
+				if (cardBodyArr[j].offsetHeight > maxHeight) maxHeight = cardBodyArr[j].offsetHeight;
+			}
+
+				//Cycle through all div's and change height
+			for (let k = 0 ; k < cardBodyArr.length; k++){
+				cardBodyArr[k].style.height = `${maxHeight}px`;
+				console.log(cardBodyArr[k].style.height);
+			}
+		}
+	}
+	equalizeText("infocard-block__row","info-card__body");
 
 	//SHOW JOB OPENNING CARDS	
 	if($('.vacancy-card')){

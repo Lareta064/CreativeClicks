@@ -18,3 +18,27 @@
     span Blog Item
     span Headline
     span 4 Lines Right
+
+// базовая карточка без фона c 2 бейджами
+mixin infoCardBadge(title)
+    .info-card.info-cardBadge
+        .info-card__img
+            img(src="img/whoweare/4.jpg", width="226" alt="img")
+            .blure-block
+                img(src="img/whoweare/4.jpg", width="226" alt="img")
+        .info-card__body
+            .info-card__badge
+                span !{title}
+                span !{title}
+            .marked-text !{title}
+        .info-card__footer
+            a(href="#!").button-white
+                span Schedule a meeting
+                span
+                    +sliderArrowRight
+
+.infocard-block.infocard-block--red.infocard-block--right
+    .infocard-block__row
+        +infoCardBadge
+        +infoCardBadge
+        +infoCardBadge

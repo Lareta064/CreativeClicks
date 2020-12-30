@@ -20,7 +20,7 @@
     span 4 Lines Right
 
 // базовая карточка без фона c 2 бейджами
-mixin infoCardBadge(title)
+mixin infoCardBadge(title1,title2,title3)
     .info-card.info-cardBadge
         .info-card__img
             img(src="img/whoweare/4.jpg", width="226" alt="img")
@@ -28,9 +28,12 @@ mixin infoCardBadge(title)
                 img(src="img/whoweare/4.jpg", width="226" alt="img")
         .info-card__body
             .info-card__badge
-                span !{title}
-                span !{title}
-            .marked-text !{title}
+                span !{title1}
+            .info-card__badge
+                span
+                    +map
+                span !{title2}
+            .marked-text !{title3}
         .info-card__footer
             a(href="#!").button-white
                 span Schedule a meeting
@@ -39,6 +42,6 @@ mixin infoCardBadge(title)
 
 .infocard-block.infocard-block--red.infocard-block--right
     .infocard-block__row
-        +infoCardBadge
-        +infoCardBadge
-        +infoCardBadge
+        +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing in Asia')
+        +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing in Asia')
+        +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing in Asia')

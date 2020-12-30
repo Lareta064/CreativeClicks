@@ -1,0 +1,38 @@
+mixin vacanceCard(title)
+	.info-card.vacancy-card
+		.info-card__img
+			img.my-class(src="img/careers/vacancy.jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/careers/vacancy.jpg", width="256" alt="img")
+			
+		.info-card__body
+			.info-card__badge
+				span Amsterdam
+			.marked-text !{title}
+		.info-card__footer
+			a(href="vacancy-page.html").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+
+section.vacancy.section--black
+	.progress-bar
+	.container.container--p0
+		.black-wrapper
+			.title-group.text-center
+				.title-3
+					h3 Job openings
+			.vacancy-content
+				.color-block.color-block--fix
+					.vacancy-content__cards#vacancy-wrapper
+						+vacanceCard('Credit Controller Internship')
+						+vacanceCard('Design Internship')
+						+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship')
+						+vacanceCard('Credit Controller Internship')
+						+vacanceCard('Design Internship')
+						+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship')
+						+vacanceCard('Credit Controller Internship')
+						+vacanceCard('Design Internship')
+						+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship')
+					.button-box
+						a(href="#vacancy-wrapper").button-white.light-button#showVacancy show all (8)

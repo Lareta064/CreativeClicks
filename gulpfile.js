@@ -57,6 +57,11 @@ gulp.task('copy:fonts', function () {
 		.pipe(gulp.dest('./build/fonts'))
 		.pipe(browserSync.stream());
 });
+gulp.task('copy:video', function () {
+	return gulp.src('src/video/**/*.*')
+		.pipe(gulp.dest('./build/video'))
+		.pipe(browserSync.stream());
+});
 gulp.task('less', function () {
 	return gulp.src('./src/less/main.less')
 		.pipe(plumber({
@@ -101,7 +106,7 @@ gulp.task('pug', function () {
 gulp.task('default', function (callback) {
 	runSequence(
 		'clean: build',
-		['less', 'pug', 'copy:js', 'copy:libs', 'copy:img', 'copy:fonts'],
+		['less', 'pug', 'copy:js', 'copy:libs', 'copy:img', 'copy:fonts', 'copy:video'],
 		'server',
 		callback
 

@@ -3,3 +3,25 @@ mixin events(text)
         p.text-1 !{text}
 mixin lable(text)
     .lable !{text}
+
+//- базовая карточка без фона c 2 бейджами
+mixin infoCardBadge(title1,title2,title3)
+    .info-card.info-cardBadge
+        .info-card__img
+            img(src="img/whoweare/4.jpg", width="226" alt="img")
+            .blure-block
+                img(src="img/whoweare/4.jpg", width="226" alt="img")
+        .info-card__body
+            .info-card__badge
+                span !{title1}
+            .info-card__badge
+                span
+                    +map
+                span !{title2}
+            .marked-text !{title3}
+        .info-card__footer
+            a(href="#!").button-white
+                span Schedule a meeting
+                span
+                    +sliderArrowRight
+

@@ -5,7 +5,7 @@ mixin lable(text)
     .lable !{text}
 
 
-// базовая карточка без фона c 2 бейджами
+//- базовая карточка без фона c 2 бейджами
 mixin infoCardBadge(title1,title2,title3)
     .info-card.info-cardBadge
         .info-card__img
@@ -25,9 +25,3 @@ mixin infoCardBadge(title1,title2,title3)
                 span Schedule a meeting
                 span
                     +sliderArrowRight
-
-.infocard-block.infocard-block--red.infocard-block--right
-    .infocard-block__row
-        +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing in Asia')
-        +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing in Asia')
-        +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing in Asia')

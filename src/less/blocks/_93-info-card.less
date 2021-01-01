@@ -2,6 +2,7 @@
 	margin-bottom: 80px;
 	.marked-text{
 		padding: 0;
+		max-width:95%;
 	}
 	@media(max-width:767px){
 		max-width:303px;
@@ -36,6 +37,14 @@
 .info-card .info-card__body{
 	display: flex;
 	flex-direction: column;
+	@media(min-width: 768px){
+		padding-left: 48px;
+	}
+}
+.info-card.info-card--bg .info-card__body{
+	@media(min-width: 768px){
+		padding-left: 0;
+	}
 }
 .info-card .info-card__footer{
 	margin-top: 22px;
@@ -45,6 +54,14 @@
 			padding-left: 10px;
 			padding-right: 10px;
 		}
+	}
+	@media(min-width: 768px){
+		padding-left: 48px;
+	}
+}
+.info-card.info-card--bg .info-card__footer{
+	@media(min-width: 768px){
+		padding-left: 0;
 	}
 }
 // info-card--bg
@@ -170,7 +187,6 @@
 			}
 		}
 	}
-
 }
 // mobile state left block + row(even)
 @media(max-width:767px){
@@ -212,7 +228,7 @@
 		}
 	}
 }
-
+@media(max-width:767px){
 .infocard-block.infocard-block--right{
 	.infocard-block__row:nth-child(odd){
 		.info-card:nth-child(odd){
@@ -230,5 +246,59 @@
 				text-align: right;
 			}
 		}
+	}
+}
+.infocard-block.infocard-block--reverse{
+	@media(max-width:767px){
+		.infocard-block__row:nth-child(even) .info-card:nth-child(even){
+		.infocard-block__row:nth-child(odd) .info-card:nth-child(odd){
+				margin-left: auto;
+				margin-right: 0;
+				.info-card__img{
+					right: -17px;
+					margin-left: auto;
+					left: auto;
+				}
+				.marked-text{
+					text-align: left;
+				}
+				.info-card__body{
+					padding-left: 42px;
+					
+				}
+				.info-card__footer{
+					 padding-left: 42px;
+					 justify-content: flex-start;
+				}
+			}
+		}
+	}
+
+	@media(max-width:767px){
+		.infocard-block__row:nth-child(even) .info-card:nth-child(odd),
+		.infocard-block__row:nth-child(odd) .info-card:nth-child(even){
+				margin-left: auto;
+				margin-right: 0;
+				.info-card__img{
+					right: -17px;
+					margin-left: auto;
+				}
+				.info-card__body{
+					padding-left: 42px;
+				}
+				.info-card__footer{
+					 padding-left: 42px;
+				}
+			}
+			.info-card.info-card--bg:nth-child(even){
+				.info-card__body{
+					padding-left: 0;
+				}
+				.info-card__footer{
+					padding-left: 0;
+				}
+			}
+		}
+	
 	}
 }

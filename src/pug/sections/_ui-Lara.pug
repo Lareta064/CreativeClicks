@@ -10,7 +10,6 @@ mixin infoCard1
 				span Millenials
 				span followed
 				span 24/7
-				span 24/7
 		
 		.info-card__footer
 			a(href="#!").button-white
@@ -32,18 +31,27 @@ mixin infoCard2
 				span Learn more
 				span
 					+sliderArrowRight
+section.section--black
+	.container.container--p0
+		.black-wrapper
+			.infocard-block.infocard-block--red
+				.infocard-block__row
+					+infoCard1
+					+infoCard1
+					+infoCard1
+				.infocard-block__row
+					+infoCard1
+					+infoCard1
 
-.infocard-block.infocard-block--red.infocard-block--right
-	.infocard-block__row
-		+infoCard1
-		+infoCard1
-		+infoCard2
-	.infocard-block__row
-		+infoCard2
-		+infoCard2
-
-.infocard-block.infocard-block--green
-	.infocard-block__row
-		+infoCard2
-		+infoCard2
-		+infoCard2
+section.section--black
+	.container.container--p0
+		.black-wrapper
+			.infocard-block.infocard-block--right.infocard-block--green
+				.infocard-block__row
+					+infoCard2
+					+infoCard2
+					+infoCard2
+				.infocard-block__row
+					+infoCard2
+					+infoCard2
+					+infoCard2

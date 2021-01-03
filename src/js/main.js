@@ -57,13 +57,7 @@ $(document).ready(function () {
 	if($('#careers-slider1')){
 		$('#careers-slider1').on('init', function(){
 			$('.slick-active').eq(0).addClass('big');
-			// if($(window).width()>768){
-			// 	$('.slick-active').eq(0).addClass('big');
-				
-			// }
-			// else{
-			// 	$('.slick-active').eq(1).addClass('big');
-			// }
+			
 		});
 		$('#careers-slider1').slick({
 			centerMode: true,
@@ -222,23 +216,35 @@ $(document).ready(function () {
 			}
 		}
 	
-	showJobCards($('.vacancy-card'), $(window) );
-	//SHOW JOB OPENNING CARDS ON RESIZE
-	$(window).on('resize', function(){
-		showJobCards($('.vacancy-card'), $(this));
-	});
+		showJobCards($('.vacancy-card'), $(window) );
+		//SHOW JOB OPENNING CARDS ON RESIZE
+		$(window).on('resize', function(){
+			showJobCards($('.vacancy-card'), $(this));
+		});
 
-	//SHOW JOB OPENNING CARDS ON CLICK
-	$('#showVacancy').on('click', function(){
-		$('.vacancy-card').fadeIn();
-		$(this).hide();
-		if($(window).width() <768){
-			$(this).closest('.button-box').css('margin-bottom', '30px');
-		}
-	});
+		//SHOW JOB OPENNING CARDS ON CLICK
+		$('#showVacancy').on('click', function(){
+			$('.vacancy-card').fadeIn();
+			$(this).hide();
+			if($(window).width() <768){
+				$(this).closest('.button-box').css('margin-bottom', '30px');
+			}
+		});
 		
 	}
-
+	//RESOURCES PAGE SHOW  ALL INFO CARDS
+	if($('.infocard-block__row')){
+		$('.infocard-block__row').each(function(ind, item){
+			if(ind > 0){
+				$(item).hide();
+			}
+		});
+		$('.btn-showCards .button-white').on('click', function(){
+			$prevElement = $(this).closest('.btn-showCards').prev();
+			$prevElement.children('.infocard-block__row').fadeIn();
+			$(this).closest('.btn-showCards').hide();
+		})
+	}
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

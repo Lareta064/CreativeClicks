@@ -11,3 +11,20 @@ mixin titleGroup(titleTop, titleBottom, addClass)
 				h2 !{titleTop}
 			.title-3
 				h3 !{titleBottom}
+mixin infoCard1
+	.info-card.info-card--bg
+		.info-card__img
+			img(src="img/images/9.jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/images/9.jpg", width="256" alt="img")
+		.info-card__body
+			.marked-text
+				span Millenials
+				span followed
+				span 24/7
+		
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight

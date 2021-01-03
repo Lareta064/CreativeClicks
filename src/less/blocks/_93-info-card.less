@@ -7,6 +7,7 @@
 	@media(max-width:767px){
 		max-width:303px;
 		width: 100%;
+		margin-bottom: 97px;
 	}
 }
 .info-card + .info-card{
@@ -26,6 +27,8 @@
 }
 .info-card .info-card__img{
 	position: relative;
+	width: 226px;
+	height: 226px;
 	&>img{
 		position: relative;
 		z-index: 2;
@@ -39,8 +42,8 @@
 		height: 170px;
 	}
 	@media(max-width:767px){
-		width: 226px;
-		height: 226px;
+		width: 256px;
+		height: 256px;
 	}
 
 }
@@ -136,6 +139,7 @@
 	}
 	@media(max-width:767px){
 		max-width:324px;
+		margin-top: 286px;
 		.infocard-block__content{
 			padding-left: 0px;
 		}
@@ -276,46 +280,63 @@
 		}
 	}
 }
+}
 .infocard-block.infocard-block--reverse{
 	@media(max-width:767px){
-		.infocard-block__row:nth-child(even) .info-card:nth-child(even){
+		.infocard-block__row:nth-child(even) .info-card:nth-child(even),
 		.infocard-block__row:nth-child(odd) .info-card:nth-child(odd){
 				margin-left: auto;
 				margin-right: 0;
 				.info-card__img{
-					right: -17px;
+					right: 0;
 					margin-left: auto;
 					left: auto;
 				}
 				.marked-text{
 					text-align: left;
+					align-items: flex-start;
 				}
 				.info-card__body{
-					padding-left: 42px;
+					// padding-left: 42px;
+					align-items: flex-start;
 					
 				}
 				.info-card__footer{
-					 padding-left: 42px;
+					//  padding-left: 42px;
 					 justify-content: flex-start;
 				}
 			}
-		}
+		
 	}
 
 	@media(max-width:767px){
 		.infocard-block__row:nth-child(even) .info-card:nth-child(odd),
 		.infocard-block__row:nth-child(odd) .info-card:nth-child(even){
-				margin-left: auto;
-				margin-right: 0;
+				// margin-left: auto;
+				// margin-right: 0;
+				margin-right: auto;
+				margin-left: 0;
 				.info-card__img{
-					right: -17px;
+					right: -20px;
 					margin-left: auto;
+					margin-left: 0;
+					right: auto;
+					left: -33px;
 				}
 				.info-card__body{
-					padding-left: 42px;
+					padding-left: 56px;
+				}
+				.marked-text{
+					text-align: right;
+					align-items: flex-end;
+				}
+				.additional-info{
+					max-width:90%;
+					text-align: right;
 				}
 				.info-card__footer{
-					 padding-left: 42px;
+					 max-width:91%;
+					 justify-content: flex-end;
 				}
 			}
 			.info-card.info-card--bg:nth-child(even){
@@ -329,7 +350,7 @@
 		}
 	
 	}
-}
+
 .info-card .additional-info{
 	margin-top: 29px;
 	p{

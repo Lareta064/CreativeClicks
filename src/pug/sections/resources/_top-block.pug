@@ -1,9 +1,9 @@
 mixin infocard3(spanText, addText1, addText2, imgSrc)
 	.info-card.info-card--bg
 		.info-card__img
-			img(src="img/resources/"+imgSrc +".jpg", width="226" alt="img")
+			img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
 			.blure-block
-				img(src="img/resources/"+imgSrc +".jpg", width="226" alt="img")
+				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
 		.info-card__body
 			.marked-text
 				each item in spanText
@@ -19,23 +19,24 @@ mixin infocard3(spanText, addText1, addText2, imgSrc)
 section.section--black.top-block
 	.progress-bar.progress-bar--left
 	.container.container--p0
-		+titleGroup('The latest from the trade', 'We’re on top of it')
-		
-		.infocard-block.infocard-block--reverse.infocard-block--purple
-			.infocard-block__content#topBlock-cards
-				.infocard-block__row
-					+infocard3([{text: 'CPI to CPA'},{text:'Ways to'},{text:'Success'}], 'Today', '7 min. read', 1)
-					+infocard3([{text: '2020'},{text:'Holiday'},{text:'Shopping:'},{text:'Preparing'},{text:'for Black'},{text:'Friday'},{text:'and Cyber'},{text:'Monday'}], '1 Day ago', '6 min. read', 2)
-					+infocard3([{text: 'With TikTok'},{text:'Experience'},{text:'Matters'}], '2 Days ago', '5 min. read', 3)
-				.infocard-block__row
-					+infocard3([{text: 'CPI to CPA'},{text:'Ways to'},{text:'Success'}], 'Today', '7 min. read', 1)
-					+infocard3([{text: '2020'},{text:'Holiday'},{text:'Shopping:'},{text:'Preparing'},{text:'for Black'},{text:'Friday'},{text:'and Cyber'},{text:'Monday'}], '1 Day ago', '6 min. read', 2)
-					+infocard3([{text: 'With TikTok'},{text:'Experience'},{text:'Matters'}], '2 Days ago', '5 min. read', 3)
-				.infocard-block__row
-					+infocard3([{text: 'CPI to CPA'},{text:'Ways to'},{text:'Success'},{text:'Success'}], 'Today', '7 min. read', 1)
-					+infocard3([{text: '2020'},{text:'Holiday'},{text:'Shopping:'},{text:'Preparing'},{text:'for Black'},{text:'Friday'},{text:'and Cyber'}], '1 Day ago', '6 min. read', 2)
-					+infocard3([{text: 'With TikTok'},{text:'Experience'}], '2 Days ago', '5 min. read', 3)
-			.btn-showCards
-				a(href="#topBlock-cards").button-white.light-button show all (12)
+		.section-content
+			+titleGroup('The latest from the trade', 'We’re on top of it')
+			
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple
+				.infocard-block__content#topBlock-cards
+					.infocard-block__row
+						+infocard3([{text: 'CPI to CPA'},{text:'Ways to'},{text:'Success'}], 'Today', '7 min. read', 1)
+						+infocard3([{text: '2020'},{text:'Holiday'},{text:'Shopping:'},{text:'Preparing'},{text:'for Black'},{text:'Friday'},{text:'and Cyber'},{text:'Monday'}], '1 Day ago', '6 min. read', 2)
+						+infocard3([{text: 'With TikTok'},{text:'Experience'},{text:'Matters'}], '2 Days ago', '5 min. read', 3)
+					.infocard-block__row
+						+infocard3([{text: 'CPI to CPA'},{text:'Ways to'},{text:'Success'}], 'Today', '7 min. read', 1)
+						+infocard3([{text: '2020'},{text:'Holiday'},{text:'Shopping:'},{text:'Preparing'},{text:'for Black'},{text:'Friday'},{text:'and Cyber'},{text:'Monday'}], '1 Day ago', '6 min. read', 2)
+						+infocard3([{text: 'With TikTok'},{text:'Experience'},{text:'Matters'}], '2 Days ago', '5 min. read', 3)
+					.infocard-block__row
+						+infocard3([{text: 'CPI to CPA'},{text:'Ways to'},{text:'Success'},{text:'Success'}], 'Today', '7 min. read', 1)
+						+infocard3([{text: '2020'},{text:'Holiday'},{text:'Shopping:'},{text:'Preparing'},{text:'for Black'},{text:'Friday'},{text:'and Cyber'}], '1 Day ago', '6 min. read', 2)
+						+infocard3([{text: 'With TikTok'},{text:'Experience'}], '2 Days ago', '5 min. read', 3)
+				.btn-showCards
+					a(href="#topBlock-cards").button-white.light-button show all (12)
 
 				

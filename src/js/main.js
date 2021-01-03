@@ -175,21 +175,22 @@ $(document).ready(function () {
 	function equalizeText(rowClassName,blockClassName){
 		//Row array
 		let rowArray = document.querySelectorAll(`.${rowClassName}`);
-		
+		if(window.innerWidth >=768){
 			// Cycle through each row
-		for (let i = 0; i < rowArray.length; i++){
-			let cardBodyArr = rowArray[i].querySelectorAll(`.${blockClassName}`);
-			let maxHeight = 0;
+			for (let i = 0; i < rowArray.length; i++){
+				let cardBodyArr = rowArray[i].querySelectorAll(`.${blockClassName}`);
+				let maxHeight = 0;
 
-				//Cycle through all div-s in the row and find maxHeight
-			for (let j = 0; j < cardBodyArr.length; j++){
-				if (cardBodyArr[j].offsetHeight > maxHeight) maxHeight = cardBodyArr[j].offsetHeight;
-			}
+					//Cycle through all div-s in the row and find maxHeight
+				for (let j = 0; j < cardBodyArr.length; j++){
+					if (cardBodyArr[j].offsetHeight > maxHeight) maxHeight = cardBodyArr[j].offsetHeight;
+				}
 
-				//Cycle through all div's and change height
-			for (let k = 0 ; k < cardBodyArr.length; k++){
-				cardBodyArr[k].style.height = `${maxHeight}px`;
-				console.log(cardBodyArr[k].style.height);
+					//Cycle through all div's and change height
+				for (let k = 0 ; k < cardBodyArr.length; k++){
+					cardBodyArr[k].style.height = `${maxHeight}px`;
+					console.log(cardBodyArr[k].style.height);
+				}
 			}
 		}
 	}
@@ -233,7 +234,7 @@ $(document).ready(function () {
 		
 	}
 	//RESOURCES PAGE SHOW  ALL INFO CARDS
-	if($('.infocard-block__row')){
+	if($('.infocard-block')){
 		$('.infocard-block__row').each(function(ind, item){
 			if(ind > 0){
 				$(item).hide();
@@ -243,7 +244,8 @@ $(document).ready(function () {
 			$prevElement = $(this).closest('.btn-showCards').prev();
 			$prevElement.children('.infocard-block__row').fadeIn();
 			$(this).closest('.btn-showCards').hide();
-		})
+			
+		});
 	}
 	//========================================================================
 	//========================================================================

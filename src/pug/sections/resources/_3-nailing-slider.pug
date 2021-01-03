@@ -1,0 +1,38 @@
+mixin sliderItem
+	.case-slider-item
+		.case-slider__body
+			.marked-text
+				span Certainty in our
+				span Uncertainty: 
+				span Six Trends for the
+				span 2020 Holiday Season
+				span and Beyond
+			.additional-info
+				p Day
+				p Duration
+		.case-slider__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+section.section--black.nailing-slider
+	.progress-bar.progress-bar--right
+	.container
+		.case-studies-content
+			.case-studies__header.flex-start
+				.case-studies__img.head-group__img
+					img(src="img/resources/4.jpg", width="386" alt="img")
+				+titleGroup('The most read', 'We’re nailing it')
+		.case-slider-wrapper
+			.case-slider-arrows
+				button.arr-left
+					+sliderArrowLeft
+				button.arr-right
+					+sliderArrowRight
+			.case-slider.owl-carousel
+				+sliderItem
+				+sliderItem
+				+sliderItem
+				+sliderItem
+			.slider-btn
+				a(href="#").button-white.light-button show all (12)

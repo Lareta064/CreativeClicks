@@ -189,12 +189,15 @@ $(document).ready(function () {
 					//Cycle through all div's and change height
 				for (let k = 0 ; k < cardBodyArr.length; k++){
 					cardBodyArr[k].style.height = `${maxHeight}px`;
-					console.log(cardBodyArr[k].style.height);
+					
 				}
 			}
 		}
 	}
 	equalizeText("infocard-block__row","info-card__body");
+	window.addEventListener('resize', function(){
+		equalizeText("infocard-block__row","info-card__body");
+	});
 
 	//SHOW JOB OPENNING CARDS	
 	if($('.vacancy-card')){
@@ -235,17 +238,23 @@ $(document).ready(function () {
 	}
 	//RESOURCES PAGE SHOW  ALL INFO CARDS
 	if($('.infocard-block')){
-		$('.infocard-block__row').each(function(ind, item){
-			if(ind > 0){
-				$(item).hide();
-			}
-		});
-		$('.btn-showCards .button-white').on('click', function(){
-			$prevElement = $(this).closest('.btn-showCards').prev();
-			$prevElement.children('.infocard-block__row').fadeIn();
-			$(this).closest('.btn-showCards').hide();
+		$('.infocard-block').each(function(i, arr){
+			$arrCardsRow = $(arr).find('.infocard-block__row');
+			console.log($arrCardsRow);
+			$arrCardsRow.each(function(ind, item){
+				if(ind > 0){
+					$(item).hide();
+				}
+			});
 			
+			$('.btn-showCards .button-white').on('click', function(){
+				$prevElement = $(this).closest('.btn-showCards').prev();
+				$prevElement.children('.infocard-block__row').fadeIn();
+				$(this).closest('.btn-showCards').hide();
+				
+			});
 		});
+		
 	}
 	//========================================================================
 	//========================================================================

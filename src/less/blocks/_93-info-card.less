@@ -57,9 +57,7 @@
 .info-card .marked-text span{
 	padding-top: 0px;
 	padding-bottom: 0px;
-	// &:first-child{
-	// 	padding-top: 2px;
-	// }
+	
 	&:last-child{
 		padding-bottom: 1px;
 	}
@@ -109,7 +107,9 @@
 }
 .infocard-block__row:first-child{
 	margin-top: -64px;
-	
+	@media(max-width:1279px){
+		margin-top: -96px;
+	}
 	@media(max-width:767px){
 		margin-top: -208px;
 	}
@@ -200,7 +200,7 @@
 			margin-left: auto;
 			margin-right: 0;
 			.info-card__img{
-				right: -17px;
+				right: -20px;
 				margin-left: auto;
 			}
 			.info-card__body{
@@ -247,7 +247,7 @@
 			margin-left: auto;
 			margin-right: 0;
 			.info-card__img{
-				right: -17px;
+				right: -20px;
 				margin-left: auto;
 			}
 			.info-card__body{
@@ -265,14 +265,14 @@
 	.infocard-block__row:nth-child(odd){
 		.info-card:nth-child(odd){
 			.info-card__img{
-				left: -17px;
+				left: -33px;
 			}
 		}
 	}
 	.infocard-block__row:nth-child(even){
 		.info-card:nth-child(even){
 			.info-card__img{
-				left: -17px;
+				left: -33px;
 			}
 			.marked-text{
 				text-align: right;

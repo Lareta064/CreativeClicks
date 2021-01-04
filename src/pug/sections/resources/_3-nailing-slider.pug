@@ -1,12 +1,8 @@
 mixin sliderItem
 	.case-slider-item
 		.case-slider__body
-			.marked-text
-				span Certainty in our
-				span Uncertainty: 
-				span Six Trends for the
-				span 2020 Holiday Season
-				span and Beyond
+			.slide-title
+				span Certainty in our Uncertainty:<br> Six Trends for the<br class="hide-mobile"> 2020 Holiday Season and Beyond
 			.additional-info
 				p Day
 				p Duration
@@ -17,22 +13,24 @@ mixin sliderItem
 					+sliderArrowRight
 section.section--black.nailing-slider
 	.progress-bar.progress-bar--right
-	.container
-		.case-studies-content
-			.case-studies__header.flex-start
-				.case-studies__img.head-group__img
+	.container.container--p0
+		.case-studies-inner
+			.case-studies__header.case-studies__mb.flex-start
+				.case-studies__img.hide-mobile.head-group__img
 					img(src="img/resources/4.jpg", width="386" alt="img")
 				+titleGroup('The most read', 'We’re nailing it')
-		.case-slider-wrapper
-			.case-slider-arrows
-				button.arr-left
-					+sliderArrowLeft
-				button.arr-right
-					+sliderArrowRight
-			.case-slider.owl-carousel
-				+sliderItem
-				+sliderItem
-				+sliderItem
-				+sliderItem
-			.slider-btn
-				a(href="#").button-white.light-button show all (12)
+			.case-slider-wrapper
+				.case-studies__img--mobile.visible-mobile
+					img(src="img/resources/4.jpg", width="256" alt="img")
+				.case-slider-arrows
+					button.arr-left
+						+sliderArrowLeft
+					button.arr-right
+						+sliderArrowRight
+				.case-slider.owl-carousel
+					+sliderItem
+					+sliderItem
+					+sliderItem
+				
+				.slider-btn
+					a(href="#").button-white.light-button show all (12)

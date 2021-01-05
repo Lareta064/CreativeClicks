@@ -1,9 +1,13 @@
 .case-studies-inner  .case-slider{
+
 	.slide-title{
 		margin-left: -3px;
 		position: relative;
 		max-width:588px;
 		z-index: 2;
+		@media(max-width:767px){
+			text-align: right;
+		}
 	}
 	.slide-title h3{
 		line-height: 52px;
@@ -46,9 +50,27 @@
 }
 .case-studies-inner{
 	.case-studies__header{
-		@media(min-width: 1280px){
-			padding-left: 87px;
+		padding-top: 254px;
+		padding-bottom: 151px;
+		margin-right: 17px;
+		padding-left: 0;
+		
+		.title-group{
+			margin-right: 0;
 		}
+		@media(max-width:1279px){
+			max-width: 53%;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		@media(max-width:767px){
+			padding-top: 125px;
+		padding-bottom: 2px;
+			max-width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		
 	}
 	.slider-btn{
 			display: flex;
@@ -61,17 +83,17 @@
 		}
 	
 }
-.case-studies__header.flex-start{
-	align-items: flex-start
-}
+
 //nailing  slider
-.nailing-slider .case-slider-wrapper{
-	background-color: @purple;
+.case-studies-inner .case-slider-wrapper{
+	
 	@media(max-width: 767px){
 		padding-top: 28px;
 	}
 }
-
+.case-slider-wrapper--purple{
+	background-color: @purple;
+}
 .nailing-slider .case-slider-item{
 	background-color: transparent;
 	position: relative;
@@ -83,8 +105,8 @@
 	margin-right: 20px;
 }
 .nailing-slider{
-	.slide-title{
-		text-align: right;
+	.title-group h2{
+		color: @red;
 	}
 	.case-studies__header .title-3 h3{
 		line-height: 0.83;
@@ -122,6 +144,12 @@
 }
 .case-studies-inner .case-slider-item{
 	padding-right: 16px;
+	@media(max-width:1199px){
+		padding-left: 80px;
+	}
+	@media(max-width:767px){
+		padding-left: 20px;
+	}
 }
 .case-studies-inner .case-slider-wrapper--right{
 	@media(max-width:767px){
@@ -133,18 +161,30 @@
 	top: -5px;
 	right: -8px;
 	@media(max-width:767px){
-	top: -30px;
-	right: 5px;	
+	top: -16px;
+	right: 12px;	
 	}
 	
 }
 .case-studies__img--mobile{
-	margin-top: -240px;
-	width: 256px;
+	max-width:45%;
+	position: absolute;
+	transform: translate(67px, -123%);
+	z-index: 1;
+	box-shadow: 24px 16px 47px rgba(19, 9, 12, 0.8);
+	@media(max-width:991px){
+		max-width: 38%;
+		
+	}
+	@media(max-width:767px){
+		transform: translate(0, 0);
+		max-width:256px;
+		width: 256px;
 	height: 256px;
+	margin-top: -240px;
 	position: relative;
 	left: 0px;
-	z-index: 1;
+	}
 }
 .case-studies__header.case-studies__mb{
 	@media(max-width:767px){

@@ -6,23 +6,27 @@ mixin infocard4(text, addText1, addText2, imgSrc)
 				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
 		.info-card__body
 			.info-card__badge
-				span Amsterdam
+				span Case study
 			.marked-text !{text}
 		.info-card__footer
 			a(href="#!").button-white
 				span Learn more
 				span
 					+sliderArrowRight
-section.section--black.top-block
+section.section--black.prove-block
 	.progress-bar.progress-bar--left
 	.container.container--p0
 		.section-content
-			+titleGroup('The latest from the trade', 'We’re on top of it')
-			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple
-				.infocard-block__content#topBlock-cards
+			+titleGroup('Case studies', 'We <br class="visible-mobile">can prove <br class="visible-mobile"> it')
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--red
+				.infocard-block__content
 					.infocard-block__row
-						+infocard4('title', 'Today', '7 min. read', 5)
-						+infocard4('title', '1 Day ago', '6 min. read', 6)
-						+infocard4('title', '2 Days ago', '5 min. read', 7)
+						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5)
+						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
+						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 7)
+					.infocard-block__row
+						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5)
+						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
+						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 7)
 				.btn-showCards
-					a(href="#topBlock-cards").button-white.light-button show all (12)
+					a(href="#").button-white.light-button show all (12)

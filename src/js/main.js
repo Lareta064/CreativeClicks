@@ -256,6 +256,24 @@ $(document).ready(function () {
 		});
 		
 	}
+	//RESOURCES SLIDERS
+	$('.section-slider-body').slick({
+		items:1,
+		arrows: false,
+		dots: true
+	});
+	$('.nailing-prev').on('click', function() {
+		$('#nailing-slider').slick('slickPrev');
+	});
+	$('.nailing-next').on('click', function() {
+		$('#nailing-slider').slick('slickNext');
+	});
+	$('.talk-prev').on('click', function() {
+		$('#talk-slider').slick('slickPrev');
+	});
+	$('.talk-next').on('click', function() {
+		$('#talk-slider').slick('slickNext');
+	});
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

@@ -142,10 +142,11 @@ $(document).ready(function () {
 		let inputParent = item.closest('.form-item');
 		item.addEventListener('focus', function(){
 			inputParent.classList.add('form-item--focus');
+			console.log(inputParent);
 		});
 		item.addEventListener('blur', function(){
 			inputParent.classList.remove('form-item--focus');
-		})
+		});
 	}
 	//TOGGLE ARROW FOR SELECR COUNTRY
 	const selectCountry = document.querySelector('#select-country');
@@ -273,6 +274,12 @@ $(document).ready(function () {
 	});
 	$('.talk-next').on('click', function() {
 		$('#talk-slider').slick('slickNext');
+	});
+	$('.captured-prev').on('click', function() {
+		$('#captured-slider').slick('slickPrev');
+	});
+	$('.captured-next').on('click', function() {
+		$('#captured-slider').slick('slickNext');
 	});
 	//========================================================================
 	//========================================================================

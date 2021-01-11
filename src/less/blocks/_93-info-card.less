@@ -265,7 +265,9 @@
 		}
 	}
 }
-
+.infocard-block + .infocard-block {
+	margin-top: 192px;
+}
 .infocard-block.infocard-block--red{
 	background-color: @red;
 }
@@ -277,6 +279,9 @@
 }
 .infocard-block.infocard-block--blue{
 	background-color: @blue;
+}
+.infocard-block--yellow{
+	background-color: @yellow;
 }
 // mobile state left block + row(odd)
 @media(max-width:767px){

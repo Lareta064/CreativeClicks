@@ -1,0 +1,32 @@
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card.info-card--bg
+		.info-card__img
+			img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.marked-text
+				each item in spanText
+					span !{item.text}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+section.section--black.analyze-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			+titleGroup('Guides and reports', 'We analyze it')
+			.infocard-block.infocard-block--right.infocard-block--blue
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3([{text: 'Blog Item'},{text:'Title with'},{text:'3 lines'}], 'Today', '7 min. read', 8)
+						+infocard3([{text: 'Blog Item'},{text:'Title with'},{text:'3 lines'}], '1 Day ago', '6 min. read', 8)
+						+infocard3([{text: 'Blog Item'},{text:'Title with'},{text:'3 lines'}], '2 Days ago', '5 min. read', 8)
+					
+				.btn-wrap
+					a(href="#!").button-white.light-button show all (12)

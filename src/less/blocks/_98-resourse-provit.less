@@ -1,0 +1,96 @@
+.prove-block {
+	.section-content{
+		padding-top: 254px;
+		@media(max-width:767px){
+			padding-top: 128px;
+		}
+	}
+	.title-group {
+		margin-bottom: 186px;
+
+		h2 {
+			color: @red;
+		}
+		h3{
+			line-height: .83;
+			@media(max-width:767px){
+				line-height: 0.86;
+			}
+		}
+	}
+	.infocard-block{
+		position: relative;
+		left: 10px;
+		@media(max-width:1279px){
+			left: 0;
+		}
+	}
+	.info-card{
+		@media(min-width:768px)and(max-width:1199px){
+			.marked-text{
+				font-size: 24px;
+				line-height: 20px;
+				max-width:200px;
+			}
+		}
+	}
+	.infocard-block .infocard-block__content {
+		padding-left: 61px;
+		@media(max-width:1279px){
+			padding-left: 20px;
+		}
+		@media(max-width:767px){
+			padding-left: 0;
+		}
+		.info-card + .info-card{
+			margin-left: 0;
+		}
+	}
+
+	.info-card__body {
+		align-items: flex-start;
+		margin-top: -18px;
+		.marked-text{
+			color: #000;
+		}
+		@media(max-width:767px){
+			margin-top: -24px;
+		}
+	}
+	.btn-wrap{
+		margin-top: 52px;
+		@media(max-width:767px){
+			margin-top: 34px;
+			padding-right: 22px;
+		}
+	}
+	
+	@media (max-width: 767px){
+		.infocard-block__row:nth-child(odd) .info-card:nth-child(odd) .info-card__body{
+			padding-right: 20px;
+		}
+		.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(even) .info-card:nth-child(odd) .info-card__body, .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card:nth-child(even) .info-card__body {
+			align-items: flex-end;
+			padding-left: 0;
+			padding-right: 20px;
+		}
+	
+	.info-card .info-card__footer{
+		margin-top: 23px;
+		
+	}
+	.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(even) .info-card:nth-child(odd) .info-card__footer, .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card:nth-child(even) .info-card__footer{
+		max-width:93%;
+	}
+	.btn-showCards{
+		margin-top: 33px;
+		padding-right: 20px;
+	}
+	.info-card:nth-child(even) .info-card__body{
+		padding-left: 0;
+	}
+	.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(even) .info-card:nth-child(odd) .info-card__footer{
+		padding-right: 0;
+	}
+	}
+}

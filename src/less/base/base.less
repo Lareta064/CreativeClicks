@@ -25,7 +25,15 @@
   font-weight: normal;
   font-style: normal;
   }
-/*font-family: 'Karla Bold Italic';*/
+  @font-face {
+    font-family: 'Karla Italic';
+    src: url('../fonts/Karla-Italic.eot');
+    src: url('../fonts/Karla-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Karla-Italic.woff') format('woff'),
+    url('../fonts/Karla-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 * {
   box-sizing: border-box;
 }
@@ -141,6 +149,7 @@ section {
   font-size: 128px;
   line-height: 0.86;
   letter-spacing: -0.025em;
+  text-transform: uppercase;
   @media (max-width: 1199px) {
     font-size: 104px;
 
@@ -377,6 +386,17 @@ text-transform: uppercase;
   justify-content: center;
   .light-button:hover{
     background-color: #EBEBEB;
+  }
+}
+.btn-wrap,
+.btn-showCards{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 48px;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+
   }
 }
 //Paddings and margins

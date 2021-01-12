@@ -1,0 +1,72 @@
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card.info-card--bg
+		.info-card__img
+			img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+
+mixin infocard4(spanText, addText1, addText2, imgSrc)
+	.info-card.info-card--bg
+		.info-card__img
+			img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Play video
+				span
+					+sliderArrowRight
+section.section--black.top-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			.section-title
+				h3 3 results:
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple
+				.infocard-block__content
+					// =====  cards row =====
+					.infocard-block__row
+						+infocard3('Certainty in our Uncertainty: Six Trends for the 2020 Holiday Season and Beyond', 'Today', '7 min. read', 4)
+						+infocard3('Certainty in our Uncertainty:', '1 Day ago', '6 min. read', 8)
+					// =====  cards row =====
+					.infocard-block__row
+						+infocard3('Certainty in our Uncertainty: Six Trends for the 2020 Holiday Season and Beyond', 'Today', '7 min. read', 4)
+						+infocard3('Certainty in our Uncertainty:', '1 Day ago', '6 min. read', 8)
+						+infocard3('Certainty in our Uncertainty:', '1 Day ago', '6 min. read', 8)
+						
+				.btn-showCards
+					a(href="#!").button-white.light-button show all (12)
+			
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--yellow
+				.infocard-block__content
+					// =====  cards row =====
+					.infocard-block__row
+						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 4)
+					.infocard-block__row
+						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 8)
+						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 8)
+						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 8)
+					.infocard-block__row
+						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 8)
+						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 8)
+						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 8)
+				
+				.btn-showCards
+					a(href="#!").button-white.light-button show all (12)

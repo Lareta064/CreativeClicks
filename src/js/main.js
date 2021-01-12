@@ -158,9 +158,10 @@ $(document).ready(function () {
 		});
 	}
 	//PLAY VIDEO
+	$('.video-modal').hide(0);
 	$('.button-playVideo').each(function(i, item){
 		$(item).on('click', function(){
-			$('.video-modal').addClass('active');
+			$('.video-modal').fadeIn();
 			$('body').addClass('noscroll');
 			$('.videoTag')[0].play();
 		
@@ -168,7 +169,7 @@ $(document).ready(function () {
 	});
 
 	$('.close-btn').on('click', function(){
-		$(this).closest('.video-modal').removeClass('active');
+		$(this).closest('.video-modal').fadeOut();;
 		$('body').removeClass('noscroll');
 		$('.videoTag')[0].pause();
 	});

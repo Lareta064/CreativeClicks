@@ -5,9 +5,8 @@ mixin infocard3(spanText, addText1, addText2, imgSrc)
 			.blure-block
 				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
 		.info-card__body
-			.marked-text
-				each item in spanText
-					span !{item.text}
+			.info-card__title
+				h3 !{spanText}
 			.additional-info
 				p #{addText1}
 				p #{addText2}
@@ -24,9 +23,9 @@ section.section--black.analyze-block
 			.infocard-block.infocard-block--right.infocard-block--blue
 				.infocard-block__content
 					.infocard-block__row
-						+infocard3([{text: 'Blog Item'},{text:'Title with'},{text:'3 lines'}], 'Today', '7 min. read', 8)
-						+infocard3([{text: 'Blog Item'},{text:'Title with'},{text:'3 lines'}], '1 Day ago', '6 min. read', 8)
-						+infocard3([{text: 'Blog Item'},{text:'Title with'},{text:'3 lines'}], '2 Days ago', '5 min. read', 8)
+						+infocard3('Blog Item Title with 3 lines', 'Today', '7 min. read', 8)
+						+infocard3('Blog Item Title with 3 lines' , '1 Day ago', '6 min. read', 8)
+						+infocard3( 'Blog Item Title with 3 lines' , '2 Days ago', '5 min. read', 8)
 					
 				.btn-wrap
 					a(href="#!").button-white.light-button show all (12)

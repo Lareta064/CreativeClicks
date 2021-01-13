@@ -102,7 +102,8 @@
 }
 /* new cards*/
 .infocard-block__row .info-card {
-
+	max-width: 274px;
+	width: 100%;
 	transform: scale(1);
 	margin-bottom: 80px;
 	.marked-text{
@@ -162,10 +163,12 @@
 .infocard-block__row  .info-card .info-card__body{
 	display: flex;
 	flex-direction: column;
+	
 	@media(min-width: 768px){
 		padding-left: 48px;
 	}
 }
+.infocard-block__row  .info-card.info-card--bg .info-card__title{padding-left: 3px;}
 .infocard-block__row  .info-card .marked-text span{
 	padding-top: 0px;
 	padding-bottom: 0px;

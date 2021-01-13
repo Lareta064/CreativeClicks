@@ -1,9 +1,24 @@
 .whoweare-page {
+
   .header--whoweare .color-block {
-    background-color: #FCE210;
+    background-color: @yellow;
   }
 
-  .head-3 p{
+  .whoweare-orange .color-block {
+    background-color: @orange;
+  }
+
+  .header--whoweare .blure-block {
+    left: 0;
+    right: -104.69%;
+    top: 0;
+  }
+
+  .title-group {
+    margin-bottom: 192px;
+  }
+
+  .head-3 p {
     text-transform: uppercase;
     color: #000000;
   }
@@ -12,22 +27,42 @@
     background-color: #E71E5A;
   }
 
-  .whoweare-purple .color-block{
+  .whoweare-purple .color-block {
     background-color: #B224FF;;
   }
 
-  .infocard-block--yellow{
-    .events-title{
+  .whoweare-purple {
+    .text-block__items {
+      margin-top: 64px;
+
+      .title-4 {
+        margin-bottom: 24px;
+      }
+
+      .text-block__item + .text-block__item {
+        margin-top: 64px;
+      }
+    }
+  }
+
+  .infocard-block--yellow {
+    .events-title {
       margin-bottom: 128px;
     }
-    .infocard-block__row{
+
+    .infocard-block__row {
       margin-top: -64px;
+
+      .marked-text {
+        color: #000;
+      }
     }
 
-    .info-card__badge--white{
+    .info-card__badge--white {
       color: #000;
       background-color: #FFFFFF;
-      span+span{
+
+      span + span {
         margin-left: 13px;
       }
     }

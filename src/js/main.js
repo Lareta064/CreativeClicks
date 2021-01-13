@@ -164,7 +164,7 @@ $(document).ready(function () {
 			$('.video-modal').fadeIn();
 			$('body').addClass('noscroll');
 			$('.videoTag')[0].play();
-		
+
 		});
 	});
 

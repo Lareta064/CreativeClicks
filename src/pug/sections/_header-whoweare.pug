@@ -33,14 +33,33 @@ header.header.header--whoweare
         .header-title
             +titleGroup('Proud people is', 'Who we<br> are')
             .header-title__img
+                .button-white.button-playVideo play video
+                    i
+                        svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M0 0V14L11 7L0 0Z" fill="black")
                 picture
                     source(srcset="img/whoweare/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
                     source(srcset="img/whoweare/header.jpg", width="524" alt="img")
                     img(src="img/whoweare/header.jpg", width="524" alt="img")
+                .blure-block
+                    img(src="img/whoweare/header.jpg", width="384" alt="img")
         .header-color-block.p-128.color-block
             .text-block
-                p Our motto
+                .text-24
+                    p Our motto
                 .head-3
-                    h3 One team,one <br> dream
+                    h3 One team, one <br> dream!
                 .text-32
                     p Our team located on 4 continents is building the largest mobile marketing platform in the world.
+
+//video-modal
+.video-modal
+    .video-wrapper
+        .close-btn
+            span
+                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white")
+        video.videoTag(src="video/video.mp4"  type="video/mp4" controls="controls" poster="img/video/1.jpg"  alt='video')
+            source(src="video/video.mp4" type="video/mp4")
+            source(src="video.webm" type="video/webm")
+            source(src="video.ogv" type="video/ogg")

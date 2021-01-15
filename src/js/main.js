@@ -244,26 +244,26 @@ $(document).ready(function () {
 		
 	}
 	//RESOURCES PAGE SHOW  ALL INFO CARDS
-	$('.show-more').hide();
-	if($('.infocard-block')){
-		$('.infocard-block').each(function(i, arr){
-			$arrCardsRow = $(arr).find('.infocard-block__row');
-			$arrCardsRow.each(function(ind, item){
-				if(ind > 0){
-					$(item).hide();
-				}
-			});
+	
+	// if($('.infocard-block')){
+	// 	$('.infocard-block').each(function(i, arr){
+	// 		$arrCardsRow = $(arr).find('.infocard-block__row');
+	// 		$arrCardsRow.each(function(ind, item){
+	// 			if(ind > 0){
+	// 				$(item).hide();
+	// 			}
+	// 		});
 			
-			$('.btn-showCards .show-all').on('click', function(){
-				$prevElement = $(this).closest('.btn-showCards').prev();
-				$prevElement.children('.infocard-block__row').fadeIn();
-				$(this).hide();
-				$(this).siblings('.show-more').fadeIn();
+	// 		$('.btn-showCards .show-all').on('click', function(){
+	// 			$prevElement = $(this).closest('.btn-showCards').prev();
+	// 			$prevElement.children('.infocard-block__row').fadeIn();
+	// 			$(this).hide();
 				
-			});
-		});
+				
+	// 		});
+	// 	});
 		
-	}
+	// }
 	//RESOURCES SLIDERS
 	$('.section-slider-body').slick({
 		items:1,

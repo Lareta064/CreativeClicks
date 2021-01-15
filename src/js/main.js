@@ -348,7 +348,7 @@ $(document).ready(function () {
 
 	let bars = document.querySelectorAll(".progress-bar");
 	for (let bar of bars) {
-		// bar.style.width = window.innerWidth >= 424 ? "424px" : window.innerWidth+"px";
+		//  bar.style.width = window.innerWidth >= 424 ? "424px" : window.innerWidth+"px";
 		bar.style.width = "424px" ;
 	}
 

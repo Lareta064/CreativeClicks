@@ -34,7 +34,7 @@ mixin infocard4(spanText, addText1, addText2, imgSrc)
 				span
 					+sliderArrowRight
 section.section--black.top-block
-	.progress-bar.progress-bar--left
+	.progress-bar.progress-bar--right
 	.container.container--p0
 		.section-content
 			.section-title
@@ -44,15 +44,19 @@ section.section--black.top-block
 					// =====  cards row =====
 					.infocard-block__row
 						+infocard3('Certainty&nbsp;in our Uncertainty: Six Trends for&nbsp;the&nbsp;2020 Holiday Season and Beyond', 'Today', '7 min. read', 4)
-						+infocard3('Certainty in our Uncertainty:', '1 Day ago', '6 min. read', 8)
+						+infocard3('Blog Item<br> holiday<br> 3 lines', '1 Day ago', '6 min. read', 8)
 				.btn-wrap
 					a(href="overview-2.html").button-white.light-button show all (12)
 			
+section.section--black.top-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
 			.infocard-block.infocard-block--yellow
 				.infocard-block__content
 					// =====  cards row =====
 					.infocard-block__row
-						+infocard4('Play video holiday 3 lines', 'Today', '7 min. read', 8)
+						+infocard4('Blog Item<br> holiday<br> 3 lines', 'Today', '7 min. read', 8)
 					
 				.btn-wrap
-					a(href="overview-2.html").button-white.light-button show all (12)
+					a(href="overview-2.html").button-white.black-button show all (12)

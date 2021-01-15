@@ -1,3 +1,45 @@
+//- базовая карточка с фоном 2 бейджами
+
+mixin infocard4(spanText, addText1, addText2, imgSrc)
+    .info-card.info-card--bg
+        .info-card__img
+            img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
+            .blure-block
+                img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
+        .info-card__body
+            .info-card__title
+                h3 !{spanText}
+            .additional-info
+                p #{addText1}
+                p #{addText2}
+        .info-card__footer
+            a(href="#!").button-white
+                span Learn more
+                span
+                    +sliderArrowRight
+
+
+//- базовая карточка без фона c 2 бейджами
+mixin infoCardBadge(title1,title2,title3)
+    .info-card.info-cardBadge
+        .info-card__img
+            img(src="img/whoweare/4.jpg", width="256" alt="img")
+            .blure-block
+                img(src="img/whoweare/4.jpg", width="256" alt="img")
+        .info-card__body
+            .info-card__badge
+                span !{title1}
+            .info-card__badge.info-card__badge--white
+                span
+                    +map
+                span !{title2}
+            .marked-text !{title3}
+        .info-card__footer
+            a(href="#!").button-white
+                span Schedule a meeting
+                span
+                    +sliderArrowRight
+
 // red block
 section.section--black.whoweare-red
     .progress-bar
@@ -56,7 +98,7 @@ section.section--black.whoweare-yellow
         .black-wrapper
             .events-title
                 +titleGroup('Upcoming events', 'You<br class="visible-mobile"> can meet us at')
-            .infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--yellow
+            .infocard-block.infocard-block--reverse.infocard-block--yellow
                 .infocard-block__content
                     .infocard-block__row
                         +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing&nbsp;in Asia')

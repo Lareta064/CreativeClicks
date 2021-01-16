@@ -1,6 +1,39 @@
+.share-block{
+	display: flex;
+	align-items: center;
+	margin-top: 32px;
+	a{
+		display: inline-block;
+		transition: .5s;
+		&:hover{
+			opacity: .5;
+		}
+	}
+	a+a{
+		margin-left: 35px;
+	}
+	
+}
+.blogDetail-footer{
+	background-color: #fff;
+	padding: 128px;
+	h4{
+		font-size: 24px;
+		line-height: 1.5;
+		letter-spacing: -0.02em;
+		color: #000000;
+
+	}
+}
 .blogDetail-wrapper{
-	padding: 124px;
 	max-width: 800px;
+	margin-right: 42px;
+	margin-left: auto;
+}
+.blogDetail-body{
+	padding: 124px;
+	padding-top: 128px;
+	padding-bottom: 128px;
 }
 .blogDetail-prevText{
 	font-size: 24px;
@@ -8,27 +41,79 @@
 	letter-spacing: -0.02em;
 	color: #000;
 	p+p{
-		margin-top: 64px;
+		margin-top: 36px;
 	}
 }
 .blogDetail-prevText p a{
 	color: #000;
 	background-repeat: no-repeat;
-	background-position: center bottom 1px;
+	background-position: center bottom 3px;
 	background-size: 100% 1px;
 	background-image: linear-gradient(to right,#000,#000);
 	
 }
 .overview-blogDetail{
-	.blogDetail-wrapper{
+	.blogDetail-body{
 		background-color:@purple;
 	}
 }
 .blogDetail-list__item{
+	margin-top: 37px;
 	h3{
 	font-size: 24px;
 	line-height: 1.17;
 	text-transform: uppercase;
 	color: #000000;
+	}
+	.blogDetail-list__img{
+		margin-top: 24px;
+	}
+	figcaption{
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.04em;
+		letter-spacing: 0.075em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		padding-top: 8px;
+		font-family: 'Karla Regular';
+
+		a{
+			background-repeat: no-repeat;
+			background-position: center bottom 1px;
+			background-size: 100% 1px;
+			background-image: linear-gradient(to right,#fff,#fff);
+			color: #FFFFFF;
+			transition:.5s;
+			&:hover{
+				color: #fff;
+				opacity: .5;
+			}
+		}
+	}
+	.blogDetail-list__text{
+		margin-top: 24px;
+		p{
+			font-size: 16px;
+			line-height: 1.5;
+			color: #FFFFFF;
+			font-family: 'Karla Regular';
+			a{
+				color: #fff;
+				background-repeat: no-repeat;
+				background-position: center bottom 1px;
+				background-size: 100% 1px;
+				background-image: linear-gradient(to right,#fff,#fff);
+				transition:.5s;
+				&:hover{
+					color: #fff;
+					opacity: .5;
+				}
+
+			}
+		}
+		p+p{
+			margin-top: 24px;
+		}
 	}
 }

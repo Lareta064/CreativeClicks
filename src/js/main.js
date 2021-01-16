@@ -349,9 +349,11 @@ $(document).ready(function () {
 	
 
 	let bars = document.querySelectorAll(".progress-bar");
+	let BAR_WIDTH = window.innerWidth >= 424 ? 424 : window.innerWidth;
 	for (let bar of bars) {
-		//  bar.style.width = window.innerWidth >= 424 ? "424px" : window.innerWidth+"px";
-		bar.style.width = "424px" ;
+		 bar.style.width = BAR_WIDTH+"px";
+		// 
+		//bar.style.width = "424px" ;
 	}
 
 	function onScrollEventHanlder(scrollEvent){
@@ -386,10 +388,10 @@ $(document).ready(function () {
 			// 		);
 
 
-			let computedOffset = Math.round(-424 + ((window.innerHeight - bar.getBoundingClientRect().top)/window.innerHeight)*(maxWidth+424));
-			let computedWidth = computedOffset < 0 ? computedOffset+424 : maxWidth-computedOffset;
+			let computedOffset = Math.round(-BAR_WIDTH + ((window.innerHeight - bar.getBoundingClientRect().top)/window.innerHeight)*(maxWidth+BAR_WIDTH));
+			let computedWidth = computedOffset < 0 ? computedOffset+BAR_WIDTH : maxWidth-computedOffset;
 			computedOffset = Math.max(0, Math.min(maxWidth, computedOffset));
-			computedWidth = Math.max(0, Math.min(424, computedWidth));
+			computedWidth = Math.max(0, Math.min(BAR_WIDTH, computedWidth));
 			// let computedWidth = 
 			// 	Math.max(0, 
 			// 		Math.min(

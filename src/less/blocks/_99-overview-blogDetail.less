@@ -168,8 +168,17 @@
 	top: 75px;
 	z-index: 2;
 }
-.resources-blogDetail .title-group h2{
+.resources-blogDetail .title-group h2 a{
 	color: @purple;
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 1px;
+	background-image: linear-gradient(to right, @purple, @purple);
+	transition:.5s;
+	&:hover{
+		opacity: .7;
+	}
+
 }
 
 

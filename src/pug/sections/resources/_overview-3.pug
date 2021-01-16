@@ -11,28 +11,11 @@ mixin infocard3(spanText, addText1, addText2, imgSrc)
 				p #{addText1}
 				p #{addText2}
 		.info-card__footer
-			a(href="#!").button-white
+			a(href="overview-4.html").button-white
 				span Learn more
 				span
 					+sliderArrowRight
 
-mixin infocard4(spanText, addText1, addText2, imgSrc)
-	.info-card.info-card--bg
-		.info-card__img
-			img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
-			.blure-block
-				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
-		.info-card__body
-			.info-card__title
-				h3 !{spanText}
-			.additional-info
-				p #{addText1}
-				p #{addText2}
-		.info-card__footer
-			a(href="#!").button-white
-				span Play video
-				span
-					+sliderArrowRight
 section.section--black.top-block
 	.progress-bar.progress-bar--left
 	.container.container--p0
@@ -47,4 +30,4 @@ section.section--black.top-block
 						+infocard3('Certainty in our Uncertainty:', '1 Day ago', '6 min. read', 8)
 						
 				.btn-wrap
-					a(href="overview-2.html").button-white.light-button show all (12)
+					a(href="#!").button-white.light-button show all (12)

@@ -201,13 +201,7 @@ $(document).ready(function () {
 					}
 				}
 			}
-				// for mobile
-				// else{
-				// 	for (let k = 0 ; k < cardBodyArr.length; k++){
-				// 		cardBodyArr[k].style.height = `auto`;
-				// 	}
-				// }
-			
+				
 	}
 	equalizeText("infocard-block__row","info-card__body");
 	window.addEventListener('resize', function(){

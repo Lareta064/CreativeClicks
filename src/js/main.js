@@ -178,28 +178,36 @@ $(document).ready(function () {
 		//Row array
 		// let rowArray = document.querySelectorAll(`.${rowClassName}`);
 		let rowArray = document.querySelectorAll(`.${rowClassName}`);
-			// Cycle through each row
+			
+		// Cycle through each row
 			for (let i = 0; i < rowArray.length; i++){
 				let cardBodyArr = rowArray[i].querySelectorAll(`.${blockClassName}`);
 				let maxHeight = 0;
-				if(window.innerWidth >=768){ 
-					//Cycle through all div-s in the row and find maxHeight
+
+				//Cycle through all div-s to let them auto-calculate heights depending on content
+				for (let k = 0 ; k < cardBodyArr.length; k++){
+					cardBodyArr[k].style.height = `auto`;
+				}
+
+				//Cycle through all div-s in the row and find maxHeight
 				for (let j = 0; j < cardBodyArr.length; j++){
 					if (cardBodyArr[j].offsetHeight > maxHeight) maxHeight = cardBodyArr[j].offsetHeight;
 				}
-
-					//Cycle through all div's and change height
+				
+				//Cycle through all div's and change height if not moile
+				if(window.innerWidth >=768){
 				for (let k = 0 ; k < cardBodyArr.length; k++){
-					cardBodyArr[k].style.height = `${maxHeight}px`;
-				}
-				}
-				// for mobile
-				else{
-					for (let k = 0 ; k < cardBodyArr.length; k++){
-						cardBodyArr[k].style.height = `auto`;
+						cardBodyArr[k].style.height = `${maxHeight}px`;
 					}
 				}
 			}
+				// for mobile
+				// else{
+				// 	for (let k = 0 ; k < cardBodyArr.length; k++){
+				// 		cardBodyArr[k].style.height = `auto`;
+				// 	}
+				// }
+			
 	}
 	equalizeText("infocard-block__row","info-card__body");
 	window.addEventListener('resize', function(){

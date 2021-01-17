@@ -35,7 +35,7 @@ mixin infoCard1
 				span Learn more
 				span
 					+sliderArrowRight
-mixin headerBlog(title1)
+mixin headerBlog(topTitle, title1)
 	// header-top
 	.header-top
 		a(href="index.html").logo
@@ -71,6 +71,6 @@ mixin headerBlog(title1)
 				.title-group.text-center
 					.title-2
 						h2 
-							a(href="resources.html") Blog
+							a(href="resources.html") !{topTitle}
 					.title-1
 						h1 !{title1}

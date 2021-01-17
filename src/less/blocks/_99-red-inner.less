@@ -6,6 +6,9 @@
 	}
 	.header--light__content .title-1 {
 		margin-bottom: 115px;
+		@media(max-width:767px){
+		margin-bottom: 80px;
+		}
 	}
 	.prove-block .section-content{
 		padding-top: 128px;
@@ -28,5 +31,29 @@
 	}
 	.blogDetail-body{
 		background-color: @red;
+	}
+}
+.resources-cs-blog{
+	.title-2 h2 a{
+		color: @red;
+		background-image: linear-gradient(to right, @red, @red);
+
+	}
+	.prove-block .section-content {
+		padding-top: 128px;
+	}
+	.prove-block .infocard-block {
+		position: relative;
+		left: 0px;
+	}
+	.header--light__content .title-1 {
+		margin-bottom: 116px;
+	}
+	.footer.footer-inner .footer-logo{
+		padding-top: 105px;
+		@media(max-width: 767px){
+			padding-top: 150px;
+			margin-bottom: 139px;
+		}
 	}
 }

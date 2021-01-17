@@ -1,23 +1,28 @@
-.share-block{
+.share-block {
 	display: flex;
 	align-items: center;
 	margin-top: 32px;
-	a{
+
+	a {
 		display: inline-block;
 		transition: .5s;
-		&:hover{
+
+		&:hover {
 			opacity: .5;
 		}
 	}
-	a+a{
+
+	a+a {
 		margin-left: 35px;
 	}
-	
+
 }
-.blogDetail-footer{
+
+.blogDetail-footer {
 	background-color: #fff;
 	padding: 128px;
-	h4{
+
+	h4 {
 		font-size: 24px;
 		line-height: 1.5;
 		letter-spacing: -0.02em;
@@ -25,51 +30,61 @@
 
 	}
 }
-.blogDetail-wrapper{
+
+.blogDetail-wrapper {
 	max-width: 800px;
 	margin-right: 42px;
 	margin-left: auto;
 }
-.blogDetail-body{
+
+.blogDetail-body {
 	padding: 124px;
 	padding-top: 128px;
 	padding-bottom: 128px;
 	position: relative;
 }
-.blogDetail-prevText{
+
+.blogDetail-prevText {
 	font-size: 24px;
 	line-height: 1.5;
 	letter-spacing: -0.02em;
 	color: #000;
-	p+p{
+
+	p+p {
 		margin-top: 36px;
 	}
 }
-.blogDetail-prevText p a{
+
+.blogDetail-prevText p a {
 	color: #000;
 	background-repeat: no-repeat;
 	background-position: center bottom 2px;
 	background-size: 100% 2px;
-	background-image: linear-gradient(to right,#000,#000);
-	
+	background-image: linear-gradient(to right, #000, #000);
+
 }
-.overview-blogDetail{
-	.blogDetail-body{
-		background-color:@purple;
+
+.overview-blogDetail {
+	.blogDetail-body {
+		background-color: @purple;
 	}
 }
-.blogDetail-list__item{
+
+.blogDetail-list__item {
 	margin-top: 37px;
-	h3{
-	font-size: 24px;
-	line-height: 1.17;
-	text-transform: uppercase;
-	color: #000000;
+
+	h3 {
+		font-size: 24px;
+		line-height: 1.17;
+		text-transform: uppercase;
+		color: #000000;
 	}
-	.blogDetail-list__img{
+
+	.blogDetail-list__img {
 		margin-top: 24px;
 	}
-	figcaption{
+
+	figcaption {
 		font-size: 12px;
 		line-height: 1.33;
 		letter-spacing: 0.04em;
@@ -79,58 +94,87 @@
 		padding-top: 8px;
 		font-family: 'Karla Regular';
 
-		a{
+		a {
 			background-repeat: no-repeat;
 			background-position: center bottom 1px;
 			background-size: 100% 1px;
-			background-image: linear-gradient(to right,#fff,#fff);
+			background-image: linear-gradient(to right, #fff, #fff);
 			color: #FFFFFF;
-			transition:.5s;
-			&:hover{
+			transition: .5s;
+
+			&:hover {
 				color: #fff;
 				opacity: .5;
 			}
 		}
 	}
-	.blogDetail-list__text{
+
+	.blogDetail-list__text {
 		margin-top: 24px;
-		p{
+
+		p {
 			font-size: 16px;
 			line-height: 1.5;
 			color: #FFFFFF;
 			font-family: 'Karla Regular';
-			a{
+
+			a {
 				color: #fff;
 				background-repeat: no-repeat;
 				background-position: center bottom 1px;
 				background-size: 100% 1px;
-				background-image: linear-gradient(to right,#fff,#fff);
-				transition:.5s;
-				&:hover{
+				background-image: linear-gradient(to right, #fff, #fff);
+				transition: .5s;
+
+				&:hover {
 					color: #fff;
 					opacity: .5;
 				}
 
 			}
 		}
-		p+p{
+
+		p+p {
 			margin-top: 24px;
 		}
 	}
+
+	h5 {
+		color: #000;
+		margin: 0;
+		margin-top: 24px;
+		font-family: 'Karla Bold';
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
 }
-.blogDetail-list__text ul{
+
+.blogDetail-list__text ul {
 	margin-top: 24px;
 	margin-bottom: 24px;
 
+	@media(max-width:767px) {
+		padding-right: 22px;
+	}
+
 }
-.blogDetail-list__text ul li{
+
+.blogDetail-list__text {
+	h5+ul {
+		margin-top: 8px;
+	}
+}
+
+.blogDetail-list__text ul li {
 	position: relative;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #FFFFFF;
 	font-family: 'Karla Regular';
 	padding-left: 15px;
-	&:before{
+
+	&:before {
 		content: '\2022';
 		position: absolute;
 		top: 0;
@@ -138,25 +182,42 @@
 		color: #fff;
 	}
 }
-.blogDetail-list__text ul li +li{
+
+.blogDetail-list__text ul li+li {
 	margin-top: 8px;
 }
-.header--detail .header-content{
+
+.header--detail .header-content {
 	display: flex;
 	padding-top: 128px;
 	padding-bottom: 36px;
 	padding-bottom: 128px;
 	padding-left: 82px;
-	
+
 	align-items: flex-start;
 }
-.resources-cs-blogDetail .header--detail .header-content{
+
+.resources-cs-blogDetail .header--detail .header-content {
 	padding-left: 57px;
+
+	@media(max-width:991px) {
+		padding-left: 0;
+		margin-left: -10px;
+	}
+
+	@media(max-width:767px) {
+		padding-left: 16px;
+		margin-left: 0px;
+	}
 }
+
 .resources-cs-blogDetail {
-	.overview-blogDetail .progress-bar{bottom: 423px;}
+	.overview-blogDetail .progress-bar {
+		bottom: 423px;
+	}
 }
-.header--detail .title-group h1{
+
+.header--detail .title-group h1 {
 	font-size: 56px;
 	line-height: .86;
 	text-align: center;
@@ -164,126 +225,175 @@
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
-.header--detail .title-group{
+
+.header--detail .title-group {
 	max-width: 688px;
 	margin-left: 0;
-	
+
 }
 
-.blogDetail-image{
+.blogDetail-image {
 	position: absolute;
 	right: 42px;
 	top: 0;
 	z-index: 2;
-	transform:translateY(-90%);
-	&>img{
+	transform: translateY(-90%);
+
+	&>img {
 		position: relative;
 		z-index: 3;
 		position: relative;
-}}
+	}
+}
 
-.title-group h2 a{
+.title-group h2 a {
 	color: @purple;
 	background-repeat: no-repeat;
 	background-position: center bottom 1px;
 	background-size: 100% 1px;
 	background-image: linear-gradient(to right, @purple, @purple);
-	transition:.5s;
-	&:hover{
+	transition: .5s;
+
+	&:hover {
 		opacity: .7;
 	}
 
 }
 
 
-.overview-blogDetail .progress-bar{
+.overview-blogDetail .progress-bar {
 	bottom: 420px;
 }
-.resources-blogDetail .footer.footer-inner{
+
+.resources-blogDetail .footer.footer-inner {
 	padding-top: 103px;
 }
-@media(max-width:1279px){
-	.header--detail .title-group{
+
+@media(max-width:1279px) {
+	.header--detail .title-group {
 		width: 52%;
 		margin-right: 3%;
-		
+
 	}
-	.blogDetail-body .blogDetail-image{
+
+	.blogDetail-body .blogDetail-image {
 		width: 40%;
 		max-width: 384px;
 		min-width: unset;
 	}
-	.header--detail .title-group h1{
+
+	.header--detail .title-group h1 {
 		font-size: 50px;
 	}
 }
-@media(max-width:1199px){
-	.header--detail .title-group{
+
+@media(max-width:1199px) {
+	.header--detail .title-group {
 		width: 57%;
 	}
-	.header--detail .title-group h1{
+
+	.header--detail .title-group h1 {
 		font-size: 44px;
 	}
-	.blogDetail-body .blogDetail-image{
+
+	.blogDetail-body .blogDetail-image {
 		width: 36%;
-		right: 20px;
+		right: 15px;
 	}
-	.header--detail .header-content{
+
+	.header--detail .header-content {
 		padding-left: 0px;
-		
+
 	}
 }
-@media(max-width:991px){
-	.blogDetail-body, .blogDetail-footer{
+
+@media(max-width:991px) {
+
+	.blogDetail-body,
+	.blogDetail-footer {
 		padding-left: 56px;
 		padding-right: 56px;
 	}
-	.header--detail .header-content{
+
+	.header--detail .header-content {
 		padding-left: 0;
-		
+
 	}
-	.header--detail .title-group h1{
+
+	.header--detail .title-group h1 {
 		font-size: 34px;
 	}
 }
-@media(max-width:767px){
-	.header--detail .header-content{
+
+@media(max-width:767px) {
+	.header--detail .header-content {
 		display: block;
 		padding-bottom: 292px;
 	}
-	.header--detail .title-group{width: 100%;}
-	.blogDetail-body .blogDetail-image{
+
+	.header--detail .title-group {
+		width: 100%;
+	}
+
+	.blogDetail-body .blogDetail-image {
 		width: 256px;
 		top: 0px;
 		margin-left: auto;
 		right: -16px;
-		transform:translateY(-82%);
+		transform: translateY(-82%);
 	}
-	.header--detail .header-content{
+
+	.header--detail .header-content {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	
-	.header--detail .title-group h1{
+
+	.header--detail .title-group h1 {
 		font-size: 56px;
 	}
-	.blogDetail-body, .blogDetail-footer{
+
+	.blogDetail-body,
+	.blogDetail-footer {
 		padding-left: 20px;
 		padding-right: 20px;
+		padding-bottom: 125px;
 	}
+
 	.blogDetail-body p {
 		padding-right: 20px;
 	}
-	.blogDetail-wrapper{
+
+	.blogDetail-wrapper {
 		position: relative;
 		left: -16px;
 		margin-right: -16px;
-		
+
 	}
-	.resources-blogDetail{
-		.footer-inner .footer-content .footer-logo{
+	
+	.resources-cs,
+	.resources-cs-blogDetail,
+	.resources-blogDetail {
+		.footer-inner .footer-content .footer-logo {
 			padding-top: 145px;
 			margin-bottom: 141px;
+		}
+	}
+}
+.resources-cs-blog,
+.resources-cs {
+	@media(min-width:1280px) {
+		.footer-inner .footer-content {
+			height: 682px;
+			padding-bottom: 50px;
+			.footer-logo {
+				padding-top: 50px;
+			}
+		}
+		.contacts-icon{
+			margin-top: 49px;
+		}
+		.footer.footer-inner .footer-logo {
+			margin-bottom: 156px;
 		}
 	}
 }

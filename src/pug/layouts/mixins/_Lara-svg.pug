@@ -35,7 +35,7 @@ mixin infoCard1
 				span Learn more
 				span
 					+sliderArrowRight
-mixin headerBlog(title1, src, btn)
+mixin headerBlog(title1)
 	// header-top
 	.header-top
 		a(href="index.html").logo
@@ -74,13 +74,3 @@ mixin headerBlog(title1, src, btn)
 							a(href="resources.html") Blog
 					.title-1
 						h1 !{title1}
-						
-				.header-image
-					img(src="img/blog/"+ src+".jpg" width="384", alt="img")
-					.blure-block
-						img(src="img/blog/"+ src+".jpg" width="384", alt="img")
-					if btn
-						.button-white.button-playVideo play video
-							i
-								svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
-									path(d="M0 0V14L11 7L0 0Z" fill="black")

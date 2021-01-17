@@ -2,7 +2,10 @@ extends ../layouts/layout.pug
 
 block content
 	.resources-cs-blogDetail
-		+headerBlog('Helping a famous <br class="hide-mobile"> social media platform <br class="hide-mobile"> drive registrations in <br class="hide-mobile"> APAC and LATAM', 'cs1', 'btn')
+		+headerBlog('Helping a famous <br class="hide-mobile"> social media platform <br class="hide-mobile"> drive registrations in <br class="hide-mobile"> APAC and LATAM')
+				
+		include ../sections/case-studies/_cs-4.pug
+		include ../sections/careers/_careers-footer
 		// ========== video-modal ==========
 		.video-modal
 			.video-wrapper
@@ -14,9 +17,7 @@ block content
 					source(src="video/video.mp4" type="video/mp4")
 					source(src="video.webm" type="video/webm")
 					source(src="video.ogv" type="video/ogg")
-		// ========== end video-modal ==========			
-		include ../sections/case-studies/_cs-4.pug
-		include ../sections/careers/_careers-footer
+		// ========== end video-modal ==========	
 		
 block variables
 	-var title = "Case studies";

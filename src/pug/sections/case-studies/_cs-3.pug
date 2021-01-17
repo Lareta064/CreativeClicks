@@ -1,33 +1,28 @@
-mixin infocard3(spanText, addText1, addText2, imgSrc)
-	.info-card.info-card--bg
+mixin infocard4(text, addText1, addText2, imgSrc)
+	.info-card
 		.info-card__img
 			img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
 			.blure-block
 				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
 		.info-card__body
-			.info-card__title
-				h3 !{spanText}
-			.additional-info
-				p #{addText1}
-				p #{addText2}
+			.info-card__badge
+				span Case study
+			.marked-text !{text}
 		.info-card__footer
-			a(href="overview-4.html").button-white
+			a(href="case-studies-3.html").button-white
 				span Learn more
 				span
 					+sliderArrowRight
-
-section.section--black.top-block
+section.section--black.prove-block
 	.progress-bar.progress-bar--left
 	.container.container--p0
 		.section-content
-			.section-title
-				h3 2 results:
-			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple
+			+titleGroup('The latest from the trade', 'We’re on top of it')
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--red
 				.infocard-block__content
-					// =====  cards row =====
 					.infocard-block__row
-						+infocard3('Certainty&nbsp;in our Uncertainty: Six Trends for&nbsp;the&nbsp;2020 Holiday Season and Beyond', 'Today', '7 min. read', 4)
-						+infocard3('Certainty in our Uncertainty:', '1 Day ago', '6 min. read', 8)
+						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5)
+						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
 						
 				.btn-wrap
 					a(href="#!").button-white.light-button show all (12)

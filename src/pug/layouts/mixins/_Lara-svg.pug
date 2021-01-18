@@ -1,18 +1,18 @@
 mixin titleGroup(titleTop, titleBottom, addClass)
 	if addClass
-		.title-group.text-center(class=" "+ addClass)
+		.title-group.text-center(class=" "+ addClass)&attributes(attributes)
 			.title-2
 				h2 !{titleTop}
 			.title-3
 				h3 !{titleBottom}
 	else
-		.title-group
+		.title-group&attributes(attributes)
 			.title-2
 				h2 !{titleTop}
 			.title-3
 				h3 !{titleBottom}
 mixin titleGroup2(titleTop, titleBottom)
-	.title-group
+	.title-group&attributes(attributes)
 		.title-2
 			h2 !{titleTop}
 		.title-1

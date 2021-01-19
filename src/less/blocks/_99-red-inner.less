@@ -46,14 +46,44 @@
 		position: relative;
 		left: 0px;
 	}
-	.header--light__content .title-1 {
-		margin-bottom: 116px;
-	}
+	// .header--light__content .title-1 {
+	// 	margin-bottom: 116px;
+	// }
 	.footer.footer-inner .footer-logo{
 		padding-top: 105px;
 		@media(max-width: 767px){
 			padding-top: 150px;
 			margin-bottom: 139px;
 		}
+	}
+}
+@media(max-width:767px){
+	.resources-cs-blog .infocard-block,
+	.resources-cs .infocard-block{
+		max-width:330px;
+		.info-card{
+			max-width:306px;
+		}
+	}
+	.resources-cs-blog,
+	.resources-cs{
+		.prove-block .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(even) .info-card:nth-child(odd) .info-card__body, .prove-block .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card:nth-child(even) .info-card__body{
+			padding-right: 34px;
+		}
+		.prove-block .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(even) .info-card:nth-child(odd) .info-card__footer,
+		.infocard-block__row:nth-child(even) .info-card:nth-child(odd) .info-card__footer,
+		.infocard-block__row:nth-child(odd) .info-card:nth-child(even) .info-card__footer{
+			padding-right: 14px;
+			padding-left: 0;
+		}
+	}
+	
+		.resources-cs-blog .section--black .progress-bar {
+    	bottom: 51px;
+	}
+	
+	.resources-cs-blog .prove-block .btn-wrap {
+		margin-top: 34px;
+		padding-right: 17px;
 	}
 }

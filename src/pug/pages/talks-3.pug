@@ -1,0 +1,12 @@
+extends ../layouts/layout.pug
+block content
+	.talks-blogDetail
+		+headerBlog('case studies', 'Helping a famous <br class="hide-mobile"> social media platform <br class="hide-mobile"> drive registra&shy;tions in <br class="hide-mobile"> APAC and LATAM')
+		
+		include ../sections/talks/_talks-3.pug
+		include ../sections/careers/_careers-footer
+		
+
+
+block variables
+	-var title = "Talks-3";

@@ -40,3 +40,26 @@
 .resources-page{
 	.top-block .progress-bar{bottom: 51px;}
 }
+.top-block .info-card2 .info-card__img{
+	background-color: @purple;
+	border:2px solid red;
+	position: relative;
+	width: 256px;
+	height: 256px;
+}
+.info-card2 .main-img{
+	position: relative;
+	z-index: 2;
+	transform: translateY(-64px);
+}
+
+.info-card2 {position: relative;}
+.info-card2 .blur-img{
+	position: absolute;
+	left: 5.88%;
+	top:0;
+	top:-44px;
+	z-index: 1;
+	filter: blur(32px);
+	mix-blend-mode: multiply;
+}

@@ -71,7 +71,7 @@
 }
 
 .blogDetail-list__item {
-	margin-top: 37px;
+	margin-top: 36px;
 
 	h3 {
 		font-size: 24px;
@@ -215,6 +215,9 @@
 .resources-cs-blogDetail {
 	.overview-blogDetail .progress-bar {
 		bottom: 423px;
+		@media(max-width:767px){
+			bottom: 419px;
+		}
 	}
 }
 
@@ -235,16 +238,31 @@
 
 .blogDetail-image {
 	position: absolute;
+	width: 384px;
+	right: 0;
+	top: 0;
+	// z-index: 2;
+	// transform: translateY(-90%);
+	.main-img{
+		position: relative;
+		z-index: 1;
+		position: absolute;
 	right: 42px;
 	top: 0;
 	z-index: 2;
 	transform: translateY(-90%);
-
-	&>img {
-		position: relative;
-		z-index: 3;
-		position: relative;
 	}
+	.blur-img{
+		position: absolute;
+		top: 44px;
+		left: 5.88%;
+		filter: blur(32px);
+		mix-blend-mode: multiply;
+		right: 42px;
+		
+		transform: translateY(-90%);
+	}
+	
 }
 
 .title-group h2 a {
@@ -264,6 +282,7 @@
 
 .overview-blogDetail .progress-bar {
 	bottom: 420px;
+
 }
 
 .resources-blogDetail .footer.footer-inner {
@@ -272,7 +291,20 @@
 		padding-top: 0;
 	}
 }
-
+.resources-cs-blogDetail{
+	.button-playVideo.button-white {
+		padding-left: 26px;
+		padding-right: 26px;
+		left: 39%;
+		bottom: 22px;
+		@media(max-width:992px){
+			left: 34%;
+		}
+		@media(max-width:767px){
+			bottom: 7px;
+		}
+	}
+}
 @media(max-width:1279px) {
 	.header--detail .title-group {
 		width: 52%;
@@ -297,12 +329,12 @@
 	}
 
 	.header--detail .title-group h1 {
-		font-size: 44px;
+		font-size: 38px;
 	}
 
 	.blogDetail-body .blogDetail-image {
 		width: 36%;
-		right: 15px;
+		right: -15px;
 	}
 
 	.header--detail .header-content {
@@ -325,7 +357,7 @@
 	}
 
 	.header--detail .title-group h1 {
-		font-size: 34px;
+		font-size: 30px;
 	}
 }
 
@@ -337,7 +369,7 @@
 	}
 	.header--detail .header-content {
 		display: block;
-		padding-bottom: 292px;
+		padding-bottom: 32px;
 	}
 
 	.header--detail .title-group {
@@ -346,10 +378,10 @@
 
 	.blogDetail-body .blogDetail-image {
 		width: 256px;
-		top: 0px;
+		top: 24px;
 		margin-left: auto;
-		right: -16px;
-		transform: translateY(-82%);
+		right: -58px;
+		// transform: translateY(-82%);
 	}
 
 	.header--detail .header-content {
@@ -363,8 +395,8 @@
 
 	.blogDetail-body,
 	.blogDetail-footer {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 24px;
+		padding-right: 16px;
 		padding-bottom: 125px;
 		margin-right: 16px;
 	}

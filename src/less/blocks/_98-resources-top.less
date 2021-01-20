@@ -38,7 +38,16 @@
 	}
 }
 .resources-page{
-	.top-block .progress-bar{bottom: 51px;}
+	.top-block .progress-bar{bottom: 48px;}
+	.top-block .infocard-block__row:first-child{
+		margin-top: 0;
+		@media(max-width:767px){
+			margin-top: -141px;
+		}
+	}
+	.top-block .info-card2 .info-card__body {
+		margin-top: -86px;
+	}
 }
 .resources-page .top-block .info-card2{
 // .info-card__img{background-color: @purple;}
@@ -80,7 +89,7 @@
 .info-card2 .blur-img{
 	position: absolute;
 	left: 5.88%;
-	left: 24px;
+	
 	top:0;
 	top:-44px;
 	z-index: 1;

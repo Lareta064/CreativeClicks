@@ -236,7 +236,36 @@
 	margin-left: 0;
 
 }
-
+.color-block-wrapper .color-block--right,
+.color-block-wrapper .color-block--left{position: relative;
+	.blur-img{z-index: 0;}
+}
+.color-block__img{
+	position: absolute;
+	width: 384px;
+	right: 0;
+	top: 0;
+	
+	.main-img{
+		position: relative;
+		z-index: 1;
+		position: absolute;
+	right: 42px;
+	top: 0;
+	z-index: 2;
+	transform: translateY(-90%);
+	}
+	.blur-img{
+		position: absolute;
+		top: 44px;
+		left: 5.88%;
+		filter: blur(32px);
+		mix-blend-mode: multiply;
+		right: 42px;
+		z-index: 0;
+		transform: translateY(-90%);
+	}
+}
 .blogDetail-image {
 	position: absolute;
 	width: 384px;

@@ -285,11 +285,15 @@
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	z-index: 1;
-	top: 15px;
-	left: 0px;
+	top: 24px;
+	left: 24px;
 	mix-blend-mode: multiply;
 	-webkit-filter: blur(32px);
 	filter: blur(32px);
+	@media(max-width:767px){
+		top: 18px;
+		left: 18px;
+	}
   }
   .header--wedo .header-title__img:after {
 	background-image: url(../img/whatwedo/header.jpg);

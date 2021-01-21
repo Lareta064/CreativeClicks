@@ -1,0 +1,31 @@
+
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card2.info-card--bg
+		.info-card__img
+			img.main-img(src="img/talks/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/talks/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+section.section--black.talks-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			.section-title
+				h3 2 results:
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--green
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3('What to expect from mobile marketing in 2021', '9 Days ago', 'Facebook', 1)
+						+infocard3('Creative Clicks China and the APAC Mobile Marketing', '5 Days ago', 'Linkedin', 1)
+						
+				.btn-wrap
+					a(href="talks-3.html").button-white.black-button show all (12)

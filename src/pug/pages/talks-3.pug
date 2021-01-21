@@ -1,0 +1,12 @@
+extends ../layouts/layout.pug
+block content
+	.talks-blogDetail
+		+headerBlog('Cc talks podcast', 'Creative Clicks China <br> and the APAC Mobile <br> Marketing')
+		
+		include ../sections/talks/_talks-3.pug
+		include ../sections/careers/_careers-footer
+		
+
+
+block variables
+	-var title = "Talks-3";

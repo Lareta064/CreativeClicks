@@ -87,7 +87,12 @@
     }
   }
 }
-
+.wedo-page .color-block-wrapper{
+  padding-top: 470px;
+  @media (max-width: 767px){
+    padding-top: 304px;
+  }
+}
 .color-block--left {
   margin-right: auto;
   @media (max-width: 767px) {
@@ -113,13 +118,17 @@
 .color-block__img {
   position: relative;
   max-width: 386px;
+
   top: 42px;
 
   img {
     position: relative;
     z-index: 2;
   }
-
+  @media (max-width: 767px) {
+    width: 256px;
+    max-width: 256px;
+  }
 }
 
 .blure-block {
@@ -133,14 +142,13 @@
   z-index: 1;
 }
 
-.color-block__img {
-  @media (max-width: 767px) {
-    width: 256px;
-  }
-}
-
 .color-block--left .color-block__img {
   left: 64px;
+  .main-img{
+    right:auto;
+    left: 0;
+    
+  }
   margin-right: auto;
   @media (max-width: 767px) {
     left: -24px;
@@ -148,10 +156,15 @@
 }
 
 .color-block--right .color-block__img {
-  margin-left: auto;
-  right: 41px;
+  // margin-left: auto;
+  right: 44px;
+  .main-img{
+    right:0;
+    
+    
+  }
   @media (max-width: 767px) {
-    position: relative;
+    // position: relative;
     right: -24px;
   }
 }

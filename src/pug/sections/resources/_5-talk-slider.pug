@@ -1,39 +1,4 @@
-//- mixin sliderItem(title)
-//- 	.case-slider-item
-//- 		.case-slider__body
-//- 			.slide-title 
-//- 				h3 !{title}
-//- 			.additional-info
-//- 				p Day
-//- 				p Duration
-//- 		.case-slider__footer
-//- 			a(href="#!").button-white
-//- 				span Learn more
-//- 				span
-//- 					+sliderArrowRight
-//- section.section--black.talk-slider
-//- 	.progress-bar.progress-bar--right
-//- 	.container.container--p0
-//- 		.case-studies-inner.case-studies-reverce
-//- 			.case-studies__header.case-studies__mb.flex-start
-//- 				//- .case-studies__img.hide-mobile.head-group__img
-//- 				//- 	img(src="img/resources/7.jpg", width="386" alt="img")
-//- 				+titleGroup('cc talks podcast', 'We Talk about it')
-//- 			.case-slider-wrapper.case-slider-wrapper--green
-//- 				.case-studies__img--mobile
-//- 					img(src="img/resources/7.jpg", width="386" alt="img")
-//- 				.case-slider-arrows
-//- 					button.arr-left
-//- 						+sliderArrowLeft
-//- 					button.arr-right
-//- 						+sliderArrowRight
-//- 				.case-slider.owl-carousel
-//- 					+sliderItem('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
-//- 					+sliderItem('Creative Clicks China and the APAC Mobile Marketing')
-//- 					+sliderItem('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
-				
-//- 				.slider-btn
-//- 					a(href="#").button-white.light-button show all (12)
+
 mixin sliderIt(title)
 	.section-slider__item
 		.slide-item__text
@@ -65,4 +30,4 @@ section.section--black.talk-slider.section-slider--reverse
 				+sliderIt('Creative Clicks China and the APAC Mobile Marketing')
 				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
 			.section-slider__btn
-				a(href="#").button-white.black-button show all (12)
+				a(href="talks-1.html").button-white.black-button show all (12)

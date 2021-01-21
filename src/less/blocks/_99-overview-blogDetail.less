@@ -64,7 +64,7 @@
 
 }
 
-.overview-blogDetail {
+.resources-blogDetail {
 	.blogDetail-body {
 		background-color: @purple;
 	}
@@ -198,7 +198,7 @@
 	align-items: flex-start;
 }
 
-.resources-cs-blogDetail .header--detail .header-content {
+.cs-blogDetail .header--detail .header-content {
 	padding-left: 57px;
 
 	@media(max-width:991px) {
@@ -211,9 +211,10 @@
 		margin-left: 0px;
 	}
 }
-
-.resources-cs-blogDetail {
-	.overview-blogDetail .progress-bar {
+.resources-blogDetail,
+.talks-blogDetail ,
+.cs-blogDetail {
+	 .progress-bar {
 		bottom: 423px;
 		@media(max-width:767px){
 			bottom: 419px;
@@ -235,14 +236,42 @@
 	margin-left: 0;
 
 }
-
+.color-block-wrapper .color-block--right,
+.color-block-wrapper .color-block--left{position: relative;
+	.blur-img{z-index: 0;}
+}
+.color-block__img{
+	position: absolute;
+	width: 384px;
+	right: 0;
+	top: 0;
+	
+	.main-img{
+		position: relative;
+		z-index: 1;
+		position: absolute;
+	right: 42px;
+	top: 0;
+	z-index: 2;
+	transform: translateY(-90%);
+	}
+	.blur-img{
+		position: absolute;
+		top: 44px;
+		left: 5.88%;
+		filter: blur(32px);
+		mix-blend-mode: multiply;
+		right: 42px;
+		z-index: 0;
+		transform: translateY(-90%);
+	}
+}
 .blogDetail-image {
 	position: absolute;
 	width: 384px;
 	right: 0;
 	top: 0;
-	// z-index: 2;
-	// transform: translateY(-90%);
+	
 	.main-img{
 		position: relative;
 		z-index: 1;
@@ -280,7 +309,7 @@
 }
 
 
-.overview-blogDetail .progress-bar {
+.cs-blogDetail .progress-bar {
 	bottom: 420px;
 
 }
@@ -291,7 +320,7 @@
 		padding-top: 0;
 	}
 }
-.resources-cs-blogDetail{
+.cs-blogDetail{
 	.button-playVideo.button-white {
 		padding-left: 26px;
 		padding-right: 26px;
@@ -362,7 +391,7 @@
 }
 
 @media(max-width:767px) {
-	.overview-blogDetail{
+	.cs-blogDetail{
 		.container{
 			padding-right: 0;
 		}
@@ -411,16 +440,6 @@
 		margin-right: -16px;
 		padding-top: 256px;
 		overflow: hidden;
-
-	}
-	
-	.resources-cs,
-	.resources-cs-blogDetail,
-	.resources-blogDetail {
-		.footer-inner .footer-content .footer-logo {
-			padding-top: 145px;
-			margin-bottom: 141px;
-		}
 	}
 }
 .resources-cs-blog,
@@ -429,9 +448,9 @@
 		.footer-inner .footer-content {
 			height: 682px;
 			padding-bottom: 50px;
-			.footer-logo {
-				padding-top: 50px;
-			}
+			// .footer-logo {
+			// 	padding-top: 50px;
+			// }
 		}
 		.contacts-icon{
 			margin-top: 49px;

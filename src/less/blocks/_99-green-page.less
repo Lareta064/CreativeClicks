@@ -1,0 +1,125 @@
+.talks-blog,
+.resources-talks{
+	.header--light__content .title-1 {
+		margin-bottom: 109px;
+	}
+	.title-group h2 a{
+		color: @green;
+		background-image: linear-gradient(to right, green, green);
+	}
+	.talks-block .title-group {
+		margin-bottom: 234px;
+	}
+	.talks-block .infocard-block__row:first-child{
+		margin-top: -20px;
+		@media(max-width:767px){
+			margin-top: -140px;
+		}
+	}
+	.talks-block .infocard-block__row +.infocard-block__row{
+			margin-top: 80px;
+	
+			@media(max-width:767px) {
+				margin-top: -3px;
+			}
+	}
+}
+/* infocard-block width*/
+.talks-blog .talks-block,
+.resources-talks .talks-block{
+	@media (max-width: 1199px) {
+		.infocard-block {
+			max-width: 95%;
+		}
+	}
+
+	@media (max-width: 991px) {
+		.infocard-block {
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.infocard-block {
+			max-width: 330px;
+		}
+	}
+}
+/* footer-desk*/
+@media(min-width:1280px){
+	.talks-blog,
+	.resources-talks{
+		
+		.footer-content{
+			height: 692px;
+		}
+		.footer-logo{
+			padding-top: 55px;
+		}
+	}
+}
+/* even row mob styles*/
+
+@media(max-width:767px){
+.talks-blog .talks-block,
+.resources-talks .talks-block{
+	.infocard-block__row:nth-child(even) .info-card2:last-child,
+	.infocard-block__row:nth-child(even) .info-card2:first-child{
+		.info-card__footer{	padding-right: 0;}
+		}
+		.infocard-block__row:nth-child(even) .info-card2:nth-child(2){
+			
+			.info-card__footer{	padding-left: 21px;}
+		}
+	}
+}
+.talks-blog,
+.resources-talks{
+	.footer-inner .footer-content .footer-logo{
+		@media(max-width:767px){
+			height: 290px;
+			padding-top: 0;
+			margin-bottom: -4px;
+			
+		}
+	}	
+}
+
+/*FREEN PAGE -3*/
+.blogDetail-list .blog-audio{
+	margin-top: 36px;
+}	
+.talks-blogDetail{
+	
+	@media(min-width:1280px){
+			.title-group{
+			position: relative;
+			left: -10px;
+		}
+		.blogDetail-image .main-img{
+			right: 50px;
+			top: -11px;
+		}
+
+	}
+	.title-group h2 a{
+		color: @green;
+		background-image: linear-gradient(to right, green, green);
+	}
+	.blogDetail-body {
+		background-color: @green;
+	}
+	.blogDetail-prevText{
+		color: #fff;
+	}
+	.blogDetail-list__item{
+		position: relative;
+	}
+	.blogDetail-list__item .blogDetail-list__text p{
+		color: #000;
+		a{
+			color: #000;
+			background-image: linear-gradient(to right, #000, #000);
+		}
+	}
+}

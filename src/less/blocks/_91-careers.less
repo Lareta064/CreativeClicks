@@ -1,3 +1,4 @@
+
 .header--careers {
   h2 {
     color: @red;
@@ -77,40 +78,14 @@
         opacity: .5;
       }
     }
-//
-//    @media (max-width: 1279px) {
-//      //max-width: 600px;
-//      padding-left: 96px;
-//      padding-right: 96px;
-//    }
-//    @media (max-width: 991px) {
-//      //max-width: 495px;
-//      padding-left: 48px;
-//      padding-right: 48px;
-//    }
-//    @media (max-width: 767px) {
-//      //max-width: 495px;
-//      padding-left: 24px;
-//      padding-right: 39px;
-//      p + p {
-//        margin-top: 40px;
-//      }
-//    }
-//
-//
-//  .text-block .head-3 {
-//    @media (max-width: 767px) {
-//      margin-bottom: 32px;
-//    }
-//  }
+
 }
 
 .careers-yellow {
   .color-block__img {
-    top: 39px;
+    
     @media (max-width: 767px) {
-      top: 49px;
-      left: -18px;
+     
     }
   }
 
@@ -140,15 +115,6 @@
     }
   }
 
-  .color-block__img {
-    top: 42px;
-    right: 43px;
-    @media (max-width: 767px) {
-      top: 48px;
-      right: -16px;
-    }
-  }
-
   .text-block .head-3 {
     margin-bottom: 62px;
     @media (max-width: 767px) {
@@ -156,20 +122,12 @@
     }
   }
 
-  .color-block__img {
-    position: relative;
-  }
 
-  .color-block-wrapper {
-    @media (max-width: 767px) {
-      padding-top: 50px;
-    }
-  }
 }
 
 .button-playVideo.button-white {
   position: absolute;
-  bottom: 58px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -252,15 +210,15 @@
   }
 
   .info-card__body {
-    margin-top: -18px;
+    // margin-top: -18px;
     height: 190px;
     @media (max-width: 1279px) {
-      margin-top: -22px;
+      // margin-top: -22px;
     }
 
     .marked-text {
       color: #000;
-      padding-left: 2px;
+      // padding-left: 2px;
     }
   }
 }
@@ -268,42 +226,50 @@
 .vacancy-content__cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -64px;
-  @media (max-width: 991px) {
-    margin-top: -107px;
-  }
+  
+  
   @media (max-width: 767px) {
     max-width: 325px;
 
   }
 }
-
-.vacancy-card {
-  width: 33.3333%;
-  margin-bottom: 96px;
-
-  .info-card__footer {
-    margin-top: 20px;
+.vacancy .infocard-block__row  .info-card2 .info-card__body {
+  margin-top: -86px;
+}
+.vacancy .infocard-block__row .info-card2{
+  margin-bottom: 160px;
+  @media(max-width:767px){
+    margin-bottom: 130px;
   }
+}
 
-  @media (max-width: 767px) {
-    width: 100%;
-  }
-
-  .info-card__img {
-    width: 226px;
-    height: 226px;
-    @media (max-width: 767px) {
-      width: 256px;
-      height: 256px;
-      position: relative;
-      left: -17px;
+@media (min-width: 1280px){
+  .vacancy .infocard-block__row .info-card2 .info-card__footer{
+    padding-left: 52px;
+    position: relative;
+    top: 2px;
+    }
+   
+}
+.careers-page .footer-inner .footer-content{
+    height: 650px;
+    .footer-logo{
+      padding-top: 11px;
+    }
+    @media(max-width:767px){
+        height: 464px;
+    .footer-logo{
+      margin-bottom: 75px;
     }
   }
 }
 
+.vacancy .infocard-block__row:first-child{
+  margin-top: 0;
+}
+
 .vacancy-content .button-box {
-  margin-top: 32px;
+  margin-top: 50px;
   margin-bottom: 128px;
   position: relative;
   right: 33px;
@@ -363,20 +329,12 @@
 .color-block-wrapper.wrapper--application {
   @media (min-width: 1279px) {
     padding-left: 63px;
-    .color-block__img {
-      top: 41px;
-    }
+    
   }
-  @media (max-width: 767px) {
-    padding-top: 47px;
-    .color-block__img {
-      top: 48px;
-    }
-  }
+ 
 
   .color-block__img {
-    // margin-right: auto;
-    // margin-left: 48px;
+    
     @media (max-width: 767px) {
       left: auto;
       right: -16px;

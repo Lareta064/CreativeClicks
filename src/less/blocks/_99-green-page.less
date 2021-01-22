@@ -2,6 +2,9 @@
 .resources-talks{
 	.header--light__content .title-1 {
 		margin-bottom: 109px;
+		@media(max-width:767px){
+			margin-bottom: 78px;
+		}
 	}
 	.title-group h2 a{
 		color: @green;
@@ -22,6 +25,26 @@
 			@media(max-width:767px) {
 				margin-top: -3px;
 			}
+	}
+}
+.talks-blog{
+	.header--light__content .title-1 {
+		margin-bottom: 115px;
+		@media(max-width:767px){
+			margin-bottom: 78px;
+		}
+	}
+}
+.talks-blog,
+.resources-talks{
+		@media (max-width: 767px){
+		.btn-wrap, .btn-showCards {
+			margin-top: 35px;
+			padding-right: 12px;
+			
+		}
+		.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2:nth-child(even) .info-card__footer,
+		.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(even) .info-card2:nth-child(odd) .info-card__footer{max-width: 93%;}
 	}
 }
 /* infocard-block width*/
@@ -88,7 +111,24 @@
 /*FREEN PAGE -3*/
 .blogDetail-list .blog-audio{
 	margin-top: 36px;
-}	
+}
+.talks-blogDetail h1{
+	@media(max-width:424px){
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.talks-blogDetail .blogDetail-body, .talks-blogDetail .blogDetail-footer {
+	@media(max-width:767px){
+		margin-right: 0;
+	}
+}
+@media (max-width: 767px){
+	.talks-blogDetail .blogDetail-body p {
+		padding-right: 10px;
+	}
+}
 .talks-blogDetail{
 	
 	@media(min-width:1280px){

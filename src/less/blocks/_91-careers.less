@@ -269,7 +269,7 @@
 }
 
 .vacancy-content .button-box {
-  margin-top: 50px;
+  margin-top: -30px;
   margin-bottom: 128px;
   position: relative;
   right: 33px;
@@ -443,5 +443,19 @@
     @media(max-width: 767px){
       bottom: 136px;
     }
+  }
+}
+.careers-slider .careers-slider1__item{
+  position: relative;
+  .slide-img{
+    position: relative;
+    z-index: 2;
+  }
+  .slide-blur{
+    position: absolute;
+    mix-blend-mode: multiply;
+    filter:blur(32px);
+    top: 5.88%;
+    left: 5.88%;
   }
 }

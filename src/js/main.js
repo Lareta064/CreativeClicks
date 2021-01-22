@@ -175,8 +175,7 @@ $(document).ready(function () {
 	});
 	// CALC INFO-CARD HEIGHT
 	function equalizeText(rowClassName,blockClassName){
-		//Row array
-		// let rowArray = document.querySelectorAll(`.${rowClassName}`);
+		
 		let rowArray = document.querySelectorAll(`.${rowClassName}`);
 			
 		// Cycle through each row
@@ -245,27 +244,7 @@ $(document).ready(function () {
 		});
 		
 	}
-	//RESOURCES PAGE SHOW  ALL INFO CARDS
 	
-	// if($('.infocard-block')){
-	// 	$('.infocard-block').each(function(i, arr){
-	// 		$arrCardsRow = $(arr).find('.infocard-block__row');
-	// 		$arrCardsRow.each(function(ind, item){
-	// 			if(ind > 0){
-	// 				$(item).hide();
-	// 			}
-	// 		});
-			
-	// 		$('.btn-showCards .show-all').on('click', function(){
-	// 			$prevElement = $(this).closest('.btn-showCards').prev();
-	// 			$prevElement.children('.infocard-block__row').fadeIn();
-	// 			$(this).hide();
-				
-				
-	// 		});
-	// 	});
-		
-	// }
 	//RESOURCES SLIDERS
 	$('.section-slider-body').slick({
 		items:1,
@@ -352,8 +331,7 @@ $(document).ready(function () {
 	let BAR_WIDTH = window.innerWidth >= 424 ? 424 : window.innerWidth;
 	for (let bar of bars) {
 		 bar.style.width = BAR_WIDTH+"px";
-		// 
-		//bar.style.width = "424px" ;
+		
 	}
 
 	function onScrollEventHanlder(scrollEvent){
@@ -362,46 +340,22 @@ $(document).ready(function () {
 			if((partnersSlider.state == SLIDER_NOT_REACHED)&&(lowerScreenBoundary >= document.body.offsetHeight)){
 				partnersSlider.state = SLIDER_AT_THE_BEGGINING;			
 				partnersSlider.anchorY = window.scrollY;
-				// $("#debug").text("STATE: "+partnersSlider.state);	
-				// console.log("Stage 1: Slider at the beggining");
+				
 			}else if((partnersSlider.state == SLIDER_AT_THE_BEGGINING)&&(lowerScreenBoundary < document.body.offsetHeight)){
 				partnersSlider.state = SLIDER_NOT_REACHED;
-				// $("#debug").text("STATE: "+partnersSlider.state);	
-				// console.log("Stage 0: Slider is out of focus");
+				
 			}
 		}
-		// else if((partnersSlider.state == SLIDER_FINISHED)&&($(window).scrollTop() < partnersSlider.element.offset().top)){
-		// 	partnersSlider.state = SLIDER_NOT_REACHED;
-		// 	partnersSlider.showNext(false);
-		// }
+		
 		for (let bar of bars) {
 			let maxWidth = bar.parentElement.offsetWidth;
-			// let computedWidth = 
-			// 	Math.max(0, 
-			// 		Math.min(
-			// 			maxWidth, 
-			// 			//bar.getBoundingClientRect().top>window.innerHeight/2 ? bar.getBoundingClientRect().top-window.innerHeight : window.innerHeight-bar.getBoundingClientRect().top
-			// 			Math.round(
-			// 					(maxWidth+424*2)-((window.innerHeight - bar.getBoundingClientRect().top)/window.innerHeight)*(maxWidth+424*2)
-			// 				)
-			// 			)
-			// 		);
-
+			
 
 			let computedOffset = Math.round(-BAR_WIDTH + ((window.innerHeight - bar.getBoundingClientRect().top)/window.innerHeight)*(maxWidth+BAR_WIDTH));
 			let computedWidth = computedOffset < 0 ? computedOffset+BAR_WIDTH : maxWidth-computedOffset;
 			computedOffset = Math.max(0, Math.min(maxWidth, computedOffset));
 			computedWidth = Math.max(0, Math.min(BAR_WIDTH, computedWidth));
-			// let computedWidth = 
-			// 	Math.max(0, 
-			// 		Math.min(
-			// 			maxWidth, 
-			// 			//bar.getBoundingClientRect().top>window.innerHeight/2 ? bar.getBoundingClientRect().top-window.innerHeight : window.innerHeight-bar.getBoundingClientRect().top
-			// 			Math.round(
-			// 					(maxWidth+424*2)-((window.innerHeight - bar.getBoundingClientRect().top)/window.innerHeight)*(maxWidth+424*2)
-			// 				)
-			// 			)
-			// 		);
+			
 			bar.style.width = computedWidth+"px";
 			if(bar.classList.contains("progress-bar--right"))
 				bar.style.right = computedOffset+"px";
@@ -424,8 +378,7 @@ $(document).ready(function () {
 					if(dir>0){
 						touchEvent.preventDefault();
 						partnersSlider.state = SLIDER_IN_PROGRESS;
-						// console.log("Stage 2: Slider is in progress");
-						// $("#debug").text("STATE: "+partnersSlider.state);
+						
 						partnersSlider.element.trigger("next.owl.carousel");
 					}
 				}else if((partnersSlider.state==SLIDER_IN_PROGRESS)){
@@ -466,8 +419,7 @@ $(document).ready(function () {
 			if(wheelEvent.deltaY>0){
 				
 				partnersSlider.state = SLIDER_IN_PROGRESS;
-				// console.log("Stage 2: Slider is in progress");
-				// $("#debug").text("STATE: "+partnersSlider.state);
+				
 				partnersSlider.element.trigger("next.owl.carousel");
 			}else{
 				window.scrollBy(0, -100);
@@ -488,12 +440,10 @@ $(document).ready(function () {
 		partnersSlider.currentIndex = owlEvent.item.index;
 		if(partnersSlider.currentIndex == 0){
 			partnersSlider.state = SLIDER_AT_THE_BEGGINING;
-			// console.log("Stage 1: Slider at the beggining");
-			// $("#debug").text("STATE: "+partnersSlider.state);
+			
 		}else if(partnersSlider.currentIndex == owlEvent.item.count-1){
 			partnersSlider.state = SLIDER_FINISHED;
-			// console.log("Stage 3: Slider completed");
-			// $("#debug").text("STATE: "+partnersSlider.state);
+			
 			partnersSlider.showNext(true);
 						
 			partnersSlider.element.trigger('destroy.owl.carousel');

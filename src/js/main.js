@@ -246,29 +246,36 @@ $(document).ready(function () {
 	}
 	
 	//RESOURCES SLIDERS
-	// $('.section-slider-body').slick({
-	// 	items:1,
-	// 	arrows: false,
-	// 	dots: true
-	// });
+
 	function doubleSlederText(sliderBlock, sliderImages) {
 		$(sliderBlock).slick({
 			items:1,
 			arrows: false,
 			dots: false,
 			fade: true,
+			infinite: true,
+			speed:1000,
+			autoplay: true,
 			asNavFor: $(sliderImages)
 		});
 		$(sliderImages).slick({
 			items:1,
 			arrows: false,
 			dots: true,
+			fade: true,
+			autoWidth: true,
+			infinite: true,
+			speed:1000,
+			autoplay: true,
 			asNavFor: $(sliderBlock),
 			focusOnSelect: true
 		  });
 	}
 
+	doubleSlederText('#nailing-images', '#nailing-slider');
 	doubleSlederText('#talk-images', '#talk-slider');
+	doubleSlederText('#captured-images', '#captured-slider');
+	
 
 
 	$('.nailing-prev').on('click', function() {
@@ -291,12 +298,7 @@ $(document).ready(function () {
 	$('.captured-next').on('click', function() {
 		$('#captured-slider').slick('slickNext');
 	});
-	// $('.section-slider-body').on( 'afterChange', function(){
-	// 	console.log('555');
-	// 	$('#talk-images .slider__img-item').each(function(item){
-	// 		console.log($(item).attr('data-pos'));
-	// 	})
-	// })
+	
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

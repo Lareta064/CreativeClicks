@@ -12,23 +12,23 @@ mixin sliderIt(title, number)
 				span Learn more
 				span
 					+sliderArrowRight
+// ========= SECTION ==========
 section.section--black.talk-slider.section-slider--reverse
 	.progress-bar.progress-bar--right
 	.container.container--p0
 		.section-top
 			+titleGroup('cc talks podcast', 'We Talk about it')
+		
+		// ========= IMG SLIDER ==========
 		.slider__images#talk-images
-				.slider__img-item(data-pos='1')
+				.slider__img-item
 					img(src="img/resources/7.jpg", width="386" alt="img")
+				.slider__img-item
+					img(src="img/resources/4.jpg", width="386" alt="img")
+				.slider__img-item
 					img(src="img/resources/7.jpg", width="386" alt="img")
-				
-				.slider__img-item(data-pos='2')
-					img(src="img/resources/7.jpg", width="386" alt="img")
-					img(src="img/resources/7.jpg", width="386" alt="img")
-				
-				.slider__img-item(data-pos='3')
-					img(src="img/resources/7.jpg", width="386" alt="img")
-					img(src="img/resources/7.jpg", width="386" alt="img")
+		
+		// ========= TEXT SLIDER ==========			
 		.section-slider__content.bg-green
 			.section-slider__arrows
 				button.arr-left.talk-prev

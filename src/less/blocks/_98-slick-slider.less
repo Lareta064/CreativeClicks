@@ -323,4 +323,39 @@
 	  
 	}
 }
-
+.section-slider__content{
+	position: relative;
+}
+.slider__images{
+	// transform: translate(40%, -280px);
+	width: 384px;
+	margin-left: auto;
+	margin-right: 100px;
+	position: relative;
+	top: 100px;
+	
+	z-index: 2;
+}
+.slider__img-item{
+	position: relative;
+	// width: 384px;
+	// height:384px;
+	padding-bottom: 50px;
+	padding-right: 50px;
+	
+	img:first-child{
+		position: relative;
+		z-index: 2;
+		
+	}
+	img:last-child{
+		position: absolute;
+		top: 44px;
+		left: 5.88%;
+		filter: blur(32px);
+		mix-blend-mode: multiply;
+		// right: 42px;
+		z-index: 0;
+		
+	}
+}

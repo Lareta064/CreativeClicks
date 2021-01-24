@@ -1,0 +1,12 @@
+extends ../layouts/layout.pug
+block content
+	.guides-blogDetail
+		+headerBlog('Guides and reports', 'Blog item title <br> with 3 lines')
+		
+		include ../sections/guides/_guides-3.pug
+		include ../sections/careers/_careers-footer
+		
+
+
+block variables
+	-var title = "Guides-3";

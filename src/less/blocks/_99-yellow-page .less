@@ -10,16 +10,16 @@
 		color: @yellow;
 		background-image: linear-gradient(to right,  @yellow,  @yellow);
 	}
-	.guides-block .title-group {
+	.videos-block .title-group {
 		margin-bottom: 234px;
 	}
-	.guides-block .infocard-block__row:first-child{
+	.videos-block .infocard-block__row:first-child{
 		margin-top: -20px;
 		@media(max-width:767px){
 			margin-top: -140px;
 		}
 	}
-	.guides-block .infocard-block__row +.infocard-block__row{
+	.videos .infocard-block__row +.infocard-block__row{
 			margin-top: 80px;
 	
 			@media(max-width:767px) {
@@ -27,7 +27,7 @@
 			}
 	}
 }
-.guides-blog{
+.videos-blog{
 	.header--light__content .title-1 {
 		margin-bottom: 115px;
 		@media(max-width:767px){
@@ -35,8 +35,8 @@
 		}
 	}
 }
-.guides-blog,
-.resources-tguides{
+.videos-blog,
+.resources-videos{
 		@media (max-width: 767px){
 		.btn-wrap, .btn-showCards {
 			margin-top: 35px;
@@ -48,8 +48,8 @@
 	}
 }
 /* infocard-block width*/
-.guides-blog .guides-block,
-.resources-guides .guides-block{
+.videos-blog .videos-block,
+.resources-videos .videos-block{
 	@media (max-width: 1199px) {
 		.infocard-block {
 			max-width: 95%;
@@ -70,8 +70,8 @@
 }
 /* footer-desk*/
 @media(min-width:1280px){
-	.guides-blog,
-	.resources-guides{
+	.videos-blog,
+	.resources-videos{
 		
 		.footer-content{
 			height: 692px;
@@ -84,8 +84,8 @@
 /* even row mob styles*/
 
 @media(max-width:767px){
-.guides-blog .guides-block,
-.resources-guides .guides-block{
+.videos-blog .videos-block,
+.resources-videos .videos-block{
 	.infocard-block__row:nth-child(even) .info-card2:last-child,
 	.infocard-block__row:nth-child(even) .info-card2:first-child{
 		.info-card__footer{	padding-right: 0;}
@@ -96,8 +96,8 @@
 		}
 	}
 }
-.guides-blog,
-.resources-guides{
+.videos-blog,
+.resources-videos{
 	.footer-inner .footer-content .footer-logo{
 		@media(max-width:767px){
 			height: 290px;
@@ -107,94 +107,3 @@
 		}
 	}	
 }
-
-/*FREEN PAGE -3*/
-
-.guides-blogDetail h1{
-	@media(max-width:424px){
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
-.guides-blogDetail .blogDetail-body, .guides-blogDetail .blogDetail-footer {
-	@media(max-width:767px){
-		margin-right: 0;
-	}
-}
-@media (max-width: 767px){
-	.guides-blogDetail .blogDetail-body p {
-		padding-right: 10px;
-	}
-}
-.guides-blogDetail{
-	.blogDetail-list__item:last-child{
-		ul{
-			margin-bottom: 0;
-		}
-	}
-	@media(min-width:1280px){
-			.title-group{
-			position: relative;
-			left: 80px;
-		}
-		.blogDetail-image .main-img{
-			right: 40px;
-			top: 5px;
-		}
-
-	}
-	.title-group h2 a{
-		color: @yellow;
-		background-image: linear-gradient(to right, @yellow, @yellow);
-	}
-	.blogDetail-body {
-		background-color: @yellow;
-	}
-	.blogDetail-prevText{
-		color: #000;
-	}
-	.blogDetail-list__item{
-		position: relative;
-	}
-	.blogDetail-list__item .blogDetail-list__text p{
-		color: #fff;
-		a{
-			color: #fff;
-			background-image: linear-gradient(to right, #fff, #fff);
-		}
-	}
-}
-.blogDetail-list__item .blogDetail-list__pic{
-	margin-top: 36px;
-	margin-bottom: 36px;
-	display: flex;
-	justify-content: space-between;
-	.img-text,
-	.img-wrap{
-		max-width:260px;
-		width: 49%;
-	}
-	.img-text p{
-		text-transform: uppercase;
-		color: #fff;
-		font-size: 12px;
-		line-height: 16px;
-		letter-spacing: 0.04em;
-	}
-	@media(max-width:767px){
-		display: block;
-		margin-top: 24px;
-		margin-bottom: 24px;
-		.img-text,
-	.img-wrap{
-		max-width:279px;
-		width: 100%;
-	}
-	.img-text{
-		margin-top: 8px;
-	}
-	}
-}
-	
-								

@@ -11,11 +11,12 @@ mixin infocard3(spanText, addText1, addText2, imgSrc)
 				p #{addText1}
 				p #{addText2}
 		.info-card__footer
-			a(href="#!").button-white
-				span Learn more
+			a(href="#!").button-white.button-video
+				span Play video
 				span
-					+sliderArrowRight
-section.section--black.guides-block
+					svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M0 0V14L11 7L0 0Z" fill="black")
+section.section--black.videos-block
 	.progress-bar.progress-bar--left
 	.container.container--p0
 		.section-content

@@ -1,0 +1,38 @@
+
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card2.info-card--bg
+		.info-card__img
+			img.main-img(src="img/guides/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/guides/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white.button-video
+				span Play video
+				span
+					svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M0 0V14L11 7L0 0Z" fill="black")
+section.section--black.videos-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			.title-group
+				.title-3
+					h3 We#[br]  captured #[br] it
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--yellow
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3('Blog Item<br> Title with 3&nbsp;lines', 'Today', '7 min. read', 1)
+						+infocard3('Blog Item <br>Title with 3&nbsp;lines' , '1 Day ago', '6 min. read', 1)
+						+infocard3( 'Blog Item <br>Title with 3&nbsp;lines' , '2 Days ago', '5 min. read', 1)
+					
+					.infocard-block__row
+						+infocard3('Blog Item<br> Title with 3&nbsp;lines', 'Today', '7 min. read', 1)
+						+infocard3('Blog Item <br>Title with 3&nbsp;lines' , '1 Day ago', '6 min. read', 1)
+						+infocard3( 'Blog Item <br>Title with 3&nbsp;lines' , '2 Days ago', '5 min. read', 1)
+				.btn-wrap
+					a(href="videos-2.html").button-white.black-button show more

@@ -1,4 +1,3 @@
-
 .header--careers {
   h2 {
     color: @red;
@@ -11,6 +10,7 @@
       position: relative;
       top: -5px;
       left: -5px;
+
       @media (max-width: 767px) {
         margin-bottom: 74px;
         left: 1px;
@@ -21,6 +21,7 @@
       position: relative;
       top: -2px;
       left: -7px;
+
       @media (max-width: 767px) {
         top: 0;
         left: 0;
@@ -30,9 +31,11 @@
 
   .header-title__img {
     margin-top: -66px;
+
     @media (max-width: 1279px) {
       margin-top: 0;
     }
+
     @media (max-width: 767px) {
       //margin-top: 0;
       max-width: 256px;
@@ -41,58 +44,65 @@
 
   .header-title__img:after {
     background-image: url(../img/careers/header.jpg);
+
     @media (max-width: 767px) {
       background-image: url(../img/careers/header-mob.jpg);
     }
   }
 }
 
-.header-color-block, .color-block {
+.careers-page .header-color-block
+ {
   background-color: @red;
   padding-right: 128px;
+
   @media (max-width: 1279px) {
     padding-left: 100px;
     padding-right: 100px;
   }
+
   @media (max-width: 767px) {
     padding-left: 24px;
     padding-right: 39px;
   }
 
-  p + p {
+  p+p {
     margin-top: 50px;
+
     @media (max-width: 767px) {
       margin-top: 39px;
     }
   }
 }
-  .header--careers {
-//
-    p a {
-      position: relative;
-      display: inline-block;
-      line-height: 0.85;
-      border-bottom: 2px solid #000;
-      color: #000;
-      &:hover{
-        opacity: .5;
-      }
+
+.header--careers {
+
+  //
+  p a {
+    position: relative;
+    display: inline-block;
+    line-height: 0.85;
+    border-bottom: 2px solid #000;
+    color: #000;
+
+    &:hover {
+      opacity: .5;
     }
+  }
 
 }
 
 .careers-yellow {
   .color-block__img {
-    
-    @media (max-width: 767px) {
-     
-    }
+
+    @media (max-width: 767px) {}
   }
 
   .yellow-block {
     @media (max-width: 767px) {
       padding-right: 20px;
       padding-bottom: 130px;
+
       .text-block .head-3 {
         margin-bottom: 34px;
       }
@@ -100,6 +110,7 @@
 
     .text-32 p:last-child {
       padding-bottom: 47px;
+
       @media (max-width: 767px) {
         padding-bottom: 34px;
       }
@@ -117,6 +128,7 @@
 
   .text-block .head-3 {
     margin-bottom: 62px;
+
     @media (max-width: 767px) {
       margin-bottom: 34px;
     }
@@ -172,6 +184,7 @@
 .vacancy .title-group {
   margin-bottom: 185px;
   margin-right: 258px;
+
   @media (max-width: 767px) {
     margin-bottom: 181px;
     margin-right: 0;
@@ -193,15 +206,18 @@
     padding-left: 120px;
     padding-right: 60px;
     margin-left: -16px;
+
     @media (max-width: 1279px) {
       margin-left: -16px;
       padding-left: 48px;
       padding-right: 48px;
     }
+
     @media (max-width: 991px) {
       padding-left: 24px;
       padding-right: 24px;
     }
+
     @media (max-width: 767px) {
       margin-left: 16px;
       padding-left: 0;
@@ -212,6 +228,7 @@
   .info-card__body {
     // margin-top: -18px;
     height: 190px;
+
     @media (max-width: 1279px) {
       // margin-top: -22px;
     }
@@ -226,45 +243,52 @@
 .vacancy-content__cards {
   display: flex;
   flex-wrap: wrap;
-  
-  
+
+
   @media (max-width: 767px) {
     max-width: 325px;
 
   }
 }
-.vacancy .infocard-block__row  .info-card2 .info-card__body {
+
+.vacancy .infocard-block__row .info-card2 .info-card__body {
   margin-top: -86px;
 }
-.vacancy .infocard-block__row .info-card2{
+
+.vacancy .infocard-block__row .info-card2 {
   margin-bottom: 160px;
-  @media(max-width:767px){
+
+  @media(max-width:767px) {
     margin-bottom: 130px;
   }
 }
 
-@media (min-width: 1280px){
-  .vacancy .infocard-block__row .info-card2 .info-card__footer{
+@media (min-width: 1280px) {
+  .vacancy .infocard-block__row .info-card2 .info-card__footer {
     padding-left: 52px;
     position: relative;
     top: 2px;
-    }
-   
+  }
+
 }
-.careers-page .footer-inner .footer-content{
-    height: 650px;
-    .footer-logo{
-      padding-top: 11px;
-    }
-    @media(max-width:767px){
-        height: 464px;
-    .footer-logo{
+
+.careers-page .footer-inner .footer-content {
+  height: 650px;
+
+  .footer-logo {
+    padding-top: 11px;
+  }
+
+  @media(max-width:767px) {
+    height: 464px;
+
+    .footer-logo {
       margin-bottom: 75px;
     }
   }
 }
 
-.vacancy .infocard-block__row:first-child{
+.vacancy .infocard-block__row:first-child {
   margin-top: 0;
 }
 
@@ -273,6 +297,7 @@
   margin-bottom: 128px;
   position: relative;
   right: 33px;
+
   @media (max-width: 767px) {
     margin-top: 61px;
     right: 3px;
@@ -302,7 +327,7 @@
     align-items: center;
     text-transform: uppercase;
 
-    & + li {
+    &+li {
       margin-top: 36px;
     }
 
@@ -329,12 +354,12 @@
 .color-block-wrapper.wrapper--application {
   @media (min-width: 1279px) {
     padding-left: 63px;
-    
+
   }
- 
+
 
   .color-block__img {
-    
+
     @media (max-width: 767px) {
       left: auto;
       right: -16px;
@@ -345,7 +370,8 @@
 
   .text-block .head-3 {
     margin-bottom: 66px;
-    @media(max-width: 767px){
+
+    @media(max-width: 767px) {
       margin-bottom: 50px;
     }
   }
@@ -360,7 +386,8 @@
 
 .application-slogan {
   margin-top: 56px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     margin-top: 60px;
   }
 
@@ -395,7 +422,7 @@
     letter-spacing: 0.03em;
   }
 
-  .application-list li + li {
+  .application-list li+li {
     margin-top: 26px;
   }
 }
@@ -423,7 +450,8 @@
 
   .color-block-wrapper {
     padding-right: 57px;
-    @media(max-width: 1279px){
+
+    @media(max-width: 1279px) {
       padding-right: 0;
     }
   }
@@ -440,21 +468,25 @@
 .careers-slider.section--black {
   .progress-bar {
     bottom: 99px;
-    @media(max-width: 767px){
+
+    @media(max-width: 767px) {
       bottom: 136px;
     }
   }
 }
-.careers-slider .careers-slider1__item{
+
+.careers-slider .careers-slider1__item {
   position: relative;
-  .slide-img{
+
+  .slide-img {
     position: relative;
     z-index: 2;
   }
-  .slide-blur{
+
+  .slide-blur {
     position: absolute;
     mix-blend-mode: multiply;
-    filter:blur(32px);
+    filter: blur(32px);
     top: 5.88%;
     left: 5.88%;
   }

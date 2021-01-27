@@ -159,7 +159,7 @@ $(document).ready(function () {
 	}
 	//PLAY VIDEO
 	$('.video-modal').hide(0);
-	$('.button-playVideo').each(function(i, item){
+	$('.button-playVideo, .button-video').each(function(i, item){
 		$(item).on('click', function(){
 			$('.video-modal').fadeIn();
 			$('body').addClass('noscroll');
@@ -167,7 +167,7 @@ $(document).ready(function () {
 
 		});
 	});
-
+	
 	$('.close-btn').on('click', function(){
 		$(this).closest('.video-modal').fadeOut();;
 		$('body').removeClass('noscroll');

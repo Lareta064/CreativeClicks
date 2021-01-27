@@ -1,0 +1,44 @@
+
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card2.info-card--bg
+		.info-card__img
+			img.main-img(src="img/guides/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/guides/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white.button-video
+				span Play video
+				span
+					svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M0 0V14L11 7L0 0Z" fill="black")
+section.section--black.videos-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			.section-title
+				h3 2 results:
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--yellow
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3('Blog Item<br> Title with 3&nbsp;lines', 'Today', '7 min. read', 1)
+						+infocard3('Blog Item <br>Title with 3&nbsp;lines' , '1 Day ago', '6 min. read', 1)
+						
+				.btn-wrap
+					a(href="#!").button-white.black-button show all (12)
+// =========== video-modal ===========
+.video-modal
+	.video-wrapper
+		.close-btn
+			span
+				svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+					path(d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white")
+		video.videoTag(src="video/video.mp4"  type="video/mp4" controls="controls" poster="img/video/1.jpg"  alt='video')
+			source(src="video/video.mp4" type="video/mp4")
+			source(src="video.webm" type="video/webm")
+			source(src="video.ogv" type="video/ogg")
+// =========== end video-modal ===========

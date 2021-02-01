@@ -320,9 +320,9 @@ $(document).ready(function () {
 			loop: false,
 			mouseDrag: false,
 			touchDrag: false,
-			navSpeed: 800,
-			autoplaySpeed:800,
-			smartSpeed:800,		
+			navSpeed: 1200,
+			autoplaySpeed:1200,
+			smartSpeed:1200,
 			onTranslate: function(){
 				partnersSlider.translating = true;
 			},

@@ -338,8 +338,9 @@ $(document).ready(function () {
 			loop: false,
 			mouseDrag: false,
 			touchDrag: false,
-			navSpeed: 400,
-			smartSpeed:400,		
+			navSpeed: 1200,
+			autoplaySpeed:1200,
+			smartSpeed:1200,
 			onTranslate: function(){
 				partnersSlider.translating = true;
 			},

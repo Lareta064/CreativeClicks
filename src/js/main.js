@@ -262,7 +262,7 @@ $(document).ready(function () {
 			items:1,
 			arrows: false,
 			dots: true,
-			fade: true,
+			// fade: true,
 			autoWidth: true,
 			infinite: true,
 			speed:1000,

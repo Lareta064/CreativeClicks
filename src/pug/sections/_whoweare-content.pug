@@ -1,11 +1,10 @@
 //- базовая карточка с фоном 2 бейджами
 
 mixin infocard4(spanText, addText1, addText2, imgSrc)
-    .info-card.info-card--bg
+    .info-card--bg.info-card2.mb-0
         .info-card__img
-            img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
-            .blure-block
-                img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
+            img.main-img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
+            img.blur-img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
         .info-card__body
             .info-card__title
                 h3 !{spanText}
@@ -17,15 +16,12 @@ mixin infocard4(spanText, addText1, addText2, imgSrc)
                 span Learn more
                 span
                     +sliderArrowRight
-
-
 //- базовая карточка без фона c 2 бейджами
 mixin infoCardBadge(title1,title2,title3)
-    .info-card.info-cardBadge
+    .info-card2.mb-0
         .info-card__img
-            img(src="img/whoweare/4.jpg", width="256" alt="img")
-            .blure-block
-                img(src="img/whoweare/4.jpg", width="256" alt="img")
+            img.main-img(src="img/whoweare/4.jpg", width="256" alt="img")
+            img.blur-img(src="img/whoweare/4.jpg", width="256" alt="img")
         .info-card__body
             .info-card__badge
                 span !{title1}
@@ -41,15 +37,14 @@ mixin infoCardBadge(title1,title2,title3)
                     +sliderArrowRight
 
 // red block
-section.section--black.whoweare-red
+section.section--black.p-470.whoweare-red
     .progress-bar
     .container.container--p0
         .color-block-wrapper
             .color-block--left
                 .color-block__img
-                    img(src="img/whoweare/1.jpg", width="384" alt="img")
-                    .blure-block
-                        img(src="img/whoweare/1.jpg", width="384" alt="img")
+                    img.main-img(src="img/whoweare/1.jpg", width="384" alt="img")
+                    img.blur-img(src="img/whoweare/1.jpg", width="384" alt="img")
                 .color-block.p-128
                     .text-block
                         .head-3.head-3--small
@@ -59,15 +54,14 @@ section.section--black.whoweare-red
                             p Growing every year&nbsp;since our founding in 2009, we provide clients with 120+ experts and professionals to service their business every day. At Creative Clicks, performance marketing is in our DNA. We know when the next big opportunity is around the corner. When we find a new marketing channel that can help our clients achieve their goals, we test it.
 
 // orange block
-section.section--black.whoweare-orange
+section.section--black.p-470.whoweare-orange
     .progress-bar.progress-bar--right
     .container.container--p0
         .color-block-wrapper
             .color-block--right
                 .color-block__img
-                    img(src="img/whoweare/5.jpg", width="384" alt="img")
-                    .blure-block
-                        img(src="img/whoweare/5.jpg", width="384" alt="img")
+                    img.main-img(src="img/whoweare/5.jpg", width="384" alt="img")
+                    img.blur-img(src="img/whoweare/5.jpg", width="384" alt="img")
                 .color-block.p-128
                     .text-block
                         .head-3
@@ -77,15 +71,14 @@ section.section--black.whoweare-orange
 
 
 // purple block
-section.section--black.whoweare-purple
+section.section--black.p-470.whoweare-purple
     .progress-bar.progress-bar--left
     .container.container--p0
         .color-block-wrapper
             .color-block--left
                 .color-block__img
-                    img(src="img/whoweare/3.jpg", width="384" alt="img")
-                    .blure-block
-                        img(src="img/whoweare/3.jpg", width="384" alt="img")
+                    img.main-img(src="img/whoweare/3.jpg", width="384" alt="img")
+                    img.blur-img(src="img/whoweare/3.jpg", width="384" alt="img")
                 .color-block.p-128
                     .text-block
                         .head-3

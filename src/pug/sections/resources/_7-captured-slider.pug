@@ -11,19 +11,29 @@ mixin sliderIt
 				span Learn more
 				span
 					+sliderArrowRight
+// ========= SECTION ==========
 section.section--black.captured-slider
 	.progress-bar.progress-bar--right
 	.container.container--p0
 		.section-top
 			+titleGroup('The most read', 'We captured it')
+		// ========= IMG SLIDER ==========
+		.slider__images.slider__images--left#captured-images
+			.slider__img-item
+				img(src="img/resources/4.jpg", width="386" alt="img")
+			.slider__img-item
+				img(src="img/resources/4.jpg", width="386" alt="img")
+			.slider__img-item
+				img(src="img/resources/7.jpg", width="386" alt="img")
+		
+		// ========= TEXT SLIDER ==========
 		.section-slider__content.bg-yellow
 			.section-slider__arrows
 				button.arr-left.captured-prev
 					+sliderArrowLeft
 				button.arr-right.captured-next
 					+sliderArrowRight
-			.section-slider__img
-				img(src="img/resources/9.jpg", width="386" alt="img")
+			
 			.section-slider-body#captured-slider
 				+sliderIt
 				+sliderIt

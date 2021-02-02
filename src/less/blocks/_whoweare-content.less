@@ -167,9 +167,9 @@
     }
 
     .color-block-wrapper {
-      @media (max-width: 1279px) {
-        padding-top: 50px;
-      }
+      // @media (max-width: 1279px) {
+      //   padding-top: 50px;
+      // }
       @media (min-width: 992px) {
         padding-right: 56px;
 
@@ -221,11 +221,7 @@
 
 
   .whoweare-purple {
-    // .color-block-wrapper {
-    //   @media (max-width: 767px) {
-    //     padding-top: 50px;
-    //   }
-    // }
+   
 
     .color-block {
       background-color: @purple;
@@ -254,7 +250,13 @@
   }
 
   .infocard-block--yellow {
-
+    &.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2:nth-child(even){
+      @media(max-width: 767px){
+        margin-right: 6px;
+      margin-left: auto;
+      }
+      
+    }
     .black-wrapper {
       @media (max-width: 767px) {
         padding-top: 129px;
@@ -266,11 +268,17 @@
     }
 
     .infocard-block__row {
-     &:first-child{margin-top: 0;}
-
-      .infocard-block__row:nth-child(odd) .info-card:nth-child(odd) .info-card__img {
-        right: -16px;
+     &:first-child{
+       margin-top: 0;
+       @media(max-width: 767px){
+         margin-top: -150px;
+       }
       }
+
+      // .infocard-block__row:nth-child(odd) .info-card:nth-child(odd) .info-card__img {
+      //   right: -16px;
+      // }
+     
 
       .marked-text {
         color: #000;
@@ -306,7 +314,12 @@
         padding-bottom: 30px;
       }
     }
-
+    .infocard-block__row:first-child {
+      margin-top: 0;
+      @media(max-width: 767px){
+        margin-top: -150px;
+      }
+  }
     .infocard-block__row .info-card.info-card--bg .info-card__body {
       margin-top: -20px;
     }

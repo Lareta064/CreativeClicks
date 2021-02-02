@@ -1,9 +1,10 @@
 //- базовая карточка с фоном 2 бейджами
 
 mixin infocard4(spanText, addText1, addText2, imgSrc)
-    .info-card--bg.info-card2.mb-0
+    .info-card2.info-card--bg
         .info-card__img
             img.main-img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
+            
             img.blur-img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
         .info-card__body
             .info-card__title
@@ -16,9 +17,20 @@ mixin infocard4(spanText, addText1, addText2, imgSrc)
                 span Learn more
                 span
                     +sliderArrowRight
+
+	.info-card2
+		.info-card__img
+			img.main-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__badge
+				span Case study
+			.marked-text !{text}
+		.info-card__footer
+			a(href="#!").button-white
 //- базовая карточка без фона c 2 бейджами
 mixin infoCardBadge(title1,title2,title3)
-    .info-card2.mb-0
+    .info-card2.info-cardBadge
         .info-card__img
             img.main-img(src="img/whoweare/4.jpg", width="256" alt="img")
             img.blur-img(src="img/whoweare/4.jpg", width="256" alt="img")
@@ -110,7 +122,7 @@ section.section--black.whoweare-yellow
             .events-title
                 +titleGroup('Upcoming events', 'You<br class="visible-mobile"> can meet<br class="visible-mobile"> us at')
             .infocard-block.infocard-block--reverse.infocard-block--yellow
-                .infocard-block__content
+                .infocard-block__content.mb-0
                     .infocard-block__row
                         +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing&nbsp;in Asia')
                         +infoCardBadge('23 jan - 30 jan','Berlin','How blockchain impacts influencer marketing')

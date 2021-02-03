@@ -1,41 +1,35 @@
+mixin sliderIt
+	.case-slider-item.section-slider__item
+		.case-slider__head
+			.case-slider-badge Case study
+			.head-3
+				h3 Cras mattis consecteur purus sit amet
+		.case-slider__body
+			.text-32
+				p Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 section.case-studies
 	.progress-bar
 	.container
-		.case-studies-content
-			.case-studies__header
-				.case-studies__img.head-group__img
-					img(src="img/images/sliderImg.jpg", width="386" alt="img")
-				+titleGroup('Case studies', 'We<br class="visible-mobile"> can <br class="hide-mobile"> prove it')
-			.case-slider-wrapper
-				.case-slider-arrows
-					button.arr-left
-						+sliderArrowLeft
-					button.arr-right
-						+sliderArrowRight
-				.case-slider.owl-carousel
-					.case-slider-item
-						.case-slider__head
-							.case-slider-badge Case study
-							.head-3
-								h3 Cras mattis consecteur purus sit amet
-						.case-slider__body
-							.text-32
-								p Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-					.case-slider-item
-						.case-slider__head
-							.case-slider-badge Case study
-							.head-3
-								h3 Cras mattis consecteur purus sit amet
-						.case-slider__body
-							.text-32
-								p Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. 
-					.case-slider-item
-						.case-slider__head
-							.case-slider-badge Case study
-							.head-3
-								h3 Cras mattis consecteur purus sit amet
-						.case-slider__body
-							.text-32
-								p Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-
+		.section-top
+			+titleGroup('Case studies', 'We<br class="visible-mobile"> can <br class="hide-mobile"> prove it')
+		// ========= IMG SLIDER ==========
+		.slider__images.slider__images--left#case-images
+				.slider__img-item
+					img(src="img/resources/4.jpg", width="386" alt="img")
+				.slider__img-item
+					img(src="img/resources/4.jpg", width="386" alt="img")
+				.slider__img-item
+					img(src="img/resources/4.jpg", width="386" alt="img")
+		
+		// ========= TEXT SLIDER ==========			
+		.section-slider__content.bg-red
+			.section-slider__arrows
+				button.arr-left.case-prev
+					+sliderArrowLeft
+				button.arr-right.case-next
+					+sliderArrowRight
+			
+			.section-slider-body#case-slider
+				+sliderIt
+				+sliderIt
+				+sliderIt

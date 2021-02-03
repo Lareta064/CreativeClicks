@@ -1,6 +1,6 @@
 
-mixin sliderIt(title, number)
-	.section-slider__item(data-pos=''+ number)
+mixin sliderIt(title)
+	.section-slider__item
 		.slide-item__text
 			.slide-title 
 				h3 !{title}
@@ -37,8 +37,8 @@ section.section--black.talk-slider.section-slider--reverse
 					+sliderArrowRight
 			
 			.section-slider-body#talk-slider
-				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012', 1)
-				+sliderIt('Creative Clicks China and the APAC Mobile Marketing',2)
-				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012', 3)
+				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
+				+sliderIt('Creative Clicks China and the APAC Mobile Marketing')
+				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
 			.section-slider__btn
 				a(href="talks-1.html").button-white.black-button show all (12)

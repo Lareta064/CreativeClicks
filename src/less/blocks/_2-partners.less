@@ -1,12 +1,19 @@
 .partners .partners-content {
 	position: relative;
+	padding-top: 256px;
   }
-  .partners-content {
-	padding-top: 260px;
+  .partners-footer .partners-content {
+	  @media(min-width:1280px){
+		 padding-top: 128px; 
+		 padding-bottom: 0;
+	  }
+	
+	
   }
   @media (max-width: 1199px) {
 	.partners-content {
 	  padding-top: 128px;
+	  
 	}
   }
   .partners-content .title-group {
@@ -51,11 +58,15 @@
   .partners-logo +.partners-logo {
 	  margin-left: 128px;
 	  @media(max-width: 1279px){
-		margin-left: 96px;
+		margin-left: 64px;
 	  }
-	  @media(max-width: 1279px){
+	  @media(max-width: 767px){
 		margin-left: 0px;
-		margin-top: 56px;
+		margin-top: 42px;
+	  }
+	  @media(max-width: 374px){
+		
+		margin-top: 28px;
 	  }
 	}
   .partners-slider__item {
@@ -94,7 +105,7 @@
   }
   .partners-footer .partners-content {
 	background-color: #000;
-	padding-bottom: 256px;
+	// padding-bottom: 256px;
 	position: relative;
   }
   @media (max-width: 767px) {

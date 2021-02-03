@@ -136,8 +136,7 @@
 .case-slider-wrapper {
   padding-top: 128px;
   padding-bottom: 128px;
-
-  background-color: #e71e5a;
+ 
   max-width: 870px;
   position: relative;
 
@@ -147,19 +146,7 @@
     margin-left: 0;
   }
 }
-@media (max-width: 767px) {
-  .case-slider-wrapper {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-@media (max-width: 424px) {
-  .case-slider-wrapper {
-    margin-right: -16px;
-  }
-}
+
 .case-slider-arrows {
   position: absolute;
   top: -30px;
@@ -212,43 +199,53 @@
 .case-slider-arrows button:hover {
   background-color: #EBEBEB;
 }
-.case-slider {
-  padding-bottom: 80px;
+.case-studies {
+  .section-slider__content{
+      padding-top: 128px;
+      @media(min-width:1280px){
+        margin-left: 6px;
+      }
+  } 
+  @media(min-width:1280px){
+        .slider__images.slider__images--left{
+          margin-left: 69px;
+        }
+        .section-slider__content .section-slider__arrows{top: -26px;}
+      }
+  .section-slider__content .slick-dots{
+    bottom: -35px;
+  }
+  .section-top{padding-bottom: 0;}
+  .section-slider__item{
+    padding-bottom: 51px;
+   
+  }
+  @media (max-width: 767px){
+  .section-top {
+      padding-bottom: 245px;
+    }
+  .slider__images{
+    margin-left: -17px;
+  }
+  .section-slider__content .section-slider__arrows{
+    right: -1px;
+    left: -17px;
+  }
+  .section-slider__item{
+   
+    padding-bottom: 24px;
+  }
+  
+  }
 }
 @media (max-width: 1199px) {
   .case-slider {
     padding-bottom: 52px;
   }
 }
-.case-slider .owl-dots {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.case-slider .owl-dots .owl-dot {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #fff;
-  outline: none;
-}
-.case-slider .owl-dots .owl-dot + .owl-dot {
-  margin-left: 16px;
-}
-.case-slider .owl-dots .owl-dot.active {
-  background-color: #000;
-}
+
 .case-slider-item {
-  background-color: #e71e5a;
-  padding-left: 128px;
-  padding-right: 128px;
+  .text-32{padding-right: 24px;}
 }
 .case-slider-item .head-3 {
   margin-bottom: 64px;
@@ -260,12 +257,7 @@
     max-width: 430px;
   }
 }
-@media (max-width: 767px) {
-  .case-slider-item {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
+
 .case-slider-item .case-slider-badge {
   padding-left: 8px;
   padding-right: 8px;

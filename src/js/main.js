@@ -272,12 +272,18 @@ $(document).ready(function () {
 		  });
 	}
 
+	doubleSlederText('#case-images', '#case-slider');
 	doubleSlederText('#nailing-images', '#nailing-slider');
 	doubleSlederText('#talk-images', '#talk-slider');
 	doubleSlederText('#captured-images', '#captured-slider');
 	
 
-
+	$('.case-prev').on('click', function() {
+		$('#case-slider').slick('slickPrev');
+	});
+	$('.case-next').on('click', function() {
+		$('#case-slider').slick('slickNext');
+	});
 	$('.nailing-prev').on('click', function() {
 		$('#nailing-slider').slick('slickPrev');
 	});

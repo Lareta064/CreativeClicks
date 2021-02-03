@@ -1,0 +1,32 @@
+mixin infocard4(text, addText1, addText2, imgSrc)
+	.info-card2
+		.info-card__img
+			img.main-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__badge
+				span Case study
+			.marked-text !{text}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+section.section--black.prove-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			+titleGroup('The latest from the trade', 'We can <br>prove it')
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--red
+				.infocard-block__content
+					.infocard-block__row
+						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5)
+						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
+						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 6)
+					.infocard-block__row
+						+infocard4('Cras mattis consecteur purus sit amet', 'Today', '7 min. read', 5)
+						+infocard4('Cras mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
+						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 6)
+				.btn-wrap
+					a(href="case-studies-2.html").button-white.light-button.show-more show more
+				

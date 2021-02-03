@@ -1,0 +1,115 @@
+.signin-page{
+	position: relative;
+	
+	.header-menu{
+		background-color: @green;
+	}
+	.header--signin .title-group{
+		padding-top: 0;
+		position: relative;
+		top: -10px;
+		right: 13px;
+		@media(max-width:767px){
+			padding-top: 126px;
+			padding-bottom: 82px;
+			top: 3px;
+			right: 0;
+		}
+	}
+	&.signin-over{
+		.header-title{
+			@media(max-width:767px){
+				padding-bottom: 114px;
+			}
+		}
+	}
+	&.signin-adv{
+		.header--signin .title-group{
+			top: 24px;
+			right: 14px;
+			@media(max-width:767px){
+				top: 0px;
+				right: 6px;
+				.title-2{
+					margin-bottom: 0;
+					margin-top: 24px;
+				}
+			}
+		}
+		.header-title{
+			padding-bottom: 106px;
+			@media(max-width:767px){
+				padding-bottom: 112px;
+			}
+		}
+	}
+	.header--signin .header-title{
+		align-items: center;
+		
+		position: relative;
+		
+	}
+	.header-color-block{
+		background-color: @green;
+		@media(max-width:767px){
+			margin-left: 0;
+			.text-32 p{
+				letter-spacing: -0.02em;
+			}
+		}
+		.text-block-btn{
+			margin-top: 32px;
+			.button-white{
+				padding-right: 24px;
+			}
+		}
+		.text-block +.text-block{
+			margin-top: 64px;
+		}
+	}
+	.color-block.color-block--white{
+		background-color: #fff;
+		margin-top: 0;
+		
+	}
+	.footer-content{
+		height: 660px;
+		padding-left: 24px;
+		padding-right: 24px;
+		@media(max-width:767px){
+			height: 417px;
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+	}
+}
+.button-white.button-dark{
+	background-color: #000;
+	svg path{
+		fill: #fff;
+	}
+	color: #fff;
+	transition: .5s;
+}
+.button-white.button-dark:hover{
+	background: #4C4C4C;
+}
+.signin-page{
+	.progress-bar{
+		bottom:444px;
+		@media(max-width:767px){
+			bottom: 468px;
+		}
+	}
+}
+.signin-page.signin-adv{
+	.progress-bar{
+		bottom:53px;
+		@media(max-width:767px){
+			bottom: 50px;
+		}
+	}
+}
+.color-block--formWrapper {
+	padding-top: 120px;
+}

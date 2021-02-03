@@ -1,0 +1,106 @@
+.footer {
+	margin-left: 16px;
+	margin-right: 16px;
+  }
+  .footer-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 640px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-bottom: 56px;
+	padding-left: 56px;
+	padding-right: 56px;
+  }
+  @media (max-width: 1199px) {
+	.footer-content {
+  
+	  height: 500px;
+	}
+  }
+  @media (max-width: 767px) {
+	.footer-content {
+	  padding-left: 8px;
+	  padding-right: 8px;
+	  padding-bottom: 20px;
+	  margin-bottom: 16px;
+	  height: 416px;
+	}
+  }
+  .footer-content .footer-logo {
+	-webkit-box-flex: 2;
+	-ms-flex-positive: 2;
+	flex-grow: 2;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+  }
+  .footer-bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+  }
+  @media (max-width: 579px) {
+	.footer-bottom {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+	}
+  }
+  .footer-bottom-left,
+  .footer-bottom-right {
+	width: 48.5%;
+	border-top: 2px solid #fff;
+	padding-top: 12px;
+	padding-bottom: 12px;
+  }
+  @media (max-width: 579px) {
+	.footer-bottom-left,
+	.footer-bottom-right {
+	  width: 100%;
+	}
+  }
+  .footer-bottom-left a,
+  .footer-bottom-right a {
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #fff;
+  }
+  
+  @media(min-width:768px){
+	.header, .partners, .partners-footer,.case-studies, .offices, .blog, .events, .feedback, footer, .section--black{
+	 background-color:#000;
+	margin-left: 16px;
+	margin-right: 16px;
+  
+  }
+  }
+  .header, .partners, .partners-footer,.case-studies, .offices, .blog, .events, .feedback, footer,  .section--black{
+	position: relative;
+	&:after{
+		content:'';
+		height: 2px;
+		position: absolute;
+		left: 16px;
+		right: 16px;
+		background-color: #000;
+		bottom: -1px;
+	}
+  }

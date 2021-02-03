@@ -1,0 +1,37 @@
+
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card2.info-card--bg
+		.info-card__img
+			img.main-img(src="img/guides/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/guides/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+section.section--black.guides-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			.title-group
+				.title-3
+					h3 We #[br] analyze #[br] it
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--blue
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3('Blog Item<br> Title with 3&nbsp;lines', 'Today', '7 min. read', 1)
+						+infocard3('Blog Item <br>Title with 3&nbsp;lines' , '1 Day ago', '6 min. read', 1)
+						+infocard3( 'Blog Item <br>Title with 3&nbsp;lines' , '2 Days ago', '5 min. read', 1)
+					
+					.infocard-block__row
+						+infocard3('Blog Item<br> Title with 3&nbsp;lines', 'Today', '7 min. read', 1)
+						+infocard3('Blog Item <br>Title with 3&nbsp;lines' , '1 Day ago', '6 min. read', 1)
+						+infocard3( 'Blog Item <br>Title with 3&nbsp;lines' , '2 Days ago', '5 min. read', 1)
+				.btn-wrap
+					a(href="guides-2.html").button-white.light-button show more

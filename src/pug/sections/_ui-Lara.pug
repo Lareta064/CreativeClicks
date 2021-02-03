@@ -1,0 +1,57 @@
+// базовая карточка с фоном под текстом
+mixin infoCard1
+	.info-card.info-card--bg
+		.info-card__img
+			img(src="img/images/9.jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/images/9.jpg", width="256" alt="img")
+		.info-card__body
+			.marked-text
+				span Millenials
+				span followed
+				span 24/7
+		
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+
+// базовая карточка без фона
+mixin infoCard2
+	.info-card
+		.info-card__img
+			img(src="img/images/9.jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/images/9.jpg", width="256" alt="img")
+		.info-card__body
+			.marked-text Millenials followed 24/7
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+section.section--black
+	.container.container--p0
+		.black-wrapper
+			.infocard-block.infocard-block--reverse.infocard-block--red
+				.infocard-block__row
+					+infoCard1
+					+infoCard1
+					+infoCard1
+				.infocard-block__row
+					+infoCard1
+					+infoCard1
+
+section.section--black
+	.container.container--p0
+		.black-wrapper
+			.infocard-block.infocard-block--right.infocard-block--green
+				.infocard-block__row
+					+infoCard2
+					+infoCard2
+					+infoCard2
+				.infocard-block__row
+					+infoCard2
+					+infoCard2
+					+infoCard2

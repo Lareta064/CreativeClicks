@@ -1,0 +1,52 @@
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card2.info-card--bg
+		.info-card__img
+			img.main-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+
+mixin infocard4(spanText, addText1, addText2, imgSrc)
+	.info-card.info-card--bg
+		.info-card__img
+			img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			.blure-block
+				img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Play video
+				span
+					+sliderArrowRight
+section.section--black.top-block
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			+titleGroup('The latest from the trade', 'We’re on top of it')
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3('CPI to CPA Ways to Success', 'Today', '7 min. read', 1)
+						+infocard3('2020 <br>Holiday Shopping: Preparing for&nbsp;Black Friday and&nbsp;Cyber Monday', '1 Day ago', '6 min. read', 2)
+						+infocard3('With TikTok Experience Matters', '2 Days ago', '5 min. read', 3)
+					.infocard-block__row
+						+infocard3('CPI to CPA Ways to Success', 'Today', '7 min. read', 1)
+						+infocard3('CPI to CPA Ways to Success', '1 Day ago', '6 min. read', 2)
+						+infocard3('With TikTok Experience Matters', '2 Days ago', '5 min. read', 3)
+				.btn-wrap
+					a(href="overview-3.html").button-white.light-button.show-more show more
+				

@@ -1,0 +1,23 @@
+extends ../layouts/layout.pug
+
+block content
+	.resources-cs-blogDetail
+		+headerBlog('case studies', 'Helping a famous <br class="hide-mobile"> social media platform <br class="hide-mobile"> drive registra&shy;tions in <br class="hide-mobile"> APAC and LATAM')
+				
+		include ../sections/case-studies/_cs-4.pug
+		include ../sections/careers/_careers-footer
+		// ========== video-modal ==========
+		.video-modal
+			.video-wrapper
+				.close-btn
+					span
+						svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+							path(d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white")
+				video.videoTag(src="video/video.mp4"  type="video/mp4" controls="controls" poster="img/video/1.jpg"  alt='video')
+					source(src="video/video.mp4" type="video/mp4")
+					source(src="video.webm" type="video/webm")
+					source(src="video.ogv" type="video/ogg")
+		// ========== end video-modal ==========	
+		
+block variables
+	-var title = "Case studies";

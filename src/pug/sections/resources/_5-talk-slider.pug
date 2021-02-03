@@ -1,0 +1,44 @@
+
+mixin sliderIt(title)
+	.section-slider__item
+		.slide-item__text
+			.slide-title 
+				h3 !{title}
+			.additional-info
+				p Day
+				p Duration
+		.slide-footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
+// ========= SECTION ==========
+section.section--black.talk-slider.section-slider--reverse
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.section-top
+			+titleGroup('cc talks podcast', 'We Talk about it')
+		
+		// ========= IMG SLIDER ==========
+		.slider__images#talk-images
+				.slider__img-item
+					img(src="img/resources/7.jpg", width="386" alt="img")
+				.slider__img-item
+					img(src="img/resources/4.jpg", width="386" alt="img")
+				.slider__img-item
+					img(src="img/resources/7.jpg", width="386" alt="img")
+		
+		// ========= TEXT SLIDER ==========			
+		.section-slider__content.bg-green
+			.section-slider__arrows
+				button.arr-left.talk-prev
+					+sliderArrowLeft
+				button.arr-right.talk-next
+					+sliderArrowRight
+			
+			.section-slider-body#talk-slider
+				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
+				+sliderIt('Creative Clicks China and the APAC Mobile Marketing')
+				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
+			.section-slider__btn
+				a(href="talks-1.html").button-white.black-button show all (12)

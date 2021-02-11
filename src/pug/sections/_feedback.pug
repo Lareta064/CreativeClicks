@@ -3,15 +3,16 @@ section.feedback
 	.container
 		.feedback-content
 			.feedback__header
-				.feedback__img.head-group__img
-					img(src="img/feedback/1.jpg", width="386" alt="img")
+				
 				+titleGroup('Get connected', 'We<br class="visible-mobile">keep <br class="hide-mobile"> in <br class="visible-mobile">touch <br> (safely)')
 			.feedback-color-block.p-128
+				.feedback__img.color-block__img
+					img.main-img(src="img/feedback/1.jpg", width="386" alt="img")
+					img.blur-img(src="img/feedback/1.jpg", width="386" alt="img")
 				.feedback-form-wrapper
 					form.contact-form#contact-form(action="#" method="POST" autocomplete="off")
 						.form-item
-							span.fake-placeholder Your e-mail
-							input(type="text" name="email")
+							input(type="text" name="email" placeholder="Your e-mail")
 						.form-btn
 							button(type="submit").button-white
 								span Let’s connect

@@ -23,6 +23,11 @@
 		}
 	}
 	.title-group{
+		h2 {
+				color: @blue;
+			}
+		}
+	.header .title-group{
 		margin-left: 16px;
 		margin-top: 256px;
 		margin-bottom: 128px;
@@ -35,9 +40,7 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 24px;
-			h2 {
-				color: @blue;
-			}
+			
 		}
 	}
 	.header-title{
@@ -63,4 +66,66 @@
 	letter-spacing: -0.02em;
 	margin-top: 48px;
 	font-family: 'Karla Regular';
+}
+.partners-slider-2 .partners-logo.logo-1{width: 117px; }
+.partners-slider-2 .partners-logo.logo-2{width: 130px; }
+.partners-slider-2 .partners-logo.logo-3{width: 124px;}
+.partners-slider-2 .partners-logo.logo-4{width: 125px;}
+.partners-slider-2 .partners-logo.logo-5{width: 135px;}
+.partners-slider-2 .partners-logo.logo-6{width: 120px;}
+.partners-slider-2 .partners-logo.logo-7{width: 145px;}
+
+.medgen-cards .infocard-block__row:first-child{
+	// margin-top: 0;
+}
+.medgen-cards .infocard-block__row{
+	justify-content: center;
+	.info-card2 +.info-card2{
+		margin-left: 48px;
+	}
+
+}
+.medgen-cards .infocard-block .infocard-block__content{
+	padding-left: 0;
+}
+.medgen-cards .title-group{
+	margin-bottom: 192px;
+	.title-2{
+		margin-top: 24px;
+	}
+}
+.medgen-cards{
+	.infocard-block{
+		padding-bottom: 49px;
+	}
+	.info-card2{
+		.info-card__img{left: 37px;}
+		.main-img{
+			transform: translateY(0);
+		}
+		 .blur-img{
+			 top: 5.88%;
+		 }
+		max-width:279px;
+		.info-card__body{
+			padding-left: 0;
+			margin-top: 0;
+			h3{
+				font-size: 40px;
+				line-height:.9;
+				letter-spacing: -0.02em;
+				text-transform: uppercase;
+				color: #fff;
+				margin-top: 37px;
+			}
+			p{
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 36px;
+				letter-spacing: -0.02em;
+				margin-top: 24px;
+				color: #000;
+			}
+		}
+	}
 }

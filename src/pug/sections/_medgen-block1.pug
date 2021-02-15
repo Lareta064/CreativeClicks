@@ -1,0 +1,29 @@
+mixin infocard3(title,imgSrc)
+	.info-card2
+		.info-card__img
+			img.main-img(src="img/medgen/"+imgSrc +".jpg", width="256" alt="img")
+			img.blur-img(src="img/medgen/"+imgSrc +".jpg", width="256" alt="img")
+		.info-card__body
+			h3 #{title}
+			.info-card-desk
+				block
+			
+section.section--black.medgen-cards
+	.progress-bar
+	.container.container--p0
+		.black-wrapper
+			.title-group
+				.title-3
+					h3 DATA. MEDIA. ANALYTICS
+				.title-2
+					h2 Our magic formula to success.
+					
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--blue
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3('data',  2)
+							p Data is the gas which powers our <br> campaigns. We <br> leverage our deep knowledge of the MedTech industry and support our B2B and <br> B2C strategies with quality health data sources to ensure maximum efficiency.
+						+infocard3('media',  3)
+							p Thanks to our proprietary machine learning and tracking technology, your campaigns are automatically <br> optimized. Beyond our automated machine learning technology, <br> our team uncovers insights based on audience, user and campaign data <br> learned from the thousands of <br> campaigns run from <br> our creation.
+						+infocard3('ANALYTICS', 4)
+							p We provide our customers with transparent <br>  dashboards and <br> insights from their <br> campaigns  to drive <br> their ROI

@@ -1,0 +1,16 @@
+extends ../layouts/layout.pug
+
+block content
+	.medgen-page
+		include ../sections/_header-medgen
+		include ../sections/_partners
+		include ../sections/_slider-block
+		include ../sections/_offices
+		include ../sections/_blog
+		include ../sections/_events
+		include ../sections/_feedback
+		include ../sections/_footer
+
+
+block variables
+	-var title = "Medgen";

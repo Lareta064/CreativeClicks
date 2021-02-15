@@ -90,6 +90,10 @@
 }
 .medgen-cards .title-group{
 	margin-bottom: 192px;
+	max-width:45%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	.title-2{
 		margin-top: 24px;
 	}
@@ -99,6 +103,9 @@
 		padding-bottom: 49px;
 	}
 	.info-card2{
+		width: 32%;
+		
+		max-width:279px;
 		.info-card__img{left: 37px;}
 		.main-img{
 			transform: translateY(0);
@@ -106,7 +113,7 @@
 		 .blur-img{
 			 top: 5.88%;
 		 }
-		max-width:279px;
+		
 		.info-card__body{
 			padding-left: 0;
 			margin-top: 0;
@@ -121,11 +128,81 @@
 			p{
 				font-weight: bold;
 				font-size: 24px;
-				line-height: 36px;
+				line-height: 1.5;
 				letter-spacing: -0.02em;
 				margin-top: 24px;
 				color: #000;
 			}
 		}
+	}
+}
+@media(max-width:1279px){
+	// .medgen-cards .title-group{max-width:40%}
+	
+	.infocard-block{
+		max-width: 95%;
+	}
+}
+@media(max-width:1199px){
+	.info-card2.info-card--medgen {width: 30%;}
+	.info-card2.info-card--medgen .info-card__body{
+		h3{font-size: 30px;}
+		p{font-size: 20px;}
+	}
+	.medgen-cards .infocard-block__row{
+		
+		.info-card2 +.info-card2{
+			margin-left: 24px;
+		}
+	
+	}
+}
+@media(max-width:767px){
+	.medgen-cards .title-group{max-width:320px;}
+	.infocard-block{max-width: 325px;}
+		
+	
+	.medgen-cards  .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2:nth-child(odd),
+	.medgen-cards .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2:nth-child(even) {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2.info-card--medgen:nth-child(odd) .info-card__img {
+		right: auto;
+		margin-left:0;
+		left: -41px;
+	}
+	.infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2.info-card--medgen:nth-child(even) .info-card__img{
+		left: auto;
+		margin-right: 0;
+		margin-left: auto;
+		right: -21px;
+	}
+	.info-card2.info-card--medgen:nth-child(even) .info-card__img{
+		margin-right:0;
+		margin-left: auto;
+		right: -20px;
+	}
+	.medgen-cards .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2:nth-child(odd) .info-card__body,
+	.medgen-cards .infocard-block.infocard-block--reverse .infocard-block__row:nth-child(odd) .info-card2:nth-child(even) .info-card__body{
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: left;
+		h3{font-size: 40px;}
+		p{
+			font-size: 24px;
+			text-align: left;
+		}
+	}
+	
+	.medgen-cards .infocard-block__row{
+		.info-card2{margin-bottom: 0;}
+		.info-card2 +.info-card2{
+			margin-left:0;
+			margin-top: 96px;
+		}
+	
 	}
 }

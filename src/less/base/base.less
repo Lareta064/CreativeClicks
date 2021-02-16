@@ -301,7 +301,12 @@ section {
     display: none;
   }
 }
-
+.hide-desktop {
+  display: none;
+  @media (max-width: 1279px) {
+    display: block;
+  }
+}
 .visible-mobile {
   display: none;
   @media (max-width: 767px) {

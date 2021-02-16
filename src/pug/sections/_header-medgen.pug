@@ -32,13 +32,18 @@ header.header
 		.title-group
 			.title-1
 				h1 medgen
-			.title-2
+			.title-2.visible-desktop
 				h2 We believe in our Industry-focus approach as the key to a mutual success.
+			.title-2.hide-desktop
+				h2 A creative Clicks Company
 		
 		.header-color-block.p-128.color-block.bg-blue
-			.color-block__img
+			.color-block__img.hide-mobile
 				img.main-img(src="img/medgen/1.jpg", width="524" alt="img")
 				img.blur-img(src="img/medgen/1.jpg", width="524" alt="img")
+			.color-block__img.visible-mobile
+				img.main-img(src="img/medgen/header-mob.jpg", width="256" alt="img")
+				img.blur-img(src="img/medgen/header-mob.jpg", width="256" alt="img")
 			.text-block
 				.head-3
 					h3 Who we are

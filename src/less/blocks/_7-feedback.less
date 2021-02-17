@@ -7,11 +7,7 @@
 	padding-top: 258px;
 	position: relative;
   }
-  @media (max-width: 992px) {
-	.feedback-content {
-	  padding-top: 64px;
-	}
-  }
+  
   @media (max-width: 767px) {
 	.feedback-content {
 	  padding-top: 128px;
@@ -20,12 +16,12 @@
   .feedback-content .title-group .title-2 {
 	color: #15d275;
   }
-  @media (min-width: 768px) and (max-width: 1199px) {
+  
 	.feedback-content .title-group {
 	  margin-left: auto;
-	  margin-right: auto;
+	  margin-right: 0;
 	}
-  }
+ 
 
   .feedback__header {
 	display: -webkit-box;
@@ -35,17 +31,13 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding-left: 105px;
-	padding-right: 100px;
-	margin-bottom: 107px;
+	padding-right: 70px;
+	margin-bottom: 112px;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
   }
-  @media (max-width: 1364px) {
-	.feedback__header {
-	  margin-bottom: 80px;
-	}
-  }
+  
   @media (max-width: 992px) {
 	.feedback__header {
 	  padding-left: 64px;
@@ -67,36 +59,55 @@
 	  flex-direction: column-reverse;
 	  padding-left: 0;
 	  padding-right: 0;
-	  margin-bottom: -45px;
+	  margin-bottom: 286px;
 	}
+	.feedback-content .title-group {
+		
+		margin-right: auto;
+	  }
   }
-  .feedback__header .feedback__img {
-	position: relative;
-	top: 150px;
+  .feedback-color-block .feedback__img {
+	position: absolute;
+	top: 0;
+	left: -4%;
+	right: auto;
   }
-  @media (max-width: 1364px) {
-	.feedback__header .feedback__img {
-	  top: 122px;
-	}
-  }
-  @media (max-width: 992px) {
-	.feedback__header .feedback__img {
-	  top: 100px;
-	}
-  }
-  @media (max-width: 767px) {
-	.feedback__header .feedback__img {
-	  top: 0;
-	  margin-top: 80px;
-	}
-  }
+
+
   .feedback-color-block {
 	max-width: 1024px;
-	padding-top: 122px;
+	padding-top: 128px;
 	padding-bottom: 128px;
 	margin-left: auto;
-	margin-right: -16px;
+	margin-right: -32px;
 	background-color: #15d275;
+	position: relative;
+	.color-block__img .blur-img{
+		right: auto;
+		left: -2%;
+		top: 25px;
+	}
+	@media (max-width: 1199px) {
+		margin-right: 0px;
+		
+			.color-block__img.feedback__img{
+				left: 2%;
+				width: 280px;
+				height: 280px;
+			}
+		  }
+	 
+	  @media (max-width: 767px) {
+		margin-right: -17px;
+		max-width:335px;
+		.color-block__img.feedback__img {
+			top: 25px;
+			left:25px;
+			.blur-img{
+				left: -10px;
+			}
+		}
+	  }
   }
   /*CONTACT FORM*/
   .form-item {

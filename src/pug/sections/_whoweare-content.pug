@@ -17,17 +17,6 @@ mixin infocard4(spanText, addText1, addText2, imgSrc)
 				span Learn more
 				span
 					+sliderArrowRight
-
-	.info-card2
-		.info-card__img
-			img.main-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
-			img.blur-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
-		.info-card__body
-			.info-card__badge
-				span Case study
-			.marked-text !{text}
-		.info-card__footer
-			a(href="#!").button-white
 //- базовая карточка без фона c 2 бейджами
 mixin infoCardBadge(title1,title2,title3)
 	.info-card2.info-cardBadge

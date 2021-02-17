@@ -1,0 +1,29 @@
+mixin numberItem(num, title)
+	li
+		span #{num}
+		.text-block 
+			h4 #{title}
+			block
+
+section.section--black.medgen-blockText.medgen-blockText3
+	.progress-bar
+	.container.container--p0
+		.black-wrapper
+			.title-group
+				.title-3
+					h3 Strategy
+			.blogDetail-wrapper
+				.blogDetail-body
+					ul.number-list
+						+numberItem(1, 'DATA-DRIVEN STRATEGY')
+							.dark-text
+								p A deep screening of available health data supports an efficient market activation and audience targeting and a continuous improvement in ROI.
+						+numberItem(2, 'OBJECTIVES AND LAUNCH')
+							.dark-text
+								p Set campaigns and acquisition goals together with our customer and launch test campaigns on a range of media channels, including our in-house publisher network, while monitoring budget spend.
+						+numberItem(3, 'SOURCE PERFORMANCE ANALYTICS')
+							.dark-text
+								p Identify the top converting publishers and media channels with the best performing traffic.
+						+numberItem(4, 'SCALE UP')
+							.dark-text
+								p Increase traffic and spend from the top converting publishers and media channels while monitoring KPIs.

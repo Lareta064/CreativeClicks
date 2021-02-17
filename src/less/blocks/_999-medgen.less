@@ -7,6 +7,9 @@
 		margin-top: 64px;
 		padding-top: 130px;
 		padding-left: 125px;
+		.head-3{
+			margin-bottom: 48px;
+	   }
 		@media(max-width:1279px){
 			padding-left: 96px;
 			padding-right: 96px;
@@ -46,6 +49,9 @@
 		h2 {
 				color: @blue;
 			}
+		h3{
+			line-height: 0.83;
+		}
 		}
 	.header .title-group{
 		margin-left: 16px;
@@ -87,13 +93,19 @@
 	.header-title{
 		padding-bottom: 0;
 	}
+	.footer-content{
+		@media(min-width:1280px){
+			height: 738px;
+			padding-left: 24px;
+			padding-right: 24px;
+			.contacts-icon{margin-top: 50px;}
+		}
+	}
 }
 .bg-blue{
 	background-color: @blue;
 }
-.text-block .head-3{
-	 margin-bottom: 0;
-}
+ 
 .text-block .white-text{
 	color: #fff;
 	font-size: 32px;
@@ -138,14 +150,15 @@
 	padding-left: 0;
 }
 .medgen-cards .title-group{
-	margin-bottom: 192px;
-	max-width:50%;
+	margin-bottom: 185px;
+	max-width:55%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	.title-2{
 		margin-top: 24px;
 	}
+	h3{line-height: 0.83;}
 }
 .medgen-cards{
 	.infocard-block{
@@ -212,6 +225,7 @@
 }
 @media(max-width:767px){
 	.medgen-page .title-group{width: 100%;text-align: center;}
+	.medgen-page .title-group h3{line-height: 0.86;}
 	.text-block .white-text,.text-block .dark-text{margin-top: 36px; letter-spacing: -0.02em;}
 	.medgen-cards .title-group{max-width:320px; }
 	.infocard-block{max-width: 325px;}
@@ -267,10 +281,10 @@
 }
 .medgen-blockText.position-left .blogDetail-wrapper{
 	margin-right: auto;
-	margin-left: 0;
+	margin-left: 54px;
 }
-.medgen-blockText.position-right .blogDetail-wrapper{
-	margin-right: 0;
+.medgen-blockText5 .blogDetail-wrapper{
+	margin-right: 54px;
 	margin-left: auto;
 }
 .medgen-blockText{
@@ -284,28 +298,38 @@
 		margin-bottom: 128px;
 	}
 }
+.medgen-blockText3 .blogDetail-wrapper{margin-right: 56px;}
+.medgen-blockText3 .number-list .dark-text{padding-right: 15px;}
+.medgen-blockText3 .number-list h4{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 40px;
+	line-height: .9;
+	letter-spacing: -0.02em;
+}
 .number-list{
 	li{
 		display: flex;
 		span{
 			display: block;
-			width: 40px;
-			height: 40px;
+			width: 50px;
+			height: 50px;
 			border-radius: 50%;
 			background-color: #000;
 			color: #fff;
 			text-align: center;
-			line-height: 40px;
+			line-height: 50px;
 			flex-shrink:0;
 			margin-right: 24px;
 			position: relative;
-			top: 10px;
+			top: 0px;
+			font-size: 24px;
 		}
 		& +li{
 			margin-top: 64px;
 		}
 	}
-	.dark-text{margin-top: 24px;}
+	.dark-text{margin-top: 24px; font-family: 'Karla Bold';}
 }
 .blogDetail-image.medgen-block__img{
 	right: auto;
@@ -318,17 +342,38 @@
 		top: 30px;
 	}
 }
-.medgen-block4 .blogDetail-wrapper{
+.medgen-blockText4 .blogDetail-wrapper{
 	margin-right: auto;
-	margin-left: 0;
+	margin-left: 25px;
+	max-width:868px;
+	width: 868px;
 }
-.medgen-block4 .title-group{
+.medgen-blockText4 .title-group{
 	margin-right: 0;
+	margin-bottom: 121px;
 }
 
-.medgen-block4 .number-list .dark-text{
+.medgen-blockText4 .number-list .dark-text{
 	margin-top: 0;
 }
-.medgen-block4 .number-list {margin-top: 48px;}
-.medgen-block4 .number-list li +li {margin-top: 24px;}
-.medgen-block4  .number-list li span{top: 7px;}
+.medgen-blockText4 .number-list {margin-top: 48px;}
+.medgen-blockText4 .number-list li +li {margin-top: 24px;}
+.medgen-blockText4  .number-list li span{top: -2px;}
+.medgen-blockText4 .title-group h3{
+	line-height: 0.83;
+}
+.medgen-blockText4 .dark-text.p-50{padding-right: 50px;}
+.medgen-blockText5 .text-block .white-text{padding-right: 20px;}
+@media(max-width:767px){
+	.medgen-blockText4 {
+		.title-group h3{
+			line-height: 0.86;
+		}
+		.text-block .dark-text{
+			padding-right: 0px;
+		}
+
+
+	}
+	.medgen-blockText5 .text-block .white-text{padding-right: 0px;}
+}

@@ -178,6 +178,9 @@
   .info-card2 + .info-card2 {
     margin-left: 48px;
   }
+  @media(min-width: 767px){
+    .info-card2{margin-bottom: 0;}
+  }
 }
 .medgen-cards .infocard-block .infocard-block__content {
   padding-left: 0;
@@ -303,7 +306,7 @@
     .info-card__img {
     right: auto;
     margin-left: 0;
-    left: -41px;
+    left: -53px;
   }
   .infocard-block.infocard-block--reverse
     .infocard-block__row:nth-child(odd)
@@ -535,7 +538,7 @@
     letter-spacing: normal;
   }
   .medgen-blockText .blogDetail-wrapper {
-    width: 348px;
+    width: 343px;
   }
   .medgen-blockText.medgen-blockText2 .title-group {
     margin-bottom: 80px;
@@ -563,10 +566,10 @@
   .medgen-blockText2 .blogDetail-body {
 	padding-bottom: 128px;
 	@media(max-width: 767px){
-		padding-bottom: 89px;
+		padding-bottom: 130px;
 	}
     p {
-      padding-right: 47px;
+      padding-right: 30px;
     }
   }
   .medgen-blockText4 .blogDetail-wrapper {
@@ -589,8 +592,9 @@
     }
   }
   .medgen-blockText5 .blogDetail-wrapper {
-    margin-right: -18px;
-    margin-left: 34px;
+    margin-right: -38px;
+    margin-left: auto;
+    .blogDetail-body{margin-right: 0;}
   }
   .medgen-blockText5 .blogDetail-body p {
     letter-spacing: -0.02em;

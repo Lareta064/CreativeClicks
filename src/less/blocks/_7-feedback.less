@@ -31,13 +31,18 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding-left: 105px;
-	padding-right: 70px;
+	padding-right: 150px;
 	margin-bottom: 112px;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
+	@media (max-width: 1439px) {
+		padding-right: 70px;
+	}
   }
-  
+  @media (max-width: 1439px) {
+	padding-right: 150px;
+}
   @media (max-width: 992px) {
 	.feedback__header {
 	  padding-left: 64px;
@@ -75,7 +80,7 @@
 
 
   .feedback-color-block {
-	max-width: 1024px;
+	max-width: 1224px;
 	padding-top: 128px;
 	padding-bottom: 128px;
 	margin-left: auto;
@@ -86,6 +91,9 @@
 		right: auto;
 		left: -2%;
 		top: 25px;
+	}
+	@media (max-width: 1439px) {
+		max-width: 1024px;
 	}
 	@media (max-width: 1199px) {
 		margin-right: 0px;

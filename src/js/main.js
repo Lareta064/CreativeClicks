@@ -206,6 +206,9 @@ $(document).ready(function () {
 	window.addEventListener('resize', function(){
 		equalizeText("infocard-block__row","info-card__body");
 	});
+	window.addEventListener('scroll', function(){
+		equalizeText("infocard-block__row","info-card__body");
+	});
 
 	//SHOW JOB OPENNING CARDS	
 	if($('.vacancy-card')){

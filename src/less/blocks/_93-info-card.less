@@ -2,7 +2,7 @@
   margin-bottom: 96px;
   max-width: 338px;
   @media (max-width: 991px) {
-    transform: scale(.8);
+    transform: scale(0.8);
     margin-bottom: 0;
   }
   @media (max-width: 767px) {
@@ -33,21 +33,20 @@
   .blure-block {
     transform: unset;
     right: 0;
-
   }
 }
-.info-card2{
+.info-card2 {
   margin-bottom: 96px;
   max-width: 338px;
 }
-.infocard-block__content.mb-0 .infocard-block__row .info-card2{
+.infocard-block__content.mb-0 .infocard-block__row .info-card2 {
   margin-bottom: 0;
-    @media(max-width:767px) {
-      margin-bottom: 160px;
+  @media (max-width: 767px) {
+    margin-bottom: 160px;
   }
 }
 .info-card,
-.info-card2{
+.info-card2 {
   .info-card__body {
     padding-left: 48px;
     position: relative;
@@ -63,10 +62,11 @@
     @media (max-width: 767px) {
       margin-top: 20px;
     }
-    .button-video{padding-left: 26px;
-    padding-right: 26px;}
+    .button-video {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
   }
-  
 
   .marked-text,
   .marked-text span {
@@ -78,11 +78,11 @@
     font-size: 20px;
     line-height: 40px;
     min-height: 40px;
-    max-height:40px;
+    max-height: 40px;
     text-align: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    font-family: 'Karla Bold';
+    font-family: "Karla Bold";
     color: #fff;
     padding-left: 8px;
     padding-right: 8px;
@@ -103,7 +103,6 @@
       text-align: right;
       padding-right: 42px;
       padding-left: 0;
-
     }
 
     .info-card__footer {
@@ -131,9 +130,12 @@
 /* new cards*/
 .infocard-block__row .info-card2,
 .infocard-block__row .info-card {
-  max-width: 274px;
+  max-width: 350px;
   width: 100%;
   margin-bottom: 80px;
+  @media (max-width: 1439px) {
+    max-width: 274px;
+  }
 
   .marked-text {
     padding: 0;
@@ -151,7 +153,7 @@
     margin-bottom: 97px;
   }
 }
-.infocard-block__row .info-card2{
+.infocard-block__row .info-card2 {
   @media (max-width: 767px) {
     margin-bottom: 160px;
   }
@@ -159,9 +161,12 @@
 .infocard-block__row .info-card {
   transform: scale(1);
 }
-.infocard-block__row .info-card2 + .info-card2, 
+.infocard-block__row .info-card2 + .info-card2,
 .infocard-block__row .info-card + .info-card {
-  margin-left: 64px;
+  margin-left: 0px;
+  @media (max-width: 1919px) {
+    margin-left: 64px;
+  }
   @media (max-width: 1279px) {
     margin-left: 48px;
   }
@@ -192,10 +197,8 @@
     width: 256px;
     height: 256px;
   }
-
 }
 .infocard-block__row .info-card .info-card__img {
- 
   & > img {
     position: relative;
     z-index: 2;
@@ -266,7 +269,6 @@
 // info-card--bg
 .info-card2.info-card--bg,
 .info-card.info-card--bg {
-
   .marked-text span {
     background-color: #000;
   }
@@ -282,6 +284,10 @@
 // infocard-row
 .infocard-block__row {
   display: flex;
+  justify-content: space-between;
+  @media (max-width: 1919px) {
+    justify-content: flex-start;
+  }
   @media (max-width: 767px) {
     flex-direction: column;
   }
@@ -306,23 +312,29 @@
 
   .infocard-block__content {
     padding-left: 109px;
+    padding-right: 109px;
+    @media (max-width: 1919px) {
+      padding-left: 109px;
+      padding-right: 0px;
+    }
   }
 
-  max-width: 1168px;
+  max-width: 1768px;
   margin-left: auto;
   margin-right: auto;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  @media (max-width: 1919px) {
+    max-width: 1168px;
+  }
   @media (max-width: 1199px) {
     max-width: 850px;
     .infocard-block__content {
       padding-left: 24px;
     }
-
   }
   @media (max-width: 991px) {
     max-width: 750px;
-
   }
   @media (max-width: 767px) {
     max-width: 324px;
@@ -364,6 +376,10 @@
 
 .infocard-block--yellow {
   background-color: @yellow;
+  max-width: 1827px;
+  @media (max-width: 1919px) {
+    max-width: 1168px;
+  }
 }
 
 // mobile state left block + row(odd)
@@ -378,7 +394,6 @@
       .info-card__body {
         align-items: flex-end;
         padding-right: 36px;
-
       }
 
       .info-card__footer {
@@ -390,7 +405,6 @@
         align-items: flex-end;
         position: relative;
         text-align: right;
-
       }
 
       .info-card__title {
@@ -471,7 +485,6 @@
       .marked-text {
         align-items: flex-end;
         position: relative;
-
       }
 
       .info-card__title {
@@ -503,7 +516,6 @@
       .info-card__title {
         text-align: left;
       }
-
     }
   }
 }
@@ -513,14 +525,12 @@
     .infocard-block__row:nth-child(odd) {
       .info-card2:nth-child(odd),
       .info-card:nth-child(odd) {
-        
         .info-card__title {
           text-align: right;
         }
       }
       .info-card2:nth-child(even),
       .info-card:nth-child(even) {
-
         .info-card__title {
           text-align: left;
         }
@@ -568,20 +578,17 @@
 
       .info-card__body {
         align-items: flex-start;
-
       }
 
       .info-card__footer {
         justify-content: flex-start;
-        padding-left: 0
+        padding-left: 0;
       }
 
       .info-card__title {
         text-align: left;
       }
-
     }
-
   }
 
   @media (max-width: 767px) {
@@ -589,7 +596,6 @@
     .infocard-block__row:nth-child(odd) .info-card2:nth-child(even),
     .infocard-block__row:nth-child(even) .info-card:nth-child(odd),
     .infocard-block__row:nth-child(odd) .info-card:nth-child(even) {
-      
       margin-right: auto;
       margin-left: 0;
 
@@ -602,7 +608,6 @@
       }
 
       .info-card__body {
-        
         padding-right: 26px;
         align-items: flex-end;
       }
@@ -637,7 +642,6 @@
       }
     }
   }
-
 }
 .info-card2 .additional-info,
 .case-slider .additional-info,
@@ -645,20 +649,24 @@
   margin-top: 29px;
 
   p {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 26px;
+    line-height: 26px;
     letter-spacing: 0.05em;
     color: #000000;
-    font-family: 'Karla Bold';
+    font-family: "Karla Bold";
+    @media (max-width: 1439px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   p:last-child {
-    font-family: 'Karla Italic';
+    font-family: "Karla Italic";
   }
 }
 // last info-card2
-@media(max-width:767px){
-	.infocard-block__row:last-child .info-card2:last-child {
-		margin-bottom: 96px;
-	}
+@media (max-width: 767px) {
+  .infocard-block__row:last-child .info-card2:last-child {
+    margin-bottom: 96px;
+  }
 }

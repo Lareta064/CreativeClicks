@@ -1,11 +1,15 @@
 .section-slider__content {
-  max-width: 64.3vw;
-  padding: 10vw;
+  max-width: 1302px;
+  padding: 192px;
   margin-left: 38px;
+  @media (max-width: 1920px) {
+    max-width: 64.3vw;
+    padding: 10vw;
+  }
   @media (max-width: 1280px) {
     max-width: 868px;
     padding: 128px;
-  margin-left: 25px;
+    margin-left: 25px;
   }
   @media (max-width: 1199px) {
     margin-left: 0;
@@ -47,17 +51,25 @@
   background-color: @red;
 }
 .section-top {
-  padding-top: 19.5vw;
+
+  padding-top: 384px;
   padding-bottom: 11.78vw;
+  @media (max-width: 1920px){
+    padding-top: 19.5vw;
+    padding-bottom: 11.78vw;
+  }
+  @media (max-width: 1280px){
+    padding-top: 256px;
+  }
   .title-group {
     margin-right: 0;
     padding-left: 0;
+
     @media (max-width: 1280px) {
       padding-left: 100px;
       padding-top: 256px;
-    padding-bottom: 151px;
+      padding-bottom: 151px;
     }
-   
 
     @media (max-width: 1199px) {
       max-width: 500px;
@@ -116,9 +128,12 @@
 }
 .slide-item__text .slide-title {
   position: relative;
-  max-width: 46.8vw;
+  max-width: 900px;
   z-index: 2;
   padding-left: 5px;
+  @media (max-width: 1920px) {
+    max-width: 46.8vw;
+  }
   @media (max-width: 1280px) {
     max-width: 600px;
   }
@@ -134,13 +149,15 @@
   box-shadow: -5px 0 0 #000, 12px 0 0 #000;
   padding: 0;
   color: #ffffff;
-  font-size: 4.375;
+  font-size: 84px;
   letter-spacing: -0.025em;
   text-transform: uppercase;
+  @media (max-width: 1920px) {
+    font-size: 4.375vw;
+  }
   @media (max-width: 1280px) {
     font-size: 56px;
-  box-shadow: -3px 0 0 #000, 9px 0 0 #000;
-
+    box-shadow: -3px 0 0 #000, 9px 0 0 #000;
   }
   @media (max-width: 1279px) {
     font-size: 46px;
@@ -161,15 +178,19 @@
   max-width: 100%;
 }
 .info-card__title h3 {
-  line-height: 2.1vw;
+  line-height: 60px;
   display: inline;
   background-color: #000;
   box-shadow: -5px 0 0 #000, 5px 0 0 #000;
   padding: 0px 0;
   color: #ffffff;
-  font-size: 2.1vw;
+  font-size: 60px;
   letter-spacing: -0.025em;
   text-transform: uppercase;
+  @media (max-width: 1920px) {
+    line-height: 2.1vw;
+    font-size: 2.1vw;
+  }
   @media (max-width: 1280px) {
     line-height: 40px;
     font-size: 40px;
@@ -190,7 +211,10 @@
   }
 }
 .section-slider__item {
-  padding-bottom: 6.56vw;
+  padding-bottom: 126px;
+  @media (max-width: 1920px) {
+    padding-bottom: 6.56vw;
+  }
   @media (max-width: 1280px) {
     padding-bottom: 84px;
   }
@@ -210,15 +234,18 @@
 .slide-item__text .additional-info {
   margin-top: 45px;
   padding-left: 3px;
-  @media(max-width:1280px){
+  @media (max-width: 1280px) {
     margin-top: 29px;
   }
   p {
-    font-size: 1.56vw;
+    font-size: 30px;
     letter-spacing: 0.05em;
     line-height: 1.2;
     color: #000;
-    @media(max-width:1280px){
+    @media (max-width: 1920px) {
+      font-size: 1.56vw;
+    }
+    @media (max-width: 1280px) {
       font-size: 20px;
     }
   }
@@ -348,12 +375,16 @@
   }
 }
 .slider__images {
-  width: 30vw;
+  width: 576px;
   margin-left: auto;
   margin-right: 100px;
   z-index: 2;
-  margin-top: -24.7vw;
+  margin-top: -517px;
   box-shadow: 24px 16px 47px rgba(19, 9, 12, 0.8);
+  @media (max-width: 1920px) {
+    width: 30vw;
+    margin-top: -24.7vw;
+  }
   @media (max-width: 1280px) {
     width: 384px;
     margin-top: -345px;
@@ -380,7 +411,6 @@
 .slider__images.slider__images--left {
   @media (min-width: 1920px) {
     margin-left: 150px;
-   
   }
   @media (min-width: 991px) {
     margin-left: 100px;

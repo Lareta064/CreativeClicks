@@ -130,9 +130,12 @@
 /* new cards*/
 .infocard-block__row .info-card2,
 .infocard-block__row .info-card {
-  max-width: 21.4vw;
+  max-width: 411px;
   width: 100%;
   margin-bottom: 80px;
+  @media (max-width: 1920px) {
+    max-width: 21.4vw;
+  }
   @media (max-width: 1280px) {
     max-width: 274px;
   }
@@ -140,8 +143,12 @@
   .marked-text {
     padding: 0;
     max-width: 95%;
-    min-width: 17.71vw;
-    max-width: 17.71vw;
+    min-width: 411px;
+    max-width: 411px;
+    @media (max-width: 1920px) {
+      min-width: 17.71vw;
+      max-width: 17.71vw;
+    }
     @media (max-width: 1280px) {
       min-width: 274px;
       max-width: 274px;
@@ -246,9 +253,14 @@
 }
 .infocard-block__row .info-card2 .info-card__footer,
 .infocard-block__row .info-card .info-card__footer {
-  margin-top: 1.7vw;
+  margin-top: 33px;
   display: flex;
-  @media(max-width:1280px){margin-top: 22px;}
+  @media (max-width: 1920px) {
+    margin-top: 1.7vw;
+  }
+  @media (max-width: 1280px) {
+    margin-top: 22px;
+  }
   @media (min-width: 768px) and (max-width: 991px) {
     .button-white {
       padding-left: 10px;
@@ -316,19 +328,26 @@
   }
 
   .infocard-block__content {
-    padding-left: 5.2vw;
-    padding-right: 5.2vw;
+    padding-left: 163px;
+    padding-right: 163px;
+    @media (max-width: 1920px) {
+      padding-left: 5.2vw;
+      padding-right: 5.2vw;
+    }
     @media (max-width: 1280px) {
       padding-left: 109px;
       padding-right: 0px;
     }
   }
 
-  max-width: 90.6vw;
+  max-width: 1752px;
   margin-left: auto;
   margin-right: auto;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  @media (max-width: 1920px) {
+    max-width: 90.6vw;
+  }
   @media (max-width: 1280px) {
     max-width: 1168px;
   }
@@ -381,7 +400,10 @@
 
 .infocard-block--yellow {
   background-color: @yellow;
-  max-width: 93.75vw;
+  max-width: 1752px;
+  @media (max-width: 1920px) {
+    max-width: 93.75vw;
+  }
   @media (max-width: 1280px) {
     max-width: 1168px;
   }

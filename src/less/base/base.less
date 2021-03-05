@@ -559,7 +559,10 @@ input[type="submit"] {
 }
 
 .color-block {
-  max-width:62.5vw;
+  max-width: 1200px;
+  @media (max-width:1920px) {
+    max-width:62.5vw;
+  }
   @media (max-width:1280px) {
     max-width: 800px;
   }

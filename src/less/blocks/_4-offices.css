@@ -1,10 +1,10 @@
-section.offices {
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  section.offices {
     padding-left: 0;
   }
-  .progress-bar {
-    bottom: 52px;
-  }
+}
+section.offices .progress-bar {
+  bottom: 52px;
 }
 .offices .container {
   overflow: hidden;
@@ -26,7 +26,6 @@ section.offices {
   margin-left: 0;
   margin-right: auto;
 }
-
 .color-block__img.offices__img {
   position: absolute;
   top: 0;
@@ -38,8 +37,6 @@ section.offices {
     width: 280px;
     height: 280px;
   }
-}
-@media (max-width: 991px) {
 }
 @media (max-width: 767px) {
   .color-block__img.offices__img {
@@ -53,7 +50,6 @@ section.offices {
 }
 .offices__header {
   margin-bottom: 110px;
-
   margin-left: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +60,9 @@ section.offices {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  @media (max-width: 1439px) {
+}
+@media (max-width: 1439px) {
+  .offices__header {
     margin-left: 150px;
   }
 }
@@ -158,10 +156,14 @@ section.offices {
   max-width: 1536px;
   margin-left: -20px;
   position: relative;
-  @media (max-width: 1920px) {
-	max-width: 78.75vw;
+}
+@media (max-width: 1920px) {
+  .offices-color-block {
+    max-width: 78.75vw;
   }
-  @media (max-width: 1280px) {
+}
+@media (max-width: 1280px) {
+  .offices-color-block {
     padding-top: 128px;
     padding-bottom: 125px;
     padding-left: 128px;

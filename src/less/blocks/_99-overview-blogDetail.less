@@ -230,10 +230,12 @@
 }
 .color-block__img{
 	position: absolute;
-	width: 384px;
+	width: 30vw;
 	right: 0;
 	top: 0;
-	
+	@media(max-width:1280px){
+		width: 384px;
+	}
 	.main-img{
 		position: relative;
 		z-index: 1;

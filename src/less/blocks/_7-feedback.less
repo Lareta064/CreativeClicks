@@ -74,15 +74,18 @@
   .feedback-color-block .feedback__img {
 	position: absolute;
 	top: 0;
-	left: -4%;
+	left: -8%;
 	right: auto;
+	@media(max-width:1280px){
+		left: -4%;
+	}
   }
 
 
   .feedback-color-block {
-	max-width: 1224px;
-	padding-top: 128px;
-	padding-bottom: 128px;
+	max-width: 79.3vw;
+	padding-top: 10vw;
+	padding-bottom: 10vw;
 	margin-left: auto;
 	margin-right: -32px;
 	background-color: #15d275;
@@ -92,8 +95,10 @@
 		left: -2%;
 		top: 25px;
 	}
-	@media (max-width: 1439px) {
+	@media (max-width: 1280px) {
 		max-width: 1024px;
+		padding-top: 128px;
+	padding-bottom: 128px;
 	}
 	@media (max-width: 1199px) {
 		margin-right: 0px;

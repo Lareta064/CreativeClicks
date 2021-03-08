@@ -149,12 +149,19 @@ section {
 
 .progress-bar {
   position: absolute;
-  bottom: 55px;
+ 
   height: 24px;
   width: 150px;
   background-color: #fff;
   z-index: 20;
   left: -16px;
+  bottom: 80px;
+    @media(max-width:1920px){
+      bottom: 4.1vw;
+    }
+    @media(max-width:1280px){
+      bottom: 55px;
+    }
 }
 
 .progress-bar.progress-bar--right {
@@ -593,5 +600,4 @@ input[type="submit"] {
 .hideDOM {
   display: none;
 }
-
 

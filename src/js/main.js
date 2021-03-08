@@ -43,7 +43,8 @@ $(document).ready(function () {
 		items:1,
 		loop: true,
 		navSpeed: 800,
-		smartSpeed:800
+		smartSpeed:800,
+		
 	});
 	
 	caseSliderArrowLeft.click(function () {

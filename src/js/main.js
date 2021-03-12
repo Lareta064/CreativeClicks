@@ -308,7 +308,8 @@ $(document).ready(function () {
 	$('.captured-next').on('click', function() {
 		$('#captured-slider').slick('slickNext');
 	});
-	
+
+
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

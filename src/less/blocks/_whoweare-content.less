@@ -63,12 +63,18 @@
   }
 
   .whoweare-yellow {
-    .progress-bar {
-      bottom: 51px;
-    }
+    // .progress-bar {
+    //   bottom: 51px;
+    // }
 
     .title-group {
-      margin-bottom: 180px;
+      margin-bottom: 270px;
+      @media(max-width: 1919px){
+        margin-bottom: 14vw;
+      }
+      @media(max-width: 1280px){
+        margin-bottom: 180px;
+      }
     }
 
     //.infocard-block {
@@ -278,10 +284,6 @@
        }
       }
 
-      // .infocard-block__row:nth-child(odd) .info-card:nth-child(odd) .info-card__img {
-      //   right: -16px;
-      // }
-     
 
       .marked-text {
         color: #000;
@@ -305,7 +307,13 @@
   }
 
   .whoweare-green {
-    padding-top: 192px;
+    padding-top: 296px;
+    @media(max-width:1919px){
+      padding-top: 15vw;
+    }
+    @media(max-width:1280px){
+      padding-top: 192px;
+    }
     @media (max-width: 767px) {
       padding-top: 0;
     }

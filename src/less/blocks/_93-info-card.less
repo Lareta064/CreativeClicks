@@ -322,7 +322,13 @@
 
 // infocard-block
 .infocard-block {
-  padding-bottom: 128px;
+  padding-bottom: 192px;
+  @media (max-width: 1919px) {
+    padding-bottom: 10vw;
+  }
+  @media (max-width: 1280px) {
+    padding-bottom: 128px;
+  }
   @media (max-width: 767px) {
     padding-bottom: 125px;
   }

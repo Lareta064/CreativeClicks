@@ -127,7 +127,14 @@
 /*CONTACT FORM*/
 .form-item {
   position: relative;
-  width: 280px;
+  width: 420px;
+  @media(max-width:1919px){
+    width: 22vw;
+  }
+  @media(max-width:1280px){
+    width: 280px;
+
+  }
 }
 .form-item input {
   background-color: transparent;
@@ -287,5 +294,39 @@ label.error {
   }
   .form-item + .form-item{
     margin-top: 30px;
+  }
+}
+.textarea{  
+  
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 40px;
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Karla Bold";
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: relative;
+    color: #000;
+    outline:none;
+    @media (max-width: 1439px) {
+      font-size: 20px;
+    }
+    @media (max-width: 374px) {
+      font-size: 16px;
+    }
+  
+  
+  &:focus,&:active{
+    outline: none;
+  }
+  &:empty::before {
+    content: "Your message";
+    color: #000;
+    font-family: "Karla Bold Italic";
+   
   }
 }

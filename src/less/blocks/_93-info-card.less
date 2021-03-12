@@ -174,7 +174,7 @@
 }
 .infocard-block__row .info-card2 + .info-card2,
 .infocard-block__row .info-card + .info-card {
-  margin-left: 0px;
+  margin-left: 80px;
   @media (max-width: 1280px) {
     margin-left: 64px;
   }
@@ -301,10 +301,6 @@
 // infocard-row
 .infocard-block__row {
   display: flex;
-  justify-content: space-between;
-  @media (max-width: 1280px) {
-    justify-content: flex-start;
-  }
   @media (max-width: 767px) {
     flex-direction: column;
   }
@@ -312,9 +308,6 @@
 
 .infocard-block__row:first-child {
   margin-top: -64px;
-  @media (max-width: 1279px) {
-    margin-top: -96px;
-  }
   @media (max-width: 767px) {
     margin-top: -150px;
   }

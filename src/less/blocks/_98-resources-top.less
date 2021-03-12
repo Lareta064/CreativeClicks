@@ -40,7 +40,10 @@
 }
 .resources-page {
   .top-block .progress-bar {
-    bottom: 48px;
+    // bottom: 48px;
+    @media (max-width: 1280px) {
+      bottom: 48px;
+    }
   }
   .top-block .infocard-block__row:first-child {
     margin-top: 0;

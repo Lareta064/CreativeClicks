@@ -71,6 +71,12 @@ $(document).ready(function () {
 				{
 					breakpoint: 1919,
 					settings: {
+					  slidesToShow: 4,
+					}
+				  },
+				  {
+					breakpoint: 1499,
+					settings: {
 					  slidesToShow: 3,
 					}
 				  },

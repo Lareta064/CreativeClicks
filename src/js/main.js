@@ -63,10 +63,17 @@ $(document).ready(function () {
 		$('#careers-slider1').slick({
 			centerMode: true,
 			centerPadding: '190px',
-			slidesToShow: 3,
+			slidesToShow: 5,
+			infinite:true,
 			arrows: false,
 			asNavFor: '#careers-slider2',
 			responsive: [
+				{
+					breakpoint: 1919,
+					settings: {
+					  slidesToShow: 3,
+					}
+				  },
 				{
 					breakpoint: 1199,
 					settings: {

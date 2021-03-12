@@ -176,15 +176,25 @@
 
 /*JOB OPENNING*/
 .vacancy .black-wrapper {
+  @media (min-width: 1920px) {
+    padding-top: 375px;
+  }
   @media (min-width: 1280px) {
-    padding-top: 253px;
+    padding-top: 19.7vw;
   }
 }
 
 .vacancy .title-group {
-  margin-bottom: 185px;
+  margin-bottom: 387px;
   margin-right: 258px;
-
+  @media (max-width: 1919px) {
+    margin-bottom: 14.4vw;
+    margin-right: 20.15vw;
+  }
+  @media (max-width: 1280px) {
+    margin-bottom: 185px;
+    margin-right: 258px;
+  }
   @media (max-width: 767px) {
     margin-bottom: 181px;
     margin-right: 0;
@@ -193,7 +203,7 @@
 
 .vacancy .section--black {
   .progress-bar {
-    bottom: 55px;
+    // bottom: 55px;
   }
 }
 
@@ -202,15 +212,22 @@
     background-color: @purple;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    max-width: 1214px;
-    padding-left: 120px;
-    padding-right: 60px;
+    max-width: 1800px;
+    padding-left: 180px;
+    padding-right: 120px;
     margin-left: -16px;
+    @media(max-width:1919px){
+      max-width: 95vw;
+      padding-right: 4.6vw;
+      padding-right: 9.2vw;
+    }
 
     @media (max-width: 1279px) {
       margin-left: -16px;
       padding-left: 48px;
       padding-right: 48px;
+      padding-left: 120px;
+      padding-right: 60px;
     }
 
     @media (max-width: 991px) {
@@ -227,10 +244,12 @@
 
   .info-card__body {
     // margin-top: -18px;
-    height: 190px;
-
+    height: 270px;
     @media (max-width: 1279px) {
-      // margin-top: -22px;
+      height: 14.8vw;
+    }
+    @media (max-width: 1279px) {
+      height: 190px;
     }
 
     .marked-text {
@@ -243,8 +262,8 @@
 .vacancy-content__cards {
   display: flex;
   flex-wrap: wrap;
-
-
+  width: 100%;
+  .infocard-block__row{width: 100%;}
   @media (max-width: 767px) {
     max-width: 325px;
 
@@ -273,8 +292,13 @@
 }
 
 .careers-page .footer-inner .footer-content {
-  height: 650px;
-
+  height: 950px;
+  @media(max-width:1919px) {
+    height: 50vw;
+  }
+  @media(max-width:1280px) {
+    height: 650px;
+  }
   .footer-logo {
     padding-top: 11px;
   }
@@ -293,11 +317,18 @@
 }
 
 .vacancy-content .button-box {
-  margin-top: -30px;
-  margin-bottom: 128px;
+  margin-top: -45px;
+  margin-bottom: 192px;
   position: relative;
   right: 33px;
-
+  @media (max-width: 1919px) {
+   
+    margin-bottom: 10vw;
+  }
+  @media (max-width: 1280px) {
+    margin-top: -30px;
+    margin-bottom: 128px;
+  }
   @media (max-width: 767px) {
     margin-top: 61px;
     right: 3px;
@@ -430,7 +461,13 @@
 /*careers green block*/
 .color-block.purple-block {
   background-color: @purple;
-  padding-bottom: 130px;
+  padding-bottom: 192px;
+  @media(max-width:1919px){
+    padding-bottom: 10vw;
+  }
+  @media(max-width:1280px){
+    padding-bottom: 130px;
+  }
 }
 
 .careers-purple {
@@ -467,7 +504,16 @@
 
 .careers-slider.section--black {
   .progress-bar {
-    bottom: 99px;
+    bottom: -50px;
+    @media(max-width:1919px){
+     
+      display: none;
+    }
+    @media(max-width:1280px){
+      bottom: 99px;
+      display: block;
+    }
+    
 
     @media(max-width: 767px) {
       bottom: 136px;

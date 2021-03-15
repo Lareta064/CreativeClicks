@@ -19,37 +19,75 @@
 
 .blogDetail-footer {
   background-color: #fff;
-  padding: 128px;
+  padding: 192px;
+  @media(max-width:1919px){ padding: 10vw}
+  @media(max-width:1280px){ padding: 128px}
 
   h4 {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #000000;
+    @media(max-width:1919px){
+      font-size: 30px;
+    }
+    @media(max-width:1280px){
+      font-size: 24px;
+    }
   }
 }
 
 .blogDetail-wrapper {
-  max-width: 800px;
-  margin-right: 42px;
+  max-width: 1200px;
+  margin-right: 63px;
   margin-left: auto;
+  @media(max-width:1919px){
+    max-width: 62.5vw;
+    margin-right: 52px;
+  }
+  @media(max-width:1280px){
+    max-width: 800px;
+    margin-right: 42px;
+  }
 }
 
 .blogDetail-body {
-  padding: 124px;
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding: 192px;
+  padding-top: 192px;
+  padding-bottom: 192px;
   position: relative;
+  @media(max-width:1919px){
+    padding: 10vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+  @media(max-width:1280px){
+    padding: 124px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 .blogDetail-prevText {
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #000;
 
   p + p {
-    margin-top: 36px;
+    margin-top: 54px;
+  }
+  @media(max-width:1919px){
+    font-size: 30px;
+    p + p {
+      margin-top: 45px;
+    }
+  }
+  @media(max-width:1280px){
+    font-size: 24px;
+    p + p {
+      margin-top: 36px;
+    }
   }
 }
 
@@ -59,6 +97,7 @@
   background-position: center bottom 2px;
   background-size: 100% 2px;
   background-image: linear-gradient(to right, #000, #000);
+  
 }
 
 .resources-blogDetail {
@@ -69,47 +108,78 @@
 
 .blogDetail-list {
   h3 {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 1.17;
     text-transform: uppercase;
     color: #000000;
-    margin-top: 36px;
+    margin-top: 54px;
+    @media(max-width:1919px){
+      font-size: 30px;
+      margin-top: 45px;
+    }
+    @media(max-width:1280px){
+      font-size: 24px;
+      margin-top: 36px;
+    }
   }
 
   .blogDetail-list__img {
-    margin-top: 24px;
+    margin-top: 36px;
+    @media(max-width:1919px){
+      margin-top:30px;
+    }
+    @media(max-width:1280px){
+      margin-top: 24px;
+    }
   }
 
   figcaption {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     letter-spacing: 0.075em;
     text-transform: uppercase;
     color: #ffffff;
-    padding-top: 8px;
+    padding-top: 12px;
     font-family: "Karla Regular";
-
-    a {
-      background-repeat: no-repeat;
-      background-position: center bottom 1px;
-      background-size: 100% 1px;
-      background-image: linear-gradient(to right, #fff, #fff);
-      color: #ffffff;
-      transition: 0.5s;
-
-      &:hover {
-        color: #fff;
-        opacity: 0.5;
-      }
-    }
+    margin-top:30px;
   }
-  p {
+  @media(max-width:1919px){
     font-size: 16px;
+    padding-top: 10px;
+  }
+  @media(max-width:1280px){
+    font-size: 12px;
+    padding-top: 8px;
+  }
+    // a {
+    //   background-repeat: no-repeat;
+    //   background-position: center bottom 1px;
+    //   background-size: 100% 1px;
+    //   background-image: linear-gradient(to right, #fff, #fff);
+    //   color: #ffffff;
+    //   transition: 0.5s;
+
+    //   &:hover {
+    //     color: #fff;
+    //     opacity: 0.5;
+    //   }
+    // }
+  
+  p {
+    font-size: 24px;
     line-height: 1.5;
     color: #ffffff;
-    margin-top: 24px;
+    margin-top: 36px;
     font-family: "Karla Regular";
+    @media(max-width:1919px){
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    @media(max-width:1280px){
+      font-size: 16px;
+      margin-top: 24px;
+    }
 
     a {
       color: #fff;
@@ -119,6 +189,8 @@
       background-image: linear-gradient(to right, #fff, #fff);
       transition: 0.5s;
       font-weight: 700;
+      margin-left: 5px;
+      margin-right: 5px;
 
       &:hover {
         color: #fff;
@@ -132,8 +204,14 @@
     margin: 0;
     margin-top: 24px;
     font-family: "Karla Bold";
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.5;
+    @media(max-width:1919px){
+      font-size: 20px;
+    }
+    @media(max-width:1280px){
+      font-size: 16px;
+    }
   }
 
   ul {
@@ -150,11 +228,19 @@
 
   ul li {
     position: relative;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.5;
     color: #ffffff;
     font-family: "Karla Regular";
-    padding-left: 15px;
+    padding-left: 23px;
+    @media(max-width:1919px){
+      font-size: 20px;
+      padding-left: 18px;
+    }
+    @media(max-width:1280px){
+      font-size: 16px;
+      padding-left: 15px;
+    }
 
     &:before {
       content: "\2022";
@@ -197,7 +283,13 @@
 .talks-blogDetail,
 .cs-blogDetail {
   .progress-bar {
-    bottom: 423px;
+    bottom: 600px;
+    @media(max-width:1919px){
+      bottom: 31.25vw;
+    }
+    @media(max-width:1280px){
+      bottom: 423px;
+    }
     @media (max-width: 767px) {
       bottom: 419px;
     }
@@ -205,17 +297,29 @@
 }
 
 .header--detail .title-group h1 {
-  font-size: 56px;
+  font-size: 84px;
   line-height: 0.86;
   text-align: center;
   letter-spacing: -0.025em;
   text-transform: uppercase;
   color: #ffffff;
+  @media(max-width:1919px){
+    font-size: 4.3vw;
+  }
+  @media(max-width:1280px){
+    font-size: 56px;
+  }
 }
 
 .header--detail .title-group {
-  max-width: 688px;
+  max-width: 1032px;
   margin-left: 0;
+  @media(max-width:1919px){
+    max-width: 53.75vw;
+  }
+  @media(max-width:1280px){
+    max-width: 688px;
+  }
 }
 .color-block-wrapper .color-block--right,
 .color-block-wrapper .color-block--left {
@@ -257,9 +361,12 @@
 }
 .blogDetail-image {
   position: absolute;
-  width: 384px;
+  width: 576px;
   right: 0;
   top: 0;
+  @media(max-width:1919px){ width: 30vw;}
+  @media(max-width:1280px){ width: 384px;}
+
 
   .main-img {
     position: relative;
@@ -300,7 +407,9 @@
 }
 
 .cs-blogDetail .progress-bar {
-  bottom: 420px;
+  bottom: 610px;
+  @media(max-width:1919px){bottom: 31.25vw;}
+  @media(max-width:1280px){bottom: 420px;}
 }
 
 .resources-blogDetail .footer.footer-inner {

@@ -336,16 +336,18 @@ $(document).ready(function () {
 			})
 		}
 
-	btnCloseModalForm.addEventListener('click', function(){
-		overlay.classList.remove('active');
-		modalForm.classList.remove('active');
-		bodyEl.classList.remove('noscroll');
-	});
-	overlay.addEventListener('click', function(){
-		this.classList.remove('active');
-		modalForm.classList.remove('active');
-		bodyEl.classList.remove('noscroll');
-	});
+	if(btnCloseModalForm){
+		btnCloseModalForm.addEventListener('click', function(){
+			overlay.classList.remove('active');
+			modalForm.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+		});
+		overlay.addEventListener('click', function(){
+			this.classList.remove('active');
+			modalForm.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+		});
+	}
 
 	
 	//========================================================================

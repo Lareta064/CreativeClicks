@@ -322,7 +322,30 @@ $(document).ready(function () {
 		$('#captured-slider').slick('slickNext');
 	});
 
-
+	//====== SHOW MODAL FORM ======
+	const overlay = document.getElementById('overlay');
+	const modalForm = document.getElementById('modal-block');
+	const btnOpenModalForm = document.getElementsByClassName('btn-open-modal');
+	const btnCloseModalForm = document.querySelector('.close-modal');
+	if(btnOpenModalForm){
+		for(let item of btnOpenModalForm){
+			item.addEventListener('click', function(){
+				overlay.classList.add('active');
+				modalForm.classList.add('active');
+				bodyEl.classList.add('noscroll');
+			})
+		}
+	}
+	btnCloseModalForm.addEventListener('click', function(){
+		overlay.classList.remove('active');
+		modalForm.classList.remove('active');
+		bodyEl.classList.remove('noscroll');
+	});
+	overlay.addEventListener('click', function(){
+		this.classList.remove('active');
+		modalForm.classList.remove('active');
+		bodyEl.classList.remove('noscroll');
+	})
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

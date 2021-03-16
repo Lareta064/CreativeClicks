@@ -1,0 +1,20 @@
+#overlay
+#modal-block.modal-block
+	.modal-wrapper
+		button.close-modal
+			span +
+		form.contact-form#modal-form(action="#" method="POST" autocomplete="off")
+			.form-item
+				label Email address
+				input(type="text" name="email" placeholder="Your email address")
+			.form-item
+				label Subject
+				input(type="text" name="subject" placeholder="Subject of your email")
+			.form-item
+				label Your message
+				p.textarea(role="textbox" contenteditable)
+			.form-btn
+				button(type="submit").button-white
+					span Get in touch
+					span 
+						+sliderArrowRight

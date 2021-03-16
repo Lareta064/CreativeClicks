@@ -327,7 +327,7 @@ $(document).ready(function () {
 	const modalForm = document.getElementById('modal-block');
 	const btnOpenModalForm = document.getElementsByClassName('btn-open-modal');
 	const btnCloseModalForm = document.querySelector('.close-modal');
-	if(btnOpenModalForm){
+	
 		for(let item of btnOpenModalForm){
 			item.addEventListener('click', function(){
 				overlay.classList.add('active');
@@ -335,7 +335,7 @@ $(document).ready(function () {
 				bodyEl.classList.add('noscroll');
 			})
 		}
-	}
+
 	btnCloseModalForm.addEventListener('click', function(){
 		overlay.classList.remove('active');
 		modalForm.classList.remove('active');
@@ -345,7 +345,9 @@ $(document).ready(function () {
 		this.classList.remove('active');
 		modalForm.classList.remove('active');
 		bodyEl.classList.remove('noscroll');
-	})
+	});
+
+	
 	//========================================================================
 	//========================================================================
 	//SCROLL LOGIC and ADDITIVES

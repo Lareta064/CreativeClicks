@@ -120,13 +120,18 @@
     padding-bottom: 0;
   }
   .footer-content {
-    height: 738px;
+    height: 1100px;
     padding-left: 24px;
     padding-right: 24px;
     .contacts-icon {
       margin-top: 50px;
     }
-
+    @media (max-width: 1919px) {
+      height: 57.5vw;
+    }
+    @media (max-width: 1280px) {
+      height: 738px;
+    }
     @media (max-width: 767px) {
       height: 567px;
       padding-left: 8px;
@@ -736,5 +741,14 @@
         padding-top: 201px;
       }
     }
+  }
+}
+
+.medgen-page .black-wrapper{
+  @media(min-width:1920px){
+    padding-top: 384px;
+  }
+  @media(min-width:1281px){
+    padding-top: 20vw;
   }
 }

@@ -262,12 +262,20 @@
   position: relative;
   .section-slider__arrows {
     position: absolute;
-    left: -16px;
-    right: 16px;
-    top: -30px;
+    left: -24px;
+    right: 24px;
+    top: -45px;
     display: flex;
     justify-content: space-between;
     z-index: 4;
+    @media (max-width: 1919px) {
+      left: -20px;
+      right: 20px;
+      top: -37px;}
+    @media (max-width: 1280px) {
+      left: -16px;
+      right: 16px;
+      top: -30px;}
     @media (max-width: 767px) {
       left: 0;
       right: -16px;

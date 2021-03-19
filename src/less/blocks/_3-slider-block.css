@@ -178,6 +178,7 @@
   outline: none;
   position: relative;
   z-index: 5;
+ 
 }
 .section-slider__arrows button svg path,
 .case-slider-arrows button svg path {

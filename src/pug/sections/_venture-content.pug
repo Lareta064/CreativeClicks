@@ -1,0 +1,107 @@
+// red block
+section.section--black.p-470
+	.progress-bar
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--left.bg-red
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3.head-3--small
+							h3 WHO are we looking for?
+						.text-32
+							p Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+// orange block
+section.section--black.p-470
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--right.bg-orange
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3
+							h3 WHAT do we offer?
+						.text-32
+							p Create Ventures offers unmatched backing and industry knowledge to skyrocket digital media companies.
+						.text-32.white-text.disc-list 
+							ul 
+								li Funding, corporate set-up, business modelling, financial, operational and HR support.
+								li Access to our in-house developed ‘tech stack’ such as tracking, BI, email and payment platforms.
+								li International presence
+								li Proven track record in M&A
+
+//blue block
+section.section--black.p-470
+	.progress-bar
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--left.bg-blue
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3
+							h3 OUR process
+						.text-32
+							p Our investment committee will carefully look at all incoming business plans.
+						
+						.text-32.pt-48
+							p Key investment criteria are:
+							.white-text.disc-list 
+								ul 
+									li Market opportunity
+									li Scalability
+									li Experience, knowledge, commitment of the entrepreneur
+									li Proven businessmodel
+// green block
+section.section--black.p-470
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--right.bg-green
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3
+							h3 OUR process
+					.form-wrapper
+						// if the required input field have been filled incorrectly we should add class 'error-value' to the parent div of that field ('.form-item' class)
+
+						form(action="").contact-form
+							.form-item
+								label.form-item__title Full Name
+								input(type="text" name="firstName" placeholder="Your first name")
+							.form-item.form-item--sibl
+								input(type="text" name="lastName" placeholder="Last name")
+							.form-item
+								label.form-item__title Email address
+								input(type="text" name="email" placeholder="Your email address")
+								// notify if input value novalid
+								label.error This is not valid email address
+								// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
+								// (ex.: <label class="error">This is not valid email address</label>)
+							.form-item
+								label.form-item__title phone number
+								input(type="text" name="phone" placeholder="Your phone number")
+								// notify if input value novalid
+								label.error This is not valid phone number
+								// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
+								// (ex.: <label class="error">This is not valid email address</label>)
+							.form-item
+								label.form-item__title company
+								input(type="text" name="company" placeholder="Company name")
+							.form-white-footer
+								.form-white-footer__content
+									.form-btn
+										button(type="submit").button-white
+											span Register
+											span 
+												+sliderArrowRight

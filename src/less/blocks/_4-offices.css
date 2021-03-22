@@ -40,7 +40,7 @@ section.offices .progress-bar {
 }
 @media (max-width: 767px) {
   .color-block__img.offices__img {
-    right: -60px;
+    left:25px;
     top: 20px;
   }
   .offices-content .title-group {
@@ -196,7 +196,7 @@ section.offices .progress-bar {
     justify-content: center;
     padding-left: 110px;
     padding-right: 120px;
-    margin-left: -20px;
+    margin-right: -20px;
     max-width: 335px;
   }
 }

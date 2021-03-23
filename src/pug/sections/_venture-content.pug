@@ -1,3 +1,6 @@
+mixin download
+	<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="upload" class="svg-inline--fa fa-upload fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>
+
 // red block
 section.section--black.p-470
 	.progress-bar
@@ -60,7 +63,7 @@ section.section--black.p-470
 									li Experience, knowledge, commitment of the entrepreneur
 									li Proven businessmodel
 // green block
-section.section--black.p-470
+section.section--black.p-470.section--venture-feedback
 	.progress-bar.progress-bar--right
 	.container.container--p0
 		.color-block-wrapper
@@ -68,40 +71,48 @@ section.section--black.p-470
 				.color-block__img
 					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
 					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
-				.color-block.p-128
-					.text-block
-						.head-3
-							h3 OUR process
+				.color-form-block
+					.text-block.special-paddings
+						.color-form-head
+							.head-3
+								h3 Ready to scale?
+							.text-32 
+								p Please fill out the application form below and we get in touch with you!
 					.form-wrapper
 						// if the required input field have been filled incorrectly we should add class 'error-value' to the parent div of that field ('.form-item' class)
 
 						form(action="").contact-form
-							.form-item
-								label.form-item__title Full Name
-								input(type="text" name="firstName" placeholder="Your first name")
-							.form-item.form-item--sibl
-								input(type="text" name="lastName" placeholder="Last name")
-							.form-item
-								label.form-item__title Email address
-								input(type="text" name="email" placeholder="Your email address")
-								// notify if input value novalid
-								label.error This is not valid email address
-								// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
-								// (ex.: <label class="error">This is not valid email address</label>)
-							.form-item
-								label.form-item__title phone number
-								input(type="text" name="phone" placeholder="Your phone number")
-								// notify if input value novalid
-								label.error This is not valid phone number
-								// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
-								// (ex.: <label class="error">This is not valid email address</label>)
-							.form-item
-								label.form-item__title company
-								input(type="text" name="company" placeholder="Company name")
+							.form-body.special-paddings
+								.form-item
+									label.form-item__title Full Name
+									input(type="text" name="firstName" placeholder="Your first name")
+								.form-item.form-item--sibl
+									input(type="text" name="lastName" placeholder="Last name")
+								.form-item
+									label.form-item__title Email address
+									input(type="text" name="email" placeholder="Your email address")
+									// notify if input value novalid
+									label.error This is not valid email address
+									// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
+									// (ex.: <label class="error">This is not valid email address</label>)
+								.form-item
+									label.form-item__title phone number
+									input(type="text" name="phone" placeholder="Your phone number")
+									// notify if input value novalid
+									label.error This is not valid phone number
+									// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
+									// (ex.: <label class="error">This is not valid email address</label>)
+								.form-item
+									label.form-item__title company
+									input(type="text" name="company" placeholder="Company name")
 							.form-white-footer
 								.form-white-footer__content
-									.form-btn
-										button(type="submit").button-white
-											span Register
+									.text-32 
+										p Upload business  plan and other relevant documents.
+									.form-btn.active
+										button(type="submit").button-white.button--upload
+											span Upload
 											span 
-												+sliderArrowRight
+												+download
+										button(type="submit").button-white.button--send#sendForm
+											span Send

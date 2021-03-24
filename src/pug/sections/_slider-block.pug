@@ -1,5 +1,5 @@
 mixin sliderIt
-	.case-slider-item.section-slider__item
+	.case-slider-item.section-slider__item(data-aos="fade-up" data-aos-delay="500" data-aos-offset="1050")
 		.case-slider__head
 			.case-slider-badge Case study
 			.head-3
@@ -10,7 +10,7 @@ mixin sliderIt
 section.case-studies
 	.progress-bar.progress-bar--right
 	.container
-		.section-top
+		.section-top(data-aos="fade-up" data-aos-delay="500" data-aos-offset="1050")
 			+titleGroup('Case studies', 'We<br class="visible-mobile"> can <br class="hide-mobile"> prove it')
 		// ========= IMG SLIDER ==========
 		.slider__images.slider__images--left#case-images
@@ -29,7 +29,7 @@ section.case-studies
 				button.arr-right.case-next
 					+sliderArrowRight
 			
-			.section-slider-body#case-slider
+			.section-slider-body#case-slider(data-aos="fade-up" data-aos-delay="600" data-aos-offset="1050")
 				+sliderIt
 				+sliderIt
 				+sliderIt

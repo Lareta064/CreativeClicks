@@ -1,15 +1,15 @@
 mixin titleGroup(titleTop, titleBottom, addClass)
 	if addClass
 		.title-group.text-center(class=" "+ addClass)
-			.title-2
+			.title-2(data-aos="fade-up" data-aos-duration="500" data-aos-delay="500")
 				h2 !{titleTop}
-			.title-3
+			.title-3(data-aos="fade-up" data-aos-duration="500")
 				h3 !{titleBottom}
 	else
 		.title-group
-			.title-2
+			.title-2(data-aos="fade-up" data-aos-duration="500")
 				h2 !{titleTop}
-			.title-3
+			.title-3(data-aos="fade-up" data-aos-duration="500" data-aos-delay="500")
 				h3 !{titleBottom}
 mixin titleGroup2(titleTop, titleBottom)
 	.title-group

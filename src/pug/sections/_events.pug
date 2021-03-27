@@ -1,13 +1,12 @@
-mixin infocard4(span,text,  imgSrc)
+mixin infocard4(span,text,  imgSrc,t1,t2,t3,t4)
 	.info-card2
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/images/"+imgSrc +".jpg", width="350" alt="img")
-			img.blur-img(src="img/images/"+imgSrc +".jpg", width="350" alt="img")
 		.info-card__body
-			.info-card__badge
+			.info-card__badge(data-aos="fade-up"  data-aos-delay=""+ t2)
 				span #{span}
-			.marked-text !{text}
-		.info-card__footer
+			.marked-text(data-aos="fade-up"  data-aos-delay=""+ t3) !{text}
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t4)
 			a(href="#!").button-white
 				span Learn more
 				span
@@ -18,9 +17,9 @@ section.events
 		.black-wrapper
 			.events-title
 				+titleGroup('Upcoming events', 'We<br class="visible-mobile"> speak<br> up')
-			.infocard-block.infocard-block--reverse.infocard-block--yellow
+			.infocard-block.infocard-block--reverse.infocard-block--yellow(data-aos="fade-up"  data-aos-delay="400")
 				.infocard-block__content
 					.infocard-block__row
-						+infocard4('1 okt','Influencer marketing in Asia', 12)
-						+infocard4('7 sep','How blockchain impacts influencer marketing', 12)
-						+infocard4('24 sep','This colour will look good on your instagram', 12)
+						+infocard4('1 okt','Influencer marketing in Asia', 12,450,500,550,600)
+						+infocard4('7 sep','How blockchain impacts influencer marketing', 12,  650,700,750,800)
+						+infocard4('24 sep','This colour will look good on your instagram', 12,850,900,950,1000)

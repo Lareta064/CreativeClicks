@@ -4,6 +4,7 @@ $(document).ready(function () {
 	const bodyEl = document.body;
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('.header-navigation');
+	const mobMenuItem = document.querySelectorAll('.header-navigation li');
 	
 	if (menuToggle) {
 		menuToggle.addEventListener('click', function () {
@@ -17,6 +18,13 @@ $(document).ready(function () {
 				this.classList.add('active');
 				mobMenu.classList.add('active');
 				bodyEl.classList.add('noscroll');
+				let delay = 0;
+				for (let item of mobMenuItem) {
+					setTimeout(function () {
+						item.classList.add('animate');
+					}, 100 + delay)
+					delay += 300;
+				}
 
 			}
 		});
@@ -351,9 +359,9 @@ $(document).ready(function () {
 	// partners-slider
 	$('.partners-slider').slick({
 		items:1
-	})
+	});
 		
-
+	AOS.refresh();
 	window.addEventListener("scroll", onScrollEventHanlder);
 
 	let bars = document.querySelectorAll(".progress-bar");

@@ -31,15 +31,27 @@ header.header
 	.hidden-layout
 	.container.container--p0
 		.header-title
-			+titleGroup('to connect with high<br class="visible-mobile"> intent global customers <br class="visible-mobile"> at a massive scale', 'We<br> empower brands', 'title-group--reverse')
-			.header-title__img
+			.title-group.text-center.title-group--reverse
+				.title-2(data-aos='fade-up' data-aos-delay='400')
+					h2
+						| to connect with high
+						br.visible-mobile
+						|  intent global customers 
+						br.visible-mobile
+						|  at a massive scale
+				.title-3(data-aos='fade-up' data-aos-delay='200')
+					h3
+						| We
+						br
+						|  empower brands
+			.header-title__img(data-aos="fade-up"  data-aos-delay="1000")
 				picture
 					source(srcset="img/images/1mob.jpg" media="(max-width: 767px)" width="256" alt="img")
 					source(srcset="img/images/1.jpg",  media="(max-width: 1439px)" width="524" alt="img")
 					img(src="img/images/1.jpg", width="786" alt="img")
-		.header-color-block.p-128.color-block
+		.header-color-block.p-128.color-block(data-aos="fade-up"  data-aos-delay="800")
 			.text-block
-				.head-3
+				.head-3(data-aos="fade-up"  data-aos-delay="1400")
 					h3 Machine learning
-				.text-32
+				.text-32(data-aos="fade-up"  data-aos-delay="1600")
 					p Thanks to our machine&nbsp;learning technology, Creative&nbsp;Clicks knows how to deliver the users at scale that marketers and publishers need via&nbsp;campaigns optimized according to location, behavior, device, OS, creative type, demographics, etc

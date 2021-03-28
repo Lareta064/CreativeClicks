@@ -274,7 +274,7 @@ $(document).ready(function () {
 
 	function doubleSlederText(sliderBlock, sliderImages) {
 		$(sliderBlock).slick({
-			items:1,
+			slidesToShow:1,
 			arrows: false,
 			dots: false,
 			fade: true,
@@ -284,7 +284,7 @@ $(document).ready(function () {
 			asNavFor: $(sliderImages)
 		});
 		$(sliderImages).slick({
-			items:1,
+			slidesToShow:1,
 			arrows: false,
 			dots: true,
 			// fade: true,
@@ -358,7 +358,10 @@ $(document).ready(function () {
 	}
 	// partners-slider
 	$('.partners-slider').slick({
-		items:1
+		slidesToShow:4,
+		slidesToScroll:4,
+		speed:1500
+
 	});
 		
 	AOS.refresh();

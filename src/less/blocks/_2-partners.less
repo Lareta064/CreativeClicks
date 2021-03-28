@@ -14,6 +14,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    @media(max-width:1199px){width: 100%;}
   }
   .slick-track{
     display: flex;
@@ -196,6 +197,11 @@
 }
 .partners-content .slick-prev{left: -45px;}
 .partners-content .slick-next{right: -45px;}
+@media(max-width:1199px){
+  .partners-content .slick-prev{left: 0;}
+  .partners-content .slick-next{right: 0;}
+}
+
 .partners-content .slick-next:before {
   content: '';
   display: block;

@@ -360,8 +360,29 @@ $(document).ready(function () {
 	$('.partners-slider').slick({
 		slidesToShow:4,
 		slidesToScroll:4,
-		speed:1500
-
+		speed:1500,
+		responsive: [
+			{
+			  breakpoint: 1199,
+			  settings: {
+				
+				slidesToShow: 3
+			  }
+			},
+			{
+			  breakpoint: 767,
+			  settings: {
+				
+				slidesToShow: 2
+			  }
+			},
+			{
+			  breakpoint: 599,
+			  settings: {
+				slidesToShow: 1
+			  }
+			}
+		  ]
 	});
 		
 	AOS.refresh();

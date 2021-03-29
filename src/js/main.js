@@ -22,8 +22,8 @@ $(document).ready(function () {
 				for (let item of mobMenuItem) {
 					setTimeout(function () {
 						item.classList.add('animate');
-					}, 100 + delay)
-					delay += 300;
+					}, 50 + delay)
+					delay += 150;
 				}
 
 			}

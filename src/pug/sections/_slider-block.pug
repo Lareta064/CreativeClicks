@@ -13,7 +13,7 @@ section.case-studies
 		.section-top
 			+titleGroup('Case studies', 'We<br class="visible-mobile"> can <br class="hide-mobile"> prove it')
 		// ========= IMG SLIDER ==========
-		.slider__images.slider__images--left#case-images
+		.slider__images.slider__images--left#case-images(data-aos='fade-up' data-aos-delay='300')
 				.slider__img-item
 					img(src="img/resources/4.jpg", width="576" alt="img")
 				.slider__img-item
@@ -22,7 +22,7 @@ section.case-studies
 					img(src="img/resources/4.jpg", width="576" alt="img")
 		
 		// ========= TEXT SLIDER ==========			
-		.section-slider__content.bg-red
+		.section-slider__content.bg-red(data-aos='fade-up' data-aos-delay='400')
 			.section-slider__arrows
 				button.arr-left.case-prev
 					+sliderArrowLeft

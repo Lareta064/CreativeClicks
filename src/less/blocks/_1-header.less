@@ -252,6 +252,7 @@
 }
 .header-title .title-group {
   padding-top: 192px;
+  position: relative;
   @media(max-width:1919px){
     padding-top: 10vw;
 }
@@ -260,6 +261,59 @@
   }
 
   padding-left: 12px;
+}
+.scroll-icon{
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  height: 32px;
+  transform:translateX(-50%);
+  @media(max-width:1280px){
+    bottom: -30px;
+  }
+  @media(max-width:767px){
+    bottom: 26px;
+  }
+  a{
+    display: inline-block;
+    width: 20px;
+    height: 32px;
+    border:1px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    &:before{
+      content: '.';
+      color: #fff;
+      position: absolute;
+      left: 7px;
+      top: -4px;
+      line-height: 1.3;
+      animation-name: scrollIcon;
+      animation-duration: 1s;
+       animation-iteration-count: infinite;
+      font-size: 16px;
+      
+
+    }
+    // &:after{
+    //   bottom: 8px;
+    //   animation-delay: .5s;
+    // }
+    // &:before{
+    //   bottom: 2px;
+    // }
+  }
+}
+@keyframes scrollIcon{
+  0%{
+    opacity: 0;
+  }
+ 50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 @media (max-width: 1199px) {
   .header-title .title-group {
@@ -317,44 +371,7 @@
 .header-title__img{
   box-shadow: 24px 24px 20px rgba(0,0,0, .25);
 }
-// .header-title__img:after {
-//   content: "";
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   background-color: #000;
-//   background-image: url(../img/images/1.jpg);
-//   background-size: cover;
-//   background-position: 0 0;
-//   background-repeat: no-repeat;
-//   z-index: 1;
-//   top: 24px;
-//   left: 24px;
-//   mix-blend-mode: multiply;
-//   -webkit-filter: blur(16px);
-//   filter: blur(16px);
-//   @media (max-width: 767px) {
-//     top: 18px;
-//     left: 18px;
-//   }
-// }
-// .header--wedo .header-title__img:after {
-//   background-image: url(../img/whatwedo/header.jpg);
-// }
-// .header--signin .header-title__img:after {
-//   background-image: url(../img/signin/header.jpg);
-// }
-// @media (max-width: 767px) {
-//   .header-title__img:after {
-//     background-image: url(../img/images/1mob.jpg);
-//   }
-//   .header--wedo .header-title__img:after {
-//     background-image: url(../img/whatwedo/header-mob.jpg);
-//   }
-//   .header--signin .header-title__img:after {
-//     background-image: url(../img/signin/header-mob.jpg);
-//   }
-// }
+
 
 @media (max-width: 1199px) {
   .header-title__img {
@@ -383,6 +400,7 @@
   @media (max-width: 1920px) {
     max-width: 62.5vw;
     margin-right: 5.65vw;
+    margin-top: -138px;
   }
   @media (max-width: 1280px) {
     max-width: 800px;

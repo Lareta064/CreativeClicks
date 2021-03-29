@@ -74,4 +74,34 @@ mixin headerBlog(topTitle, title1)
 							a(href="resources.html") !{topTitle}
 					.title-1
 						h1 !{title1}
-						
+
+mixin headerMenu
+	// header-top
+	.header-top
+		a(href="index.html").logo
+			img(src="img/logo/logo.png", width="92" alt="logo")
+		.menu-toggle
+			span
+		//header-menu
+	.header-navigation
+		.header-menu
+			.header-menu__list
+				.header-menu__list-head
+					a(href="index.html").logo.logo--mobile
+						img(src="img/logo/logo.png", width="92" alt="logo")
+					button.close-mobile-menu
+						+icon-close
+				ul
+					li.active
+						a(href="index.html") Home
+					li
+						a(href="whatWeDo.html") What we do
+					li
+						a(href="whoWeAre.html") Who we are
+					li
+						a(href="careers.html") Careers
+					li
+						a(href="resources.html") Resources
+					li
+						a(href="signIn.html") Sign in
+	

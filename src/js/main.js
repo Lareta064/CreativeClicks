@@ -18,13 +18,13 @@ $(document).ready(function () {
 				this.classList.add('active');
 				mobMenu.classList.add('active');
 				bodyEl.classList.add('noscroll');
-				let delay = 0;
-				for (let item of mobMenuItem) {
-					setTimeout(function () {
-						item.classList.add('animate');
-					}, 50 + delay)
-					delay += 150;
-				}
+				// let delay = 0;
+				// for (let item of mobMenuItem) {
+				// 	setTimeout(function () {
+				// 		item.classList.add('animate');
+				// 	}, 50 + delay)
+				// 	delay += 150;
+				// }
 
 			}
 		});

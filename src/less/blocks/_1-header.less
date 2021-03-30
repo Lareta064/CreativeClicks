@@ -5,6 +5,7 @@
   left: 50%;
   height: 48px;
   transform:translateX(-50%);
+  cursor:default;
   @media(max-width:1919px){
     height: 48px;
     bottom: -70px;
@@ -18,28 +19,29 @@
   }
   a{
     display: inline-block;
+    cursor:default;
     width: 30px;
     height: 48px;
-    border:1px solid #fff;
+    border:2px solid #fff;
     border-radius: 15px;
     position: relative;
     &:before{
       content: '.';
       color: #fff;
       position: absolute;
-      left: 12px;
+      left: 10px;
       top: 0px;
-      line-height: 1.3;
+      line-height: 1;
       animation-name: scrollIcon;
       animation-duration: 1s;
        animation-iteration-count: infinite;
-      font-size: 16px;
+      font-size: 22px;
     }
     @media(max-width:1919px){
       width: 25px;
       height: 40px;
       &:before{
-        left: 9px;
+        left: 7.5px;
         top: -2px;
       }
     }
@@ -47,8 +49,18 @@
       width: 20px;
     height: 32px;
       &:before{
-        left: 7px;
-        top: -4px;
+        left: 5px;
+        top: -7px;
+      }
+    }
+    @media(max-width:991px){
+      &:before{
+        left: 6px;
+      }
+    }
+    @media(max-width:767px){
+      &:before{
+        left: 6px;
       }
     }
   }

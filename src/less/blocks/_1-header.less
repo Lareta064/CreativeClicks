@@ -1,17 +1,18 @@
 /*HEADER ICON SCROLL*/
 .scroll-icon{
-  position: absolute;
-  bottom: -90px;
+  position: fixed;
+  bottom: 30px;
   left: 50%;
   height: 48px;
   transform:translateX(-50%);
   cursor:default;
+  z-index: 10;
   @media(max-width:1919px){
     height: 48px;
-    bottom: -70px;
+   
   }
   @media(max-width:1280px){
-    bottom: -50px;
+   
     height: 32px;
   }
   @media(max-width:767px){
@@ -30,19 +31,20 @@
       color: #fff;
       position: absolute;
       left: 10px;
-      top: 0px;
+      top: 0;
       line-height: 1;
       animation-name: scrollIcon;
-      animation-duration: 1s;
+      animation-duration: 1.5s;
        animation-iteration-count: infinite;
-      font-size: 22px;
+      font-size: 24px;
     }
     @media(max-width:1919px){
       width: 25px;
       height: 40px;
+      font-size: 22px;
       &:before{
-        left: 7.5px;
-        top: -2px;
+        left: 8px;
+        
       }
     }
     @media(max-width:1280px){
@@ -50,7 +52,7 @@
     height: 32px;
       &:before{
         left: 5px;
-        top: -7px;
+        
       }
     }
     @media(max-width:991px){
@@ -67,13 +69,21 @@
 }
 @keyframes scrollIcon{
   0%{
-    opacity: 0;
-  }
- 50%{
     opacity: 1;
+    top: 5px;
+  }
+  40%{
+    opacity: .6;
+    
+  }
+ 85%{
+    opacity: 0;
+    top: -10px;
   }
   100%{
     opacity: 0;
+    top: 5px;
+   
   }
 }
 /*HEADER*/

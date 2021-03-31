@@ -32,13 +32,13 @@ header.header.header--signin
 	.container.container--p0
 		.header-title
 			.title-group
-				.title-3
-					h3 Sign up
-			.header-title__img
-				picture
-					source(srcset="img/signin/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
-					source(srcset="img/signin/header.jpg", width="524" alt="img")
-					img(src="img/signin/header.jpg", width="786" alt="img")
+				.title-1
+					h1 Sign up
+			
+			.header-title__img.header-img--mobile
+				img(src="img/signin/header-mob.jpg", width="256" alt="img")
+			.header-title__img.header-img--desktop(style="background-image: url(img/signin/header.jpg)")
+		
 		.header-color-block.p-128.color-block
 			.text-block
 				.text-32

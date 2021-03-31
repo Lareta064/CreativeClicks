@@ -2,7 +2,7 @@ mixin infocard3(spanText, addText1, addText2, imgSrc)
 	.info-card2.info-card--bg
 		.info-card__img
 			img.main-img(src="img/resources/"+imgSrc +".jpg", width="384" alt="img")
-			img.blur-img(src="img/resources/"+imgSrc +".jpg", width="384" alt="img")
+			
 		.info-card__body
 			.info-card__title
 				h3 !{spanText}
@@ -15,23 +15,7 @@ mixin infocard3(spanText, addText1, addText2, imgSrc)
 				span
 					+sliderArrowRight
 
-mixin infocard4(spanText, addText1, addText2, imgSrc)
-	.info-card.info-card--bg
-		.info-card__img
-			img(src="img/resources/"+imgSrc +".jpg", width="384" alt="img")
-			.blure-block
-				img(src="img/resources/"+imgSrc +".jpg", width="384" alt="img")
-		.info-card__body
-			.info-card__title
-				h3 !{spanText}
-			.additional-info
-				p #{addText1}
-				p #{addText2}
-		.info-card__footer
-			a(href="#!").button-white
-				span Play video
-				span
-					+sliderArrowRight
+
 section.section--black.top-block
 	.progress-bar.progress-bar--left
 	.container.container--p0

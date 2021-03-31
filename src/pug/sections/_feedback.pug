@@ -4,19 +4,18 @@ section.feedback
 		.feedback-content
 			.feedback__header
 				+titleGroup('Get connected', 'We <br class="visible-mobile">keep <br class="hide-mobile"> in <br class="visible-mobile">touch <br> (safely)')
-			.feedback-color-block.p-128
-				.feedback__img.color-block__img
+			.feedback-color-block.p-128(data-aos="fade-up"  data-aos-delay="450")
+				.feedback__img.color-block__img(data-aos="fade-up"  data-aos-delay="500")
 					img.main-img(src="img/feedback/1.jpg", width="576" alt="img")
-					img.blur-img(src="img/feedback/1.jpg", width="576" alt="img")
 				.feedback-form-wrapper
 					form.contact-form#contact-form(action="#" method="POST" autocomplete="off")
-						.form-item
+						.form-item(data-aos="fade-up"  data-aos-delay="550")
 							label Your email
 							input(type="text" name="email" placeholder="Your e-mail")
-						.form-item
+						.form-item(data-aos="fade-up"  data-aos-delay="600")
 							label Your message
 							p.textarea(role="textbox" contenteditable)
-						.form-btn
+						.form-btn(data-aos="fade-up"  data-aos-delay="650")
 							button(type="submit").button-white
 								span Let’s connect
 								span 

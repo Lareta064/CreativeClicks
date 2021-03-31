@@ -5,33 +5,7 @@
 	padding-right: 16px;
 	}
 }
-.header-title{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 192px;
-	padding-bottom: 192px;
-	position: relative;
-	z-index: 3;
-	min-height:415px;
-	@media(max-width:1919px){
-		padding-top: 10vw;
-	   padding-bottom: 10vw;
-	}
-	@media(max-width:1280px){
-		padding-top: 128px;
-		padding-bottom: 128px;
-	}
-	@media(max-width:991px){
-		padding-top: 96px;
-		padding-bottom: 96px;
-	}
-	@media(max-width:767px){
-		flex-direction: column;
-		padding-bottom: 0;
-		padding-top: 128px;
-	}
-}
+
 .header-title .title-group{
 	display: flex;
 	flex-direction: column;
@@ -79,27 +53,98 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	right: 0;
+	right: -10px;
+	box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.5), 16px 16px 32px rgba(0, 0, 0, 0.25);
 	img{
 		max-width:unset;
 		max-height: 100%;
 		height: 100%;
 		width: auto;
-		box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.5), 16px 16px 32px rgba(0, 0, 0, 0.25);
-		@media(max-width:767px){
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		}
+	
 	}
 	@media(max-width:767px){
 		width: 50%;
 		min-width:256px;
 		position: relative;
 		align-self: flex-end;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		img{
 			max-width:100%;
 			max-height: unset;
 			height: auto;
 			width: 100%;
 		}
+	}
+}
+.header-img--mobile{
+	display: none;
+	@media(max-width:767px){
+		display: block;
+	}
+}
+.header-img--desktop{
+	display: block;
+	width: 41%;
+	background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	@media(max-width:767px){
+		display: none;
+		
+	}
+}
+.header .header-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 192px;
+	padding-bottom: 192px;
+	position: relative;
+	z-index: 3;
+	min-height:786px;
+	@media(max-width:1919px){
+		padding-top: 10vw;
+	   padding-bottom: 10vw;
+	   min-height:32.5vw;
+	}
+	@media(max-width:1280px){
+		padding-top: 128px;
+		padding-bottom: 128px;
+		min-height:415px;
+	}
+	@media(max-width:991px){
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+	@media(max-width:767px){
+		flex-direction: column;
+		padding-bottom: 0;
+		padding-top: 128px;
+		min-height:unset;
+	}
+}
+.signin-over .header-title{
+	min-height:786px;
+	@media(max-width:1919px){
+		min-height:41vw;
+	}
+	@media(max-width:1280px){
+		min-height:50.625vw;
+	}
+	@media(max-width:767px){
+		min-height:unset;
+	}
+}
+.whoweare-page .header-title,
+.wedo-page .header-title{
+	min-height:786px;
+	@media(max-width:1919px){
+		min-height:41vw;
+	}
+	@media(max-width:1280px){
+		min-height:40.625vw;
+	}
+	@media(max-width:767px){
+		min-height:unset;
 	}
 }

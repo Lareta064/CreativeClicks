@@ -416,7 +416,7 @@ $(document).ready(function () {
 	}
 
 	// icon-hide/visible
-	let scrl = window.pageYOffset, elem = document.querySelector('.footer-logo');
+	let scrl = window.pageYOffset, elem = document.querySelector('.footer');
 
 	document.onscroll = ()=>{
 		scrl = window.pageYOffset;

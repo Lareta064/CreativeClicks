@@ -1,41 +1,26 @@
+mixin infocard4(span,text,  imgSrc)
+	.info-card2
+		.info-card__img
+			img.main-img(src="img/images/"+imgSrc +".jpg", width="350" alt="img")
+			img.blur-img(src="img/images/"+imgSrc +".jpg", width="350" alt="img")
+		.info-card__body
+			.info-card__badge
+				span #{span}
+			.marked-text !{text}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
 section.events
-    .progress-bar.progress-bar--right
-    .container
-        .black-wrapper
-            .events-title
-                +titleGroup('Upcoming events', 'We<br class="visible-mobile"> speak<br> up')
-            .events-content
-                .events-cards
-                    .events-cards-item.events-cards-item-1
-                        .events-img
-                            img(src="img/images/12.jpg", width="256" alt="img")
-                        .events-cards-title
-                            +lable('1 okt')
-                            .marked-text.marked-text--fix Influencer marketing in Asia
-                        .events-button
-                            a(href="#!").button-white
-                                span Learn more
-                                span
-                                    +sliderArrowRight
-                    .events-cards-item.events-cards-item-2
-                        .events-img
-                            img(src="img/images/12.jpg", width="256" alt="img")
-                        .events-cards-title
-                            +lable('7 sep')
-                            .marked-text.marked-text--fix How blockchain impact influencer marketing
-                        .events-button
-                            a(href="#!").button-white
-                                span Learn more
-                                span
-                                    +sliderArrowRight
-                    .events-cards-item.events-cards-item-3
-                        .events-img
-                            img(src="img/images/12.jpg", width="256" alt="img")
-                        .events-cards-title
-                            +lable('24 sep')
-                            .marked-text.marked-text--fix This colour will look good on your instagram
-                        .events-button
-                            a(href="#!").button-white
-                                span Learn more
-                                span
-                                    +sliderArrowRight
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.black-wrapper
+			.events-title
+				+titleGroup('Upcoming events', 'We<br class="visible-mobile"> speak<br> up')
+			.infocard-block.infocard-block--reverse.infocard-block--yellow
+				.infocard-block__content
+					.infocard-block__row
+						+infocard4('1 okt','Influencer marketing in Asia', 12)
+						+infocard4('7 sep','How blockchain impacts influencer marketing', 12)
+						+infocard4('24 sep','This colour will look good on your instagram', 12)

@@ -27,6 +27,10 @@
 .resources-searchResult{
 	.infocard-block__row:first-child{
 		margin-top: 0;
+		@media (max-width: 767px){
+		
+			margin-top: -150px;
+		}
 	}
 	section.top-block:first-of-type{
 		.infocard-block {
@@ -42,7 +46,14 @@
 	}
 	section.top-block+section.top-block{
 		.section-content {
-			padding-top: 189px;
+			padding-top: 265px;
+			@media(max-width:1919px){
+				padding-top: 14.7vw;
+			}
+			@media(max-width:1280px){
+				padding-top: 189px;
+			}
+			
 			@media(max-width:767px){
 				padding-top: 16px;
 			}

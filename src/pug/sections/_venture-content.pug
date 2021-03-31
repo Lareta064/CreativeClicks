@@ -1,0 +1,125 @@
+mixin download
+	<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M5,20h14v-2H5V20z M5,10h4v6h6v-6h4l-7-7L5,10z"/></g></svg>
+
+// red block
+section.section--black.p-470
+	.progress-bar
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--left.bg-red
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.text-block
+							.head-3
+								h3 WHO are we looking for?
+							.text-32
+								p We are looking for ambitious entrepreneurs with relevant experience in the digital marketing industry.
+							.text-32.white-text.disc-list 
+								ul 
+									li With a proven business model, relevant book of business or proven developed technology
+									li Focus on mobile, owned and operated content/apps, e-commerce, social/search/affiliate marketing and media buying.
+// orange block
+section.section--black.p-470
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--right.bg-orange
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3
+							h3 WHAT do we offer?
+						.text-32
+							p Create Ventures offers unmatched backing and industry knowledge to skyrocket digital media companies.
+						.text-32.white-text.disc-list 
+							ul 
+								li Funding, corporate set-up, business modelling, financial, operational and HR support.
+								li Access to our in-house developed ‘tech stack’ such as tracking, BI, email and payment platforms.
+								li International presence
+								li Proven track record in M&A
+
+//blue block
+section.section--black.p-470
+	.progress-bar
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--left.bg-blue
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3
+							h3 OUR process
+						.text-32
+							p Our investment committee will carefully look at all incoming business plans.
+						
+						.text-32.pt-48
+							p Key investment criteria are:
+							.white-text.disc-list 
+								ul 
+									li Market opportunity
+									li Scalability
+									li Experience, knowledge, commitment of the entrepreneur
+									li Proven businessmodel
+// green block
+section.section--black.p-470.section--venture-feedback
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--right.bg-green
+				.color-block__img
+					img.main-img(src="img/venture/2.jpg", width="576" alt="img")
+					img.blur-img(src="img/venture/2.jpg", width="576" alt="img")
+				.color-form-block
+					.text-block.special-paddings
+						.color-form-head
+							.head-3
+								h3 Ready to scale?
+							.text-32 
+								p Please fill out the application form below and we get in touch with you!
+					.form-wrapper
+						// if the required input field have been filled incorrectly we should add class 'error-value' to the parent div of that field ('.form-item' class)
+
+						form(action="").contact-form
+							.form-body.special-paddings
+								.form-item
+									label.form-item__title Full Name
+									input(type="text" name="firstName" placeholder="Your first name")
+								.form-item.form-item--sibl
+									input(type="text" name="lastName" placeholder="Last name")
+								.form-item
+									label.form-item__title Email address
+									input(type="text" name="email" placeholder="Your email address")
+									// notify if input value novalid
+									label.error This is not valid email address
+									// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
+									// (ex.: <label class="error">This is not valid email address</label>)
+								.form-item
+									label.form-item__title phone number
+									input(type="text" name="phone" placeholder="Your phone number")
+									// notify if input value novalid
+									label.error This is not valid phone number
+									// error message of the each input field should be added after this input field, using <label> tag with class '.error' 
+									// (ex.: <label class="error">This is not valid email address</label>)
+								.form-item
+									label.form-item__title company
+									input(type="text" name="company" placeholder="Company name")
+							.form-white-footer
+								.form-white-footer__content
+									.text-32 
+										p Upload business  plan and other relevant documents.
+
+									//For "Upload" button to change collor to white, and button "Send" to apper you need to add class 'active' to the '<div class="form-btn' >
+									.form-btn.active
+										button(type="submit").button-white.button--upload
+											span Upload
+											span 
+												+download
+										button(type="submit").button-white.button--send#sendForm
+											span Send

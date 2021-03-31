@@ -43,7 +43,8 @@ $(document).ready(function () {
 		items:1,
 		loop: true,
 		navSpeed: 800,
-		smartSpeed:800
+		smartSpeed:800,
+		
 	});
 	
 	caseSliderArrowLeft.click(function () {
@@ -62,10 +63,23 @@ $(document).ready(function () {
 		$('#careers-slider1').slick({
 			centerMode: true,
 			centerPadding: '190px',
-			slidesToShow: 3,
+			slidesToShow: 5,
+			infinite:true,
 			arrows: false,
 			asNavFor: '#careers-slider2',
 			responsive: [
+				{
+					breakpoint: 1919,
+					settings: {
+					  slidesToShow: 4,
+					}
+				  },
+				  {
+					breakpoint: 1499,
+					settings: {
+					  slidesToShow: 3,
+					}
+				  },
 				{
 					breakpoint: 1199,
 					settings: {
@@ -206,6 +220,9 @@ $(document).ready(function () {
 	window.addEventListener('resize', function(){
 		equalizeText("infocard-block__row","info-card__body");
 	});
+	window.addEventListener('scroll', function(){
+		equalizeText("infocard-block__row","info-card__body");
+	});
 
 	//SHOW JOB OPENNING CARDS	
 	if($('.vacancy-card')){
@@ -304,6 +321,34 @@ $(document).ready(function () {
 	$('.captured-next').on('click', function() {
 		$('#captured-slider').slick('slickNext');
 	});
+
+	//====== SHOW MODAL FORM ======
+	const overlay = document.getElementById('overlay');
+	const modalForm = document.getElementById('modal-block');
+	const btnOpenModalForm = document.getElementsByClassName('btn-open-modal');
+	const btnCloseModalForm = document.querySelector('.close-modal');
+	
+		for(let item of btnOpenModalForm){
+			item.addEventListener('click', function(){
+				overlay.classList.add('active');
+				modalForm.classList.add('active');
+				bodyEl.classList.add('noscroll');
+			})
+		}
+
+	if(btnCloseModalForm){
+		btnCloseModalForm.addEventListener('click', function(){
+			overlay.classList.remove('active');
+			modalForm.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+		});
+		overlay.addEventListener('click', function(){
+			this.classList.remove('active');
+			modalForm.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+		});
+	}
+
 	
 	//========================================================================
 	//========================================================================

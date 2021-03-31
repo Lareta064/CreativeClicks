@@ -31,16 +31,18 @@ header.header.header--whoweare
     .hidden-layout
     .container.container--p0
         .header-title
-            +titleGroup('Proud people is', 'Who we<br> are')
+            .title-group
+                .title-3
+                    h3 Who we<br> are
             .header-title__img
-                .button-white.button-playVideo play video
-                    i
-                        svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            path(d="M0 0V14L11 7L0 0Z" fill="black")
+                //- .button-white.button-playVideo play video
+                //-     i
+                //-         svg(width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                //-             path(d="M0 0V14L11 7L0 0Z" fill="black")
                 picture
                     source(srcset="img/whoweare/header-mob.jpg" media="(max-width: 767px)" width="256" alt="img")
                     source(srcset="img/whoweare/header.jpg", width="524" alt="img")
-                    img(src="img/whoweare/header.jpg", width="524" alt="img")
+                    img(src="img/whoweare/header.jpg", width="786" alt="img")
                 .blure-block
                     img(src="img/whoweare/header.jpg", width="256" alt="img")
         .header-color-block.p-128.color-block

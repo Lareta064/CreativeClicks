@@ -1,54 +1,28 @@
+mixin infocard3(spanText, addText1, addText2, imgSrc)
+	.info-card2.info-card--bg
+		.info-card__img
+			img.main-img(src="img/images/"+imgSrc +".jpg", width="335" alt="img")
+			img.blur-img(src="img/images/"+imgSrc +".jpg", width="335" alt="img")
+		.info-card__body
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
+		.info-card__footer
+			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
 section.blog
-    .progress-bar
-    .container
-        .black-wrapper
-            .blog-title
-                +titleGroup('The latest from<br class="visible-mobile"> the trade', 'We’re<br class="visible-mobile"> on<br class="hide-mobile"> top<br class="visible-mobile"> of it')
-            .blog-content
-                .blog-cards
-                    .blog-cards-item
-                        .blog-img
-                            img(src="img/images/9.jpg", width="256" alt="img")
-                        .blog-cards-title
-                            .marked-text
-                                span Millenials
-                                span followed
-                                span 24/7
-                            .subtitle-text
-                                span Today
-                                span.italic 5 min. read
-                        .blog-button
-                            a(href="#!").button-white
-                                span Learn more
-                                span
-                                    +sliderArrowRight
-                    .blog-cards-item
-                        .blog-img
-                            img(src="img/images/10.jpg", width="256" alt="img")
-                        .blog-cards-title
-                            .marked-text
-                                span Marketing
-                                span in China
-                            .subtitle-text
-                                span 3 Days ago
-                                span.italic 4 min. read
-                        .blog-button
-                            a(href="#!").button-white
-                                span Learn more
-                                span
-                                    +sliderArrowRight
-                    .blog-cards-item
-                        .blog-img
-                            img(src="img/images/11.jpg", width="256" alt="img")
-                        .blog-cards-title
-                            .marked-text
-                                span Hongkong
-                                span business
-                            .subtitle-text
-                                span 3 Days ago
-                                span.italic 4 min. read
-                        .blog-button
-                            a(href="#!").button-white
-                                span Learn more
-                                span
-                                    +sliderArrowRight
+	.progress-bar
+	.container.container--p0
+		.black-wrapper
+			.blog-title
+				+titleGroup('The latest from<br class="visible-mobile"> the trade', 'We’re<br class="visible-mobile"> on<br class="hide-mobile"> top<br class="visible-mobile"> of it')
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple
+				.infocard-block__content
+					.infocard-block__row
+						+infocard3('Millenials followed 24/7', 'Today', '5 min. read', 9)
+						+infocard3('Marketing in&nbsp;China', '3 Days ago', '4 min. read', 10)
+						+infocard3('Hongkong business', '3 Days ago', '4 min. read', 11)

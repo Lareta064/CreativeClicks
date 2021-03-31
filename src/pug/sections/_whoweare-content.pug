@@ -1,142 +1,132 @@
 //- базовая карточка с фоном 2 бейджами
 
 mixin infocard4(spanText, addText1, addText2, imgSrc)
-    .info-card2.info-card--bg
-        .info-card__img
-            img.main-img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
-            
-            img.blur-img(src="img/whoweare/"+imgSrc +".jpg", width="256" alt="img")
-        .info-card__body
-            .info-card__title
-                h3 !{spanText}
-            .additional-info
-                p #{addText1}
-                p #{addText2}
-        .info-card__footer
-            a(href="#!").button-white
-                span Learn more
-                span
-                    +sliderArrowRight
-
-	.info-card2
+	.info-card2.info-card--bg
 		.info-card__img
-			img.main-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
-			img.blur-img(src="img/resources/"+imgSrc +".jpg", width="256" alt="img")
+			img.main-img(src="img/whoweare/"+imgSrc +".jpg", width="384" alt="img")
+			
+			img.blur-img(src="img/whoweare/"+imgSrc +".jpg", width="384" alt="img")
 		.info-card__body
-			.info-card__badge
-				span Case study
-			.marked-text !{text}
+			.info-card__title
+				h3 !{spanText}
+			.additional-info
+				p #{addText1}
+				p #{addText2}
 		.info-card__footer
 			a(href="#!").button-white
+				span Learn more
+				span
+					+sliderArrowRight
 //- базовая карточка без фона c 2 бейджами
 mixin infoCardBadge(title1,title2,title3)
-    .info-card2.info-cardBadge
-        .info-card__img
-            img.main-img(src="img/whoweare/4.jpg", width="256" alt="img")
-            img.blur-img(src="img/whoweare/4.jpg", width="256" alt="img")
-        .info-card__body
-            .info-card__badge
-                span !{title1}
-            .info-card__badge.info-card__badge--white
-                span
-                    +map
-                span !{title2}
-            .marked-text !{title3}
-        .info-card__footer
-            a(href="#!").button-white
-                span Schedule a meeting
-                span
-                    +sliderArrowRight
+	.info-card2.info-cardBadge
+		.info-card__img
+			img.main-img(src="img/whoweare/4.jpg", width="384" alt="img")
+			img.blur-img(src="img/whoweare/4.jpg", width="384" alt="img")
+		.info-card__body
+			.info-card__badge
+				span !{title1}
+			.info-card__badge.info-card__badge--white
+				span
+					+map
+				span !{title2}
+			.marked-text !{title3}
+		.info-card__footer
+			a(href="#!").button-white
+				span Schedule a meeting
+				span
+					+sliderArrowRight
 
 // red block
 section.section--black.p-470.whoweare-red
-    .progress-bar
-    .container.container--p0
-        .color-block-wrapper
-            .color-block--left
-                .color-block__img
-                    img.main-img(src="img/whoweare/1.jpg", width="384" alt="img")
-                    img.blur-img(src="img/whoweare/1.jpg", width="384" alt="img")
-                .color-block.p-128
-                    .text-block
-                        .head-3.head-3--small
-                            p story
-                            h3 10+ years of experience
-                        .text-32
-                            p Growing every year&nbsp;since our founding in 2009, we provide clients with 120+ experts and professionals to service their business every day. At Creative Clicks, performance marketing is in our DNA. We know when the next big opportunity is around the corner. When we find a new marketing channel that can help our clients achieve their goals, we test it.
+	.progress-bar
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--left
+				.color-block__img
+					img.main-img(src="img/whoweare/1.jpg", width="576" alt="img")
+					img.blur-img(src="img/whoweare/1.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3.head-3--small
+							h3 10+ years of experience
+						.text-32
+							p Growing every year&nbsp;since our founding in 2009, we provide clients with 120+ experts and professionals to service their business every day. At Creative Clicks, performance marketing is in our DNA. We know when the next big opportunity is around the corner. When we find a new marketing channel that can help our clients achieve their goals, we test it.
 
 // orange block
 section.section--black.p-470.whoweare-orange
-    .progress-bar.progress-bar--right
-    .container.container--p0
-        .color-block-wrapper
-            .color-block--right
-                .color-block__img
-                    img.main-img(src="img/whoweare/5.jpg", width="384" alt="img")
-                    img.blur-img(src="img/whoweare/5.jpg", width="384" alt="img")
-                .color-block.p-128
-                    .text-block
-                        .head-3
-                            h3 Creativity
-                        .text-32
-                            p Well, that’s our first name. Though we’re a performance-based mobile marketing company, we’re able to exceed client KPI goals based on the effective creative produced by our creative studio.
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--right
+				.color-block__img
+					img.main-img(src="img/whoweare/5.jpg", width="576" alt="img")
+					img.blur-img(src="img/whoweare/5.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3
+							h3 Creativity
+						.text-32
+							p Well, that’s our first name. Though we’re a performance-based mobile marketing company, we’re able to exceed client KPI goals based on the effective creative produced by our creative studio.
 
 
 // purple block
 section.section--black.p-470.whoweare-purple
-    .progress-bar.progress-bar--left
-    .container.container--p0
-        .color-block-wrapper
-            .color-block--left
-                .color-block__img
-                    img.main-img(src="img/whoweare/3.jpg", width="384" alt="img")
-                    img.blur-img(src="img/whoweare/3.jpg", width="384" alt="img")
-                .color-block.p-128
-                    .text-block
-                        .head-3
-                            h3 Our triple E<br class="visible-mobile"> philosophy
-                        .text-32
-                            p What is our Triple E Philosophy? We are Energetic and Entrepreneurial Experts. While the concept seems simple enough, it is much more.
-                        .text-block__items
-                            .text-block__item
-                                .text-block__desk
-                                    h4.title-4 Energetic people
-                                    .text-32
-                                        p At Creative Clicks, it is of the utmost importance that the team is surrounded by other energetic people. That way, each person can build off each other’s energy.
-                            .text-block__item
-                                .text-block__desk
-                                    h4.title-4 Entrepreneurial mindset
-                                    .text-32
-                                        p If you then add in an entrepreneurial mindset where the team is encouraged to take ownership and aim for the stars, dreams become reality no matter how large or small they seem.
-                            .text-block__item
-                                .text-block__desk
-                                    h4.title-4 Experts in the field
-                                    .text-32
-                                        p  The final E stands for expert, which just means that Creative Clicks wants to be the absolute experts in the field of digital marketing. Instead of following trends, they want to set the trends. The Triple E Philosophy isn’t just followed, it’s lived.
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.color-block-wrapper
+			.color-block--left
+				.color-block__img
+					img.main-img(src="img/whoweare/3.jpg", width="576" alt="img")
+					img.blur-img(src="img/whoweare/3.jpg", width="576" alt="img")
+				.color-block.p-128
+					.text-block
+						.head-3
+							h3 Our triple E<br class="visible-mobile"> philosophy
+						.text-32
+							p What is our Triple E Philosophy? We are Energetic and Entrepreneurial Experts. While the concept seems simple enough, it is much more.
+						.text-block__items
+							.text-block__item
+								.text-block__desk
+									h4.title-4 Energetic people
+									.text-32
+										p At Creative Clicks, it is of the utmost importance that the team is surrounded by other energetic people. That way, each person can build off each other’s energy.
+							.text-block__item
+								.text-block__desk
+									h4.title-4 Entrepreneurial mindset
+									.text-32
+										p If you then add in an entrepreneurial mindset where the team is encouraged to take ownership and aim for the stars, dreams become reality no matter how large or small they seem.
+							.text-block__item
+								.text-block__desk
+									h4.title-4 Experts in the field
+									.text-32
+										p  The final E stands for expert, which just means that Creative Clicks wants to be the absolute experts in the field of digital marketing. Instead of following trends, they want to set the trends. The Triple E Philosophy isn’t just followed, it’s lived.
 
 // yellow block
 section.section--black.whoweare-yellow
-    .progress-bar.progress-bar--right
-    .container.container--p0
-        .black-wrapper
-            .events-title
-                +titleGroup('Upcoming events', 'You<br class="visible-mobile"> can meet<br class="visible-mobile"> us at')
-            .infocard-block.infocard-block--reverse.infocard-block--yellow
-                .infocard-block__content.mb-0
-                    .infocard-block__row
-                        +infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing&nbsp;in Asia')
-                        +infoCardBadge('23 jan - 30 jan','Berlin','How blockchain impacts influencer marketing')
-                        +infoCardBadge('17 feb - 24 feb','Paris','This&nbsp;colour will look good on your instagram')
+	.progress-bar.progress-bar--right
+	.container.container--p0
+		.black-wrapper
+			.events-title
+				+titleGroup('Upcoming events', 'You<br class="visible-mobile"> can meet<br class="visible-mobile"> us at')
+			.infocard-block.infocard-block--reverse.infocard-block--yellow
+				.infocard-block__content.mb-0
+					.infocard-block__row
+						+infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing&nbsp;in Asia')
+						+infoCardBadge('23 jan - 30 jan','Berlin','How blockchain impacts influencer marketing')
+						+infoCardBadge('17 feb - 24 feb','Paris','This&nbsp;colour will look good on your instagram')
 
 // green block
 section.section--black.whoweare-green
-    .progress-bar.progress-bar--left
-    .container.container--p0
-        .infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--green
-            .infocard-block__content
-                .infocard-block__row
-                    +infocard4('All about black friday and cyber monday&nbsp;2020', '5 Days ago', 'Linkedin', 6)
-                    +infocard4('The power<br class="visible-mobile"> of video in&nbsp;mobile marketing' , '2 Day ago', 'Instagram', 7)
-                    +infocard4( 'Check our halloween playlist' , '9 Days ago', 'Facebook', 8)
+	.progress-bar.progress-bar--left
+	.container.container--p0
+		.section-content
+			+titleGroup('Check our', 'Social Media')
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--green
+				.infocard-block__content.mb-0
+					.infocard-block__row
+						+infocard4('All about black friday and cyber monday&nbsp;2020', '5 Days ago', 'Linkedin', 6)
+						+infocard4('The power<br class="visible-mobile"> of video in&nbsp;mobile marketing' , '2 Day ago', 'Instagram', 7)
+						+infocard4( 'Check our halloween playlist' , '9 Days ago', 'Facebook', 8)
 
 

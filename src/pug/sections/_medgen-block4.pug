@@ -1,5 +1,5 @@
-mixin numberItem(num, title)
-	li
+mixin numberItem(num, title, t1)
+	li(data-aos="fade-up"  data-aos-delay=""+ t1)
 		span #{num}
 		.text-block
 			block
@@ -9,14 +9,14 @@ section.section--black.medgen-blockText.medgen-blockText4
 	.container.container--p0
 		.black-wrapper
 			.title-group
-				.title-3
+				.title-3(data-aos="fade-up"  data-aos-delay="200")
 					h3 CREATIVE AND <br> AI-DRIVEN OPTIMI&shy;ZATION
 			.blogDetail-wrapper
 				.blogDetail-body
-					.blogDetail-image.medgen-block__img
+					.blogDetail-image.medgen-block__img(data-aos="fade-up"  data-aos-delay="300")
 						img.main-img(src="img/medgen/5.jpg" width="576", alt="img")
 				
-					.text-block 
+					.text-block(data-aos="fade-up"  data-aos-delay="350")
 						.white-text
 							p Combining machine&#8209;driven analytics&#8209;and human creativity holds the key&nbsp;to creating the best possible&nbsp;customer experience.
 						.dark-text.p-50 
@@ -25,15 +25,15 @@ section.section--black.medgen-blockText.medgen-blockText4
 					
 					
 					ul.number-list
-						+numberItem(1)
+						+numberItem(1, 400)
 							.dark-text
 								p Different campaigns / pre-landers with content and design to be launched frequently
-						+numberItem(2)
+						+numberItem(2, 450)
 							.dark-text
 								p A/B testing with our in-house machine learning technology
-						+numberItem(3)
+						+numberItem(3, 500)
 							.dark-text
 								p A team of specialists that can advise you on the complete conversion funnel
-						+numberItem(4)
+						+numberItem(4, 550)
 							.dark-text
 								p On request we can support with any other creative studio work that you may need

@@ -1,15 +1,15 @@
 
-mixin infocard3(spanText, addText1, addText2, imgSrc)
+mixin infocard3(spanText, addText1, addText2, imgSrc, imgSrc,t1, t2, t3, t4)
 	.info-card2.info-card--bg
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/talks/"+imgSrc +".jpg", width="384" alt="img")
 		.info-card__body
-			.info-card__title
+			.info-card__title(data-aos="fade-up"  data-aos-delay=""+ t2)
 				h3 !{spanText}
-			.additional-info
+			.additional-info(data-aos="fade-up"  data-aos-delay=""+ t3)
 				p #{addText1}
 				p #{addText2}
-		.info-card__footer
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t4)
 			a(href="#!").button-white
 				span Learn more
 				span
@@ -19,18 +19,18 @@ section.section--black.talks-block
 	.container.container--p0
 		.section-content
 			.title-group
-				.title-3
+				.title-3(data-aos="fade-up"  data-aos-delay="200")
 					h3 We talk #[br] about it
-			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--green
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--green(data-aos="fade-up"  data-aos-delay="300")
 				.infocard-block__content
 					.infocard-block__row
-						+infocard3('What to expect from mobile marketing in 2021', '9 Days ago', 'Facebook', 1)
-						+infocard3('Creative Clicks China and the APAC Mobile Marketing', '5 Days ago', 'Linkedin', 1)
-						+infocard3('The power of video marketing', '2 Days ago', 'Instagram', 1)
+						+infocard3('What to expect from mobile marketing in 2021', '9 Days ago', 'Facebook', 1, 450,500, 550, 600)
+						+infocard3('Creative Clicks China and the APAC Mobile Marketing', '5 Days ago', 'Linkedin', 1, 450,500, 550, 600)
+						+infocard3('The power of video marketing', '2 Days ago', 'Instagram', 1, 450,500, 550, 600)
 					
 					.infocard-block__row
-						+infocard3('All about Black friday and cyber Monday 2021','5 Days ago', 'Linkedin',  2)
-						+infocard3('The power of video in mobile marketing', '2 Days ago', 'Instagram', 3)
-						+infocard3('Check our Halloween Playlist', '9 Days ago', 'Facebook', 4)
-				.btn-wrap
+						+infocard3('All about Black friday and cyber Monday 2021','5 Days ago', 'Linkedin',  2, 450,500, 550, 600)
+						+infocard3('The power of video in mobile marketing', '2 Days ago', 'Instagram', 3, 450,500, 550, 600)
+						+infocard3('Check our Halloween Playlist', '9 Days ago', 'Facebook', 4, 450,500, 550, 600)
+				.btn-wrap(data-aos="fade-up"  data-aos-delay="650")
 					a(href="talks-2.html").button-white.black-button show more

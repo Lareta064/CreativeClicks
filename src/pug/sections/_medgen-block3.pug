@@ -1,5 +1,5 @@
-mixin numberItem(num, title)
-	li
+mixin numberItem(num, title, t1)
+	li(data-aos="fade-up"  data-aos-delay=" " +t1)
 		span #{num}
 		.text-block 
 			h4 #{title}
@@ -10,20 +10,20 @@ section.section--black.medgen-blockText.medgen-blockText3
 	.container.container--p0
 		.black-wrapper
 			.title-group
-				.title-3
+				.title-3(data-aos="fade-up"  data-aos-delay="200")
 					h3 Strategy
 			.blogDetail-wrapper
 				.blogDetail-body
 					ul.number-list
-						+numberItem(1, 'DATA-DRIVEN STRATEGY')
+						+numberItem(1, 'DATA-DRIVEN STRATEGY', 350)
 							.dark-text
 								p A deep screening of available health data supports an efficient market activation and audience targeting and a continuous improvement in ROI.
-						+numberItem(2, 'OBJECTIVES AND LAUNCH')
+						+numberItem(2, 'OBJECTIVES AND LAUNCH', 400)
 							.dark-text
 								p Set campaigns and acquisition goals together with our customer and launch test campaigns on a range of media channels, including our in-house publisher network, while monitoring budget spend.
-						+numberItem(3, 'SOURCE PERFORMANCE ANALYTICS')
+						+numberItem(3, 'SOURCE PERFORMANCE ANALYTICS', 450)
 							.dark-text
 								p Identify the top converting publishers and media channels with the best performing traffic.
-						+numberItem(4, 'SCALE UP')
+						+numberItem(4, 'SCALE UP', 500)
 							.dark-text
 								p Increase traffic and spend from the top converting publishers and media channels while monitoring KPIs.

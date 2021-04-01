@@ -1,32 +1,32 @@
-mixin infocard3(spanText, addText1, addText2, imgSrc)
+mixin infocard3(spanText, addText1, addText2, imgSrc, t1, t2, t3, t4)
 	.info-card2.info-card--bg
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/resources/"+imgSrc +".jpg", width="384" alt="img")
 			
 		.info-card__body
-			.info-card__title
+			.info-card__title(data-aos="fade-up"  data-aos-delay=""+ t2)
 				h3 !{spanText}
-			.additional-info
+			.additional-info(data-aos="fade-up"  data-aos-delay=""+ t3)
 				p #{addText1}
 				p #{addText2}
-		.info-card__footer
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t4)
 			a(href="#!").button-white
 				span Learn more
 				span
 					+sliderArrowRight
 
-mixin infocard4(spanText, addText1, addText2, imgSrc)
+mixin infocard4(spanText, addText1, addText2, imgSrc, t1, t2, t3, t4)
 	.info-card2.info-card--bg
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/resources/"+imgSrc +".jpg", width="384" alt="img")
 			
 		.info-card__body
-			.info-card__title
+			.info-card__title(data-aos="fade-up"  data-aos-delay=""+ t2)
 				h3 !{spanText}
-			.additional-info
+			.additional-info(data-aos="fade-up"  data-aos-delay=""+ t3)
 				p #{addText1}
 				p #{addText2}
-		.info-card__footer
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t4)
 			a(href="#!").button-white.button-video
 				span Play video
 				span
@@ -36,26 +36,26 @@ section.section--black.top-block
 	.progress-bar.progress-bar--right
 	.container.container--p0
 		.section-content
-			.section-title
+			.section-title(data-aos="fade-up"  data-aos-delay="200")
 				h3 3 results:
-			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--purple(data-aos="fade-up"  data-aos-delay="300")
 				.infocard-block__content
 					// =====  cards row =====
 					.infocard-block__row
-						+infocard3('Certainty&nbsp;in our Uncertainty: Six Trends for&nbsp;the&nbsp;2020 Holiday Season and Beyond', 'Today', '7 min. read', 4)
-						+infocard3('Blog Item<br> holiday<br> 3 lines', '1 Day ago', '6 min. read', 8)
-				.btn-wrap
+						+infocard3('Certainty&nbsp;in our Uncertainty: Six Trends for&nbsp;the&nbsp;2020 Holiday Season and Beyond', 'Today', '7 min. read', 4, 450,500, 550, 600)
+						+infocard3('Blog Item<br> holiday<br> 3 lines', '1 Day ago', '6 min. read', 8, 450,500, 550, 600)
+				.btn-wrap(data-aos="fade-up"  data-aos-delay="650")
 					a(href="overview-2.html").button-white.light-button show all (12)
 			
 section.section--black.top-block
 	.progress-bar.progress-bar--left
 	.container.container--p0
 		.section-content
-			.infocard-block.infocard-block--yellow
+			.infocard-block.infocard-block--yellow(data-aos="fade-up"  data-aos-delay="350")
 				.infocard-block__content
 					// =====  cards row =====
 					.infocard-block__row
-						+infocard4('Blog Item<br> holiday<br> 3 lines', 'Today', '7 min. read', 8)
+						+infocard4('Blog Item<br> holiday<br> 3 lines', 'Today', '7 min. read', 8, 450,500, 550, 600 )
 					
-				.btn-wrap
+				.btn-wrap(data-aos="fade-up"  data-aos-delay="650")
 					a(href="overview-2.html").button-white.black-button show all (12)

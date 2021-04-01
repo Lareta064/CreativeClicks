@@ -1,12 +1,12 @@
-mixin vacanceCard(title)
+mixin vacanceCard(title, t1, t2, t3, t4)
 	.info-card2.vacancy-card
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=" "+ t1)
 			img.main-img(src="img/careers/vacancy.jpg", width="384" alt="img")
 		.info-card__body
-			.info-card__badge
+			.info-card__badge(data-aos="fade-up"  data-aos-delay=" "+ t2)
 				span Amsterdam
-			.marked-text !{title}
-		.info-card__footer
+			.marked-text(data-aos="fade-up"  data-aos-delay=" "+ t3) !{title}
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=" "+ t4)
 			a(href="vacancy-page.html").button-white
 				span Learn more
 				span
@@ -17,22 +17,22 @@ section.vacancy.section--black
 	.container.container--p0
 		.black-wrapper
 			.title-group.text-center
-				.title-3
+				.title-3(data-aos="fade-up"  data-aos-delay=" 300")
 					h3 Job openings
 			.vacancy-content
 				.color-block.color-block--fix
 					.vacancy-content__cards#vacancy-wrapper
 						.infocard-block__row
-							+vacanceCard('Credit Controller Internship')
-							+vacanceCard('Design Internship')
-							+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship')
+							+vacanceCard('Credit Controller Internship', 450,500,550,600)
+							+vacanceCard('Design Internship', 450,500,550,600)
+							+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship', 450,500,550,600)
 						.infocard-block__row
-							+vacanceCard('Credit Controller Internship')
-							+vacanceCard('Design Internship')
-							+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship')
+							+vacanceCard('Credit Controller Internship', 450,500,550,600)
+							+vacanceCard('Design Internship', 450,500,550,600)
+							+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship', 450,500,550,600)
 						.infocard-block__row
-							+vacanceCard('Credit Controller Internship')
-							+vacanceCard('Design Internship')
-							+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship')
+							+vacanceCard('Credit Controller Internship', 450,500,550,600)
+							+vacanceCard('Design Internship', 450,500,550,600)
+							+vacanceCard('Marketing & Commu&shy;nica&shy;tions Internship', 450,500,550,600)
 					.button-box
 						a(href="#vacancy-wrapper").button-white.light-button#showVacancy show all (8)

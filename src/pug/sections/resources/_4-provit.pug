@@ -1,12 +1,12 @@
-mixin infocard4(text, addText1, addText2, imgSrc)
+mixin infocard4(text, addText1, addText2, imgSrc, t1, t2, t3, t4)
 	.info-card2
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/resources/"+imgSrc +".jpg", width="576" alt="img")
 		.info-card__body
-			.info-card__badge
+			.info-card__badge(data-aos="fade-up"  data-aos-delay=""+ t2)
 				span Case study
-			.marked-text !{text}
-		.info-card__footer
+			.marked-text(data-aos="fade-up"  data-aos-delay=""+ t3) !{text}
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t4)
 			a(href="#!").button-white
 				span Learn more
 				span
@@ -16,12 +16,12 @@ section.section--black.prove-block
 	.container.container--p0
 		.section-content
 			+titleGroup('Case studies', 'We <br class="visible-mobile">can prove <br class="visible-mobile"> it')
-			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--red
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--red(data-aos="fade-up"  data-aos-delay="350")
 				.infocard-block__content
 					.infocard-block__row
-						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5)
-						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
-						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 7)
+						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5, 450, 500,550,600)
+						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6, 450, 500,550,600)
+						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 7, 450, 500,550,600)
 					
-				.btn-wrap
+				.btn-wrap(data-aos="fade-up"  data-aos-delay="650")
 					a(href="case-studies-1.html").button-white.light-button show all (12)

@@ -3,19 +3,19 @@ mixin titleGroup(titleTop, titleBottom, addClass)
 		.title-group.text-center(class=" "+ addClass)
 			.title-2(data-aos="fade-up"  data-aos-delay="200")
 				h2 !{titleTop}
-			.title-3(data-aos="fade-up"  data-aos-delay="600")
+			.title-3(data-aos="fade-up"  data-aos-delay="300")
 				h3 !{titleBottom}
 	else
 		.title-group
 			.title-2(data-aos="fade-up" data-aos-delay="200")
 				h2 !{titleTop}
-			.title-3(data-aos="fade-up" data-aos-delay="600" )
+			.title-3(data-aos="fade-up" data-aos-delay="300" )
 				h3 !{titleBottom}
 mixin titleGroup2(titleTop, titleBottom)
 	.title-group
-		.title-2
+		.title-2(data-aos="fade-up"  data-aos-delay="200")
 			h2 !{titleTop}
-		.title-1
+		.title-1(data-aos="fade-up"  data-aos-delay="300")
 			h1 !{titleBottom}
 
 mixin infoCard1
@@ -69,10 +69,10 @@ mixin headerBlog(topTitle, title1)
 		.container.container--p0
 			.header-content
 				.title-group.text-center
-					.title-2
+					.title-2(data-aos="fade-up"  data-aos-delay="200")
 						h2 
 							a(href="resources.html") !{topTitle}
-					.title-1
+					.title-1(data-aos="fade-up"  data-aos-delay="300")
 						h1 !{title1}
 
 mixin headerMenu

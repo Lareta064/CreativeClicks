@@ -1,11 +1,11 @@
-mixin infocard3(title,imgSrc)
+mixin infocard3(title,imgSrc, t1, t2, t3)
 	.info-card2.info-card--medgen
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/medgen/"+imgSrc +".jpg", width="384" alt="img")
 			
-		.info-card__body
-			h3 #{title}
-			.info-card-desk
+		.info-card__body(data-aos="fade-up"  data-aos-delay=""+ t2)
+			h3(data-aos="fade-up"  data-aos-delay=""+ t2) #{title}
+			.info-card-desk(data-aos="fade-up"  data-aos-delay=""+ t3)
 				block
 			
 section.section--black.medgen-cards
@@ -13,17 +13,17 @@ section.section--black.medgen-cards
 	.container.container--p0
 		.black-wrapper
 			.title-group
-				.title-3
+				.title-3(data-aos="fade-up"  data-aos-delay="200")
 					h3 DATA. MEDIA. ANALYTICS
-				.title-2
+				.title-2(data-aos="fade-up"  data-aos-delay="300")
 					h2 Our magic formula to success.
 					
-			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--blue
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--blue(data-aos="fade-up"  data-aos-delay="400")
 				.infocard-block__content
 					.infocard-block__row
-						+infocard3('data',  2)
+						+infocard3('data',  2, 450, 500, 550)
 							p Data is the gas which powers our <br class="visible-desktop"> campaigns. We <br class="visible-desktop"> leverage our deep knowledge of the MedTech industry and support our B2B and <br class="visible-desktop"> B2C strategies with quality health data sources to ensure maximum efficiency.
-						+infocard3('media',  3)
+						+infocard3('media',  3, 450, 500, 550)
 							p Thanks to our proprietary machine learning and tracking technology, your campaigns are automatically <br class="visible-desktop"> optimized. Beyond our automated machine learning technology, <br class="visible-desktop"> our team uncovers insights based on audience, user and campaign data <br class="visible-desktop"> learned from the thousands of <br class="visible-desktop"> campaigns run from <br> our creation.
-						+infocard3('ANALYTICS', 4)
+						+infocard3('ANALYTICS', 4, 450, 500, 550)
 							p We provide our customers with transparent <br class="visible-desktop">  dashboards and <br class="visible-desktop"> insights from their <br class="visible-desktop"> campaigns  to drive <br class="visible-desktop"> their ROI

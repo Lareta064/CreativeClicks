@@ -1,12 +1,12 @@
-mixin infocard4(text, addText1, addText2, imgSrc)
+mixin infocard4(text, addText1, addText2, imgSrc, t1,t2,t3,t4)
 	.info-card2
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/resources/"+imgSrc +".jpg", width="384" alt="img")
 		.info-card__body
-			.info-card__badge
+			.info-card__badge(data-aos="fade-up"  data-aos-delay=""+ t2)
 				span Case study
-			.marked-text !{text}
-		.info-card__footer
+			.marked-text(data-aos="fade-up"  data-aos-delay=""+ t3) !{text}
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t4)
 			a(href="#!").button-white
 				span Learn more
 				span
@@ -19,13 +19,13 @@ section.section--black.prove-block
 			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--red
 				.infocard-block__content
 					.infocard-block__row
-						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5)
-						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
-						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 6)
+						+infocard4('Helping a famous social media platform drive registra-tions in APAC and LATAM', 'Today', '7 min. read', 5, 450,500,550,600)
+						+infocard4('Cras&nbsp;mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6, 450,500,550,600)
+						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 6, 450,500,550,600)
 					.infocard-block__row
-						+infocard4('Cras mattis consecteur purus sit amet', 'Today', '7 min. read', 5)
-						+infocard4('Cras mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6)
-						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 6)
+						+infocard4('Cras mattis consecteur purus sit amet', 'Today', '7 min. read', 5, 450,500,550,600)
+						+infocard4('Cras mattis consecteur purus sit amet', '1 Day ago', '6 min. read', 6, 450,500,550,600)
+						+infocard4('Cras mattis consecteur purus sit amet', '2 Days ago', '5 min. read', 6, 450,500,550,600)
 				.btn-wrap
 					a(href="case-studies-2.html").button-white.light-button.show-more show more
 				

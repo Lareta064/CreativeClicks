@@ -1,34 +1,34 @@
 //- базовая карточка с фоном 2 бейджами
 
-mixin infocard4(spanText, addText1, addText2, imgSrc)
+mixin infocard4(spanText, addText1, addText2, imgSrc, t1,t2,t3,t4)
 	.info-card2.info-card--bg
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/whoweare/"+imgSrc +".jpg", width="384" alt="img")
 		.info-card__body
-			.info-card__title
+			.info-card__title(data-aos="fade-up"  data-aos-delay=""+ t2)
 				h3 !{spanText}
-			.additional-info
+			.additional-info(data-aos="fade-up"  data-aos-delay=""+ t3)
 				p #{addText1}
 				p #{addText2}
-		.info-card__footer
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t4)
 			a(href="#!").button-white
 				span Learn more
 				span
 					+sliderArrowRight
 //- базовая карточка без фона c 2 бейджами
-mixin infoCardBadge(title1,title2,title3)
+mixin infoCardBadge(title1,title2,title3, t1,t2,t3,t4,t5)
 	.info-card2.info-cardBadge
-		.info-card__img
+		.info-card__img(data-aos="fade-up"  data-aos-delay=""+ t1)
 			img.main-img(src="img/whoweare/4.jpg", width="384" alt="img")
 		.info-card__body
-			.info-card__badge
+			.info-card__badge(data-aos="fade-up"  data-aos-delay=""+ t2)
 				span !{title1}
-			.info-card__badge.info-card__badge--white
+			.info-card__badge.info-card__badge--white(data-aos="fade-up"  data-aos-delay=""+ t3)
 				span
 					+map
 				span !{title2}
-			.marked-text !{title3}
-		.info-card__footer
+			.marked-text(data-aos="fade-up"  data-aos-delay=""+ t4) !{title3}
+		.info-card__footer(data-aos="fade-up"  data-aos-delay=""+ t5)
 			a(href="#!").button-white
 				span Schedule a meeting
 				span
@@ -39,14 +39,14 @@ section.section--black.p-470.whoweare-red
 	.progress-bar
 	.container.container--p0
 		.color-block-wrapper
-			.color-block--left
-				.color-block__img
+			.color-block--left(data-aos="fade-up"  data-aos-delay="300")
+				.color-block__img(data-aos="fade-up"  data-aos-delay="350")
 					img.main-img(src="img/whoweare/1.jpg", width="576" alt="img")
 				.color-block.p-128
 					.text-block
-						.head-3.head-3--small
+						.head-3.head-3--small(data-aos="fade-up"  data-aos-delay="400")
 							h3 10+ years of experience
-						.text-32
+						.text-32(data-aos="fade-up"  data-aos-delay="450")
 							p Growing every year&nbsp;since our founding in 2009, we provide clients with 120+ experts and professionals to service their business every day. At Creative Clicks, performance marketing is in our DNA. We know when the next big opportunity is around the corner. When we find a new marketing channel that can help our clients achieve their goals, we test it.
 
 // orange block
@@ -54,14 +54,14 @@ section.section--black.p-470.whoweare-orange
 	.progress-bar.progress-bar--right
 	.container.container--p0
 		.color-block-wrapper
-			.color-block--right
-				.color-block__img
+			.color-block--right(data-aos="fade-up"  data-aos-delay="300")
+				.color-block__img(data-aos="fade-up"  data-aos-delay="350")
 					img.main-img(src="img/whoweare/5.jpg", width="576" alt="img")
 				.color-block.p-128
 					.text-block
-						.head-3
+						.head-3(data-aos="fade-up"  data-aos-delay="400")
 							h3 Creativity
-						.text-32
+						.text-32(data-aos="fade-up"  data-aos-delay="450")
 							p Well, that’s our first name. Though we’re a performance-based mobile marketing company, we’re able to exceed client KPI goals based on the effective creative produced by our creative studio.
 
 
@@ -70,27 +70,27 @@ section.section--black.p-470.whoweare-purple
 	.progress-bar.progress-bar--left
 	.container.container--p0
 		.color-block-wrapper
-			.color-block--left
-				.color-block__img
+			.color-block--left(data-aos="fade-up"  data-aos-delay="300")
+				.color-block__img(data-aos="fade-up"  data-aos-delay="350")
 					img.main-img(src="img/whoweare/3.jpg", width="576" alt="img")
 				.color-block.p-128
 					.text-block
-						.head-3
+						.head-3(data-aos="fade-up"  data-aos-delay="400")
 							h3 Our triple E<br class="visible-mobile"> philosophy
-						.text-32
+						.text-32(data-aos="fade-up"  data-aos-delay="450")
 							p What is our Triple E Philosophy? We are Energetic and Entrepreneurial Experts. While the concept seems simple enough, it is much more.
 						.text-block__items
-							.text-block__item
+							.text-block__item(data-aos="fade-up"  data-aos-delay="500")
 								.text-block__desk
 									h4.title-4 Energetic people
 									.text-32
 										p At Creative Clicks, it is of the utmost importance that the team is surrounded by other energetic people. That way, each person can build off each other’s energy.
-							.text-block__item
+							.text-block__item(data-aos="fade-up"  data-aos-delay="550")
 								.text-block__desk
 									h4.title-4 Entrepreneurial mindset
 									.text-32
 										p If you then add in an entrepreneurial mindset where the team is encouraged to take ownership and aim for the stars, dreams become reality no matter how large or small they seem.
-							.text-block__item
+							.text-block__item(data-aos="fade-up"  data-aos-delay="600")
 								.text-block__desk
 									h4.title-4 Experts in the field
 									.text-32
@@ -103,12 +103,12 @@ section.section--black.whoweare-yellow
 		.black-wrapper
 			.events-title
 				+titleGroup('Upcoming events', 'You<br class="visible-mobile"> can meet<br class="visible-mobile"> us at')
-			.infocard-block.infocard-block--reverse.infocard-block--yellow
+			.infocard-block.infocard-block--reverse.infocard-block--yellow(data-aos="fade-up"  data-aos-delay="400")
 				.infocard-block__content.mb-0
 					.infocard-block__row
-						+infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing&nbsp;in Asia')
-						+infoCardBadge('23 jan - 30 jan','Berlin','How blockchain impacts influencer marketing')
-						+infoCardBadge('17 feb - 24 feb','Paris','This&nbsp;colour will look good on your instagram')
+						+infoCardBadge('11 jan - 16 jan','Amsterdam','Influencer marketing&nbsp;in Asia',  450,500,550,600,650)
+						+infoCardBadge('23 jan - 30 jan','Berlin','How blockchain impacts influencer marketing',  650,700,750,800,850)
+						+infoCardBadge('17 feb - 24 feb','Paris','This&nbsp;colour will look good on your instagram',  850,800,850,1000,1050)
 
 // green block
 section.section--black.whoweare-green
@@ -116,11 +116,11 @@ section.section--black.whoweare-green
 	.container.container--p0
 		.section-content
 			+titleGroup('Check our', 'Social Media')
-			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--green
+			.infocard-block.infocard-block--right.infocard-block--reverse.infocard-block--green(data-aos="fade-up"  data-aos-delay="400")
 				.infocard-block__content.mb-0
 					.infocard-block__row
-						+infocard4('All about black friday and cyber monday&nbsp;2020', '5 Days ago', 'Linkedin', 6)
-						+infocard4('The power<br class="visible-mobile"> of video in&nbsp;mobile marketing' , '2 Day ago', 'Instagram', 7)
-						+infocard4( 'Check our halloween playlist' , '9 Days ago', 'Facebook', 8)
+						+infocard4('All about black friday and cyber monday&nbsp;2020', '5 Days ago', 'Linkedin', 6, 450,500,550,600)
+						+infocard4('The power<br class="visible-mobile"> of video in&nbsp;mobile marketing' , '2 Day ago', 'Instagram', 7, 10, 650,700,750,800)
+						+infocard4( 'Check our halloween playlist' , '9 Days ago', 'Facebook', 8, 850,900,950,1000)
 
 

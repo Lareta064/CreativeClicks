@@ -26,14 +26,14 @@ section.section--black.nailing-slider
 			.slider__img-item
 				img(src="img/resources/7.jpg", width="579" alt="img")
 		// ========= TEXT SLIDER ==========
-		.section-slider__content.bg-purple(data-aos="fade-up"  data-aos-delay="400")
+		.section-slider__content.bg-purple
 			.section-slider__arrows
 				button.arr-left.nailing-prev
 					+sliderArrowLeft
 				button.arr-right.nailing-next
 					+sliderArrowRight
 			
-			.section-slider-body#nailing-slider
+			.section-slider-body#nailing-slider(data-aos="fade-up"  data-aos-delay="400")
 				+sliderIt
 				+sliderIt
 				+sliderIt

@@ -425,10 +425,11 @@ $(document).ready(function () {
 		else document.querySelector('.scroll-icon').style.display = 'block';
 	}
 
-
+	
 
 	/* Move - hide */
 	document.onmousemove = (function() {
+		console.log("pop")
 		var onmousestop = function() {
 			document.querySelector('.scroll-icon').style.opacity = 1
 		}, thread;
@@ -439,8 +440,12 @@ $(document).ready(function () {
 		};
 		})();
 
-	document.documentElement.onmousemove = ()=>document.querySelector('.scroll-icon').style.opacity = 0
+	document.documentElement.onmousemove = ()=>{
+		document.querySelector('.scroll-icon').style.opacity = 0;
+	}
 
+	document.documentElement.dispatchEvent(new Event("mousemove"));
+	document.dispatchEvent(new Event("mousemove"));
 	/* Scroll - hide */
 	window.onscroll = (function() {
 		var onscrollstop = function() {

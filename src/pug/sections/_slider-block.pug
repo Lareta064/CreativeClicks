@@ -22,14 +22,14 @@ section.case-studies
 					img(src="img/resources/4.jpg", width="576" alt="img")
 		
 		// ========= TEXT SLIDER ==========			
-		.section-slider__content.bg-red(data-aos='fade-up' data-aos-delay='400')
+		.section-slider__content.bg-red
 			.section-slider__arrows
 				button.arr-left.case-prev
 					+sliderArrowLeft
 				button.arr-right.case-next
 					+sliderArrowRight
 			
-			.section-slider-body#case-slider
+			.section-slider-body#case-slider(data-aos='fade-up' data-aos-delay='400')
 				+sliderIt
 				+sliderIt
 				+sliderIt

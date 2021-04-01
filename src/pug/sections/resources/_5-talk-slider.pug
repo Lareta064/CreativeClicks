@@ -29,14 +29,14 @@ section.section--black.talk-slider.section-slider--reverse
 					img(src="img/resources/7.jpg", width="579" alt="img")
 		
 		// ========= TEXT SLIDER ==========			
-		.section-slider__content.bg-green(data-aos="fade-up"  data-aos-delay="500")
+		.section-slider__content.bg-green
 			.section-slider__arrows
 				button.arr-left.talk-prev
 					+sliderArrowLeft
 				button.arr-right.talk-next
 					+sliderArrowRight
 			
-			.section-slider-body#talk-slider
+			.section-slider-body#talk-slider(data-aos="fade-up"  data-aos-delay="500")
 				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')
 				+sliderIt('Creative Clicks China and the APAC Mobile Marketing')
 				+sliderIt('What to expect<br>from mobile <br class="hide-mobile">marketing in 2012')

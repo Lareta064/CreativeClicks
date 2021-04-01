@@ -27,14 +27,14 @@ section.section--black.captured-slider
 				img(src="img/resources/7.jpg", width="579" alt="img")
 		
 		// ========= TEXT SLIDER ==========
-		.section-slider__content.bg-yellow(data-aos="fade-up"  data-aos-delay="500")
+		.section-slider__content.bg-yellow
 			.section-slider__arrows
 				button.arr-left.captured-prev
 					+sliderArrowLeft
 				button.arr-right.captured-next
 					+sliderArrowRight
 			
-			.section-slider-body#captured-slider
+			.section-slider-body#captured-slider(data-aos="fade-up"  data-aos-delay="500")
 				+sliderIt
 				+sliderIt
 				+sliderIt

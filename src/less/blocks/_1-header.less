@@ -27,7 +27,7 @@
       top: 0;
       line-height: 1;
       animation-name: scrollIcon;
-      animation-duration: 1.5s;
+      animation-duration: 1.732s;
       animation-iteration-count: infinite;
       font-size: 28px;
     }
@@ -50,47 +50,36 @@
 
 @keyframes scrollIcon {
   0% {
-    opacity: 1;
-    top: 5px;
+  opacity: 0;
+  top: 5px;
   }
-
-  40% {
-    opacity: .6;
-
+  12.5% {
+  opacity: 1;
   }
-
-  85% {
-    opacity: 0;
-    top: -14px;
+  25% {
+  opacity: 0;
+  top: -14px;
   }
-
   100% {
-    opacity: 0;
-    top: 5px;
-
+  opacity: 0;
+  top: 5px;
   }
-}
-
-@keyframes scrollIconMob {
+  }
+  @keyframes scrollIconMob {
   0% {
-    opacity: 1;
-    top: -5px;
+  opacity: 0;
+  top: -5px;
   }
-
-  40% {
-    opacity: .6;
-
+  12.5% {
+  opacity: 1;
   }
-
-  85% {
-    opacity: 0;
-    top: -12px;
+  25% {
+  opacity: 0;
+  top: -12px;
   }
-
   100% {
-    opacity: 0;
-    top: -5px;
-
+  opacity: 0;
+  top: -5px;
   }
-}
+  }
 

@@ -358,33 +358,37 @@ $(document).ready(function () {
 	}
 	// partners-slider
 	$('.partners-slider').slick({
-		slidesToShow:4,
-		slidesToScroll:4,
+		slidesToShow:1,
+		slidesToScroll:1,
 		speed:1500,
-		responsive: [
-			{
-			  breakpoint: 1199,
-			  settings: {
+		infinite: false,
+		// responsive: [
+		// 	{
+		// 	  breakpoint: 1199,
+		// 	  settings: {
 				
-				slidesToShow: 3
-			  }
-			},
-			{
-			  breakpoint: 767,
-			  settings: {
+		// 		slidesToShow: 1
+		// 	  }
+		// 	},
+		// 	{
+		// 	  breakpoint: 767,
+		// 	  settings: {
 				
-				slidesToShow: 2
-			  }
-			},
-			{
-			  breakpoint: 599,
-			  settings: {
-				slidesToShow: 1
-			  }
-			}
-		  ]
+		// 		slidesToShow: 1
+		// 	  }
+		// 	},
+		// 	{
+		// 	  breakpoint: 599,
+		// 	  settings: {
+		// 		slidesToShow: 1
+		// 	  }
+		// 	}
+		//   ]
 	});
+	//hide slider arrow
 		
+	
+	//AOS
 	AOS.refresh();
 	window.addEventListener("scroll", onScrollEventHanlder);
 
